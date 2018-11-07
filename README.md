@@ -160,11 +160,47 @@ https://blog.csdn.net/jiachen0212/article/details/79498047
 https://blog.csdn.net/cym1990/article/details/78772020
 https://blog.csdn.net/u014380165/article/details/82025720
 https://handong1587.github.io/deep_learning/2015/10/09/object-detection.html
+
 15)opencv关键点检测
 https://www.learnopencv.com/hand-keypoint-detection-using-deep-learning-and-opencv/
+
 16)keras分割教程
 https://www.cnblogs.com/skyfsm/p/8330882.html
 https://www.cnblogs.com/skyfsm/p/6806246.html#4106616
 https://github.com/zhixuhao/unet
+
+17)图像分割教程
+https://blog.csdn.net/yy2yy99/article/details/83029542
+https://github.com/mrgloom/awesome-semantic-segmentation
+
+18）目标检测的教程综述
+https://handong1587.github.io/deep_learning/2015/10/09/object-detection.html
+
+19）遥感图像分割与识别的新思路
+https://www.cnblogs.com/skyfsm/p/8330882.html
+
+20）不规则及倾斜问题文字的识别
+https://blog.csdn.net/abc8350712/article/details/78331166
+https://blog.csdn.net/weixin_39099017/article/details/79654756
+
+21）keras GRU文字识别方法
+https://blog.csdn.net/dcrmg/article/details/79306402
+
+22）objectdetection教程
+https://blog.csdn.net/zj1131190425/article/details/80778888
+
+23）pre-train与Fine-tuning
+https://blog.csdn.net/yjl9122/article/details/70198885
+https://blog.csdn.net/wangzuhui0430/article/details/48156717
+https://blog.csdn.net/dcxhun3/article/details/51768923
+
+24）Ensemble Learning模型融合
+https://blog.csdn.net/shine19930820/article/details/75209021
+
+python中传统的图像转为base64传输
+https://blog.csdn.net/kl28978113/article/details/79034014
+
+
+
 
 
