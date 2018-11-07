@@ -1,0 +1,85 @@
+1、图像编码及相互转换问题
+#图片编码格式转换问题 
+#base64用于传输8bit字节的编码方式之一，用64个字符表示二进制数据方法。
+#是一个从二进制到字符的过程可用在http中环境下传较长的标识信息。
+
+编码使用 base64.b64encode()
+解码使用 base64.b64decode()
+
+import base64
+
+def convert_image():
+	#图像的编码
+	with open('C:/123.jpg','rb') as fin:
+		image_data = fin.read()
+		base64_data = base64.b64encode(image_data)
+		
+		fout = open('C:/123.jpg','W')
+		fout.write(base64_data.decode())
+		fout.close()
+		
+	with open('C:/123.jpg','r') as fin:
+		base64_data = fin.read()
+		ori_image_data = base64.b64decode(base64_data)
+	
+		fout = open('C/123.jpg''wb')
+		fout = write(ori_image_data)
+		fout.close()
+		
+if __name__ =='__main__'
+	convert_image()
+	
+	
+import base64
+
+def convert_image():
+	with open('C/Hop_Despair.jpg''rb') as fin, open('C/base64_content.txt','w') as fout :
+		fout.write(base64.b64encode(fin.read()).decode())
+		
+	with open('C/base64_content','r') as fin ,open('C/Hope_Despair_2.jpg','wb') as fout :
+		fout.write(base64.b64decode(fin.read()))
+	if __name__ =='__main__':
+	convert_image()
+	
+	
+#python 图片base64解码还原PIL.Image或者opencv图像
+#前端图像用图片流base64编码传过来的
+
+#opencv：
+	img_data_base64 = request.POST.get("image_data")
+
+	img_data = base64.b64decode(img_data_base64)
+	arry = np.fromstring(image_data,np.uint8)
+	img = cv2.imdecode(arry,cv2.COLOR_BGR2RGB)
+
+#PIL.Image:
+	image_data_base64 = request.POST.get("img_data")
+	
+	image = io.BytesIO(image_data)
+	img = Image.open(image)
+	
+#python的opencv格式和PIL.Image格式互相转化
+
+#opencv转换为PIL.Image格式
+	import cv2
+	from PIL import Image
+	
+	img = cv2.imread('123.jpg')
+	cv2.imshow("opencv",img)
+	image = Image.fromarry(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
+	image.show()
+	image.waitKey()
+	
+#PIL.Image转换为opencv格式
+	import cv2
+	from PIL import Image
+	import numpy
+	
+	image = Image.open("123.jpg")
+	image.show()
+	img = cv2.cvtColor(numpy,asarray(image),cv2.COLOR_BGR2RGB)
+	cv2.imshow("opencv",img)
+	cv2.waitKey()
+	
+
+2、图像直方图及直方图均衡化处理直观研究图像的像素分布
