@@ -197,10 +197,42 @@ https://blog.csdn.net/dcxhun3/article/details/51768923
 24）Ensemble Learning模型融合
 https://blog.csdn.net/shine19930820/article/details/75209021
 
-python中传统的图像转为base64传输
+25）python中传统的图像转为base64传输
 https://blog.csdn.net/kl28978113/article/details/79034014
 
+26）车道线分割
+https://github.com/SeokjuLee/VPGNet
+边缘分割与检测
+https://github.com/moabitcoin/holy-edge
+https://github.com/MaybeShewill-CV/lanenet-lane-detection
+https://github.com/jeremy-shannon/CarND-Advanced-Lane-Lines
+https://github.com/jeremy-shannon
+车道线与车辆检测项目
+https://github.com/windowsub0406/Vehicle-Detection-YOLO-ver
+
+27）pytorch教程
+https://github.com/chenyuntc/pytorch-book
+tenorflow教程
+https://blog.csdn.net/zj1131190425/article/details/80726353
+https://mp.weixin.qq.com/s/rstzkyyzuQTqjF-uoonzcw
+28）唇语识别
+https://github.com/astorfi/lip-reading-deeplearning
+DEMO 演示地址
+1.Training/Evaluation ：
+https://asciinema.org/a/kXIDzZt1UzRioL1gDPzOy9VkZ
+2.Lip Tracking：
+https://asciinema.org/a/RiZtscEJscrjLUIhZKkoG3GVm
+
+29）pocketflow腾讯开源压缩项目
+https://github.com/Tencent/PocketFlow
 
 
-
-
+30）谷歌开源AdaNet基于TensorFlow的AutoML框架
+相关论文：
+AdaNet: Adaptive Structural Learning of Artificial Neural Networks
+论文地址：
+http://proceedings.mlr.press/v70/cortes17a/cortes17a.pdf
+Github 项目地址：
+https://github.com/tensorflow/adanet
+教程 notebook：
+https://github.com/tensorflow/adanet/tree/v0.1.0/adanet/examples/tutorials
