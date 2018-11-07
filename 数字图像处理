@@ -81,5 +81,360 @@ def convert_image():
 	cv2.imshow("opencv",img)
 	cv2.waitKey()
 	
+2、图像中光斑问题是按照读取像素的分布函数来确定
+#1、python实现两个列表相加
 
-2、图像直方图及直方图均衡化处理直观研究图像的像素分布
+#利用操作符+（生成一个新对象）
+a = [1,2,3]
+b = [4,5,6]
+c = a + b
+
+#利用extend实现两个列表相加（生成一个新对象）
+a = [1,2,3]
+b = [4,5,6]
+
+a.extend(b)
+
+#append的方法（往列表中添加新元素）
+a.append(4)#后面跟的是元素类型
+a的结果是：[1,2,3,4]
+
+
+#2、两链表相交点问题如果两个链表不想交返回空如果相交函数返回必须保持原有结构不破坏
+#时间复杂度0（n）空间复杂度0（1）
+def getIntersectionNode(self,HeadA,headB):
+    if not headA or not headB:
+        return None
+   aList = []
+   bList = []
+   tempA = headA
+   tempB = headB
+   #链表A转换成列表
+   while tempA is not None:
+       aList.append(tempA)
+       tempA = tempA.next
+   #链表B转列表
+   while tempB is not None:
+       BList.append(tempB)
+       tempB = tempB.next
+    while len(aList)>1 and len(bList)>1 and aList[-2]==bList[-2]:
+        aList.pop()
+        bList.pop()
+    if aList[-1]==bList[-1]:
+        return bList[1]
+    else:
+        return None
+#双指针法求交点
+def getInterctionNode(self,headA,headB):
+    
+    if not headA or not headB:
+        return None
+    tempA = headA
+    tempB = headB
+    while tempA! = tempB:
+        if not tempA and not tempB:
+            return None
+        if not tempA:
+            tempA =headB:
+        if not tempB:
+            tempB = headA
+        return tempA
+
+#pythonarray数组的最值及索引值用where.list列表直接用index。numpy中的array方法
+#arange元素个数，shape是行列数
+a = np.arange(9).shape((3,3))
+array([[0,1,2]
+       [9,4,5]
+       [6,7,8]])
+    #全局最大
+    print(np.max(a))
+    #每列最大
+    8
+    print(np.max(a,axis = 0))
+    #每行最大
+    [6,7,8]
+    print(np.max(a,axis = 1))
+    [2,5,8]
+    
+# where得到的返回值中前面的是array行后面是列
+print(np.where(a == np.max(x)))
+(array([2],dtpye = int64),array([2],dtype = int64))
+print(np.where(a ==np.max(a,axis=0)))
+(array([2,2,2],dtype = int64),array([0,1,2]dtype))
+
+#如果array中有相同的最大值where将其位置全部给出
+a[1,0] = 8
+array([[0,1,2]
+       [8,4,5]
+       [6,7,8]])
+    print(np.where(a == np.max(a)))
+    (array([1,2],dtype = int64),array([0,2],dtype=int64))
+#3、数组中最大的元素
+
+3、FLANN匹配
+import cv2	
+import numpy as np
+from PIL import Image
+from skimage import transform
+import matplotlib.pyplot as plt
+
+
+def calc_length(point1, point2):
+    x = (point1[0] - point2[0]) ** 2
+    y = (point1[1] - point2[1]) ** 2
+    return (x + y) ** 0.5
+
+MIN_MATCH_COUNT = 10 
+#标准的证件模板
+dst_img = cv2.imread('C:/Users/Administrator/Desktop/1010test/1234567.jpg', 0)
+#需要检测的证件读入路径
+ori_img_ori = cv2.imread('C:/Users/Administrator/Desktop/1010test/123456.jpg', 1)
+#使用SIFT检测角点
+sift = cv2.xfeatures2d.SIFT_create()
+# 获取关键点和描述符
+kp1, des1 = sift.detectAndCompute(dst_img, None)
+kp2, des2 = sift.detectAndCompute(ori_img_ori, None)
+
+# 定义FLANN匹配器
+index_params = dict(algorithm = 1, trees = 5)
+search_params = dict(checks = 50)
+flann = cv2.FlannBasedMatcher(index_params, search_params)
+# 使用KNN算法匹配
+matches = flann.knnMatch(des1,des2,k=2)
+
+# 去除错误匹配
+good = []
+for m,n in matches:
+    if m.distance < 0.9*n.distance:
+        good.append(m)
+
+# 单应性
+print(len(good))
+if len(good) > MIN_MATCH_COUNT:
+    # 改变数组的表现形式，不改变数据内容，数据内容是每个关键点的坐标位置
+    src_pts = np.float32([ kp1[m.queryIdx].pt for m in good ]).reshape(-1,1,2)
+    dst_pts = np.float32([ kp2[m.trainIdx].pt for m in good ]).reshape(-1,1,2)
+    # findHomography 函数是计算变换矩阵
+    # 参数cv2.RANSAC是使用RANSAC算法寻找一个最佳单应性矩阵H，即返回值M
+    # 返回值：M 为变换矩阵，mask是掩模
+    M, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC,5.0)
+    # ravel方法将数据降维处理，最后并转换成列表格式
+    matchesMask = mask.ravel().tolist()
+    # 获取img1的图像尺寸
+    h,w = dst_img.shape
+    # pts是图像img1的四个顶点
+    pts = np.float32([[0,0],[0,h-1],[w-1,h-1],[w-1,0]]).reshape(-1,1,2)
+    # 计算变换后的四个顶点坐标位置
+    ori = cv2.perspectiveTransform(pts, M)
+
+    dst = [(ele[0][0], ele[0][1]) for ele in ori]
+    length_width = int(max(calc_length(dst[3], dst[0]), calc_length(dst[1], dst[2])))
+    length_hight = int(max(calc_length(dst[0], dst[1]), calc_length(dst[2], dst[3])))
+    tar = np.float32([[0,0],[length_hight,0],[length_hight,length_width], [0,length_width]])
+    warp_matrix = cv2.getPerspectiveTransform(ori, tar)
+    res = cv2.warpPerspective(ori_img_ori, warp_matrix, (length_hight, length_width))
+    rot_img = transform.rotate(res[::-1,:], -90, resize=True)
+    #img_new =cv2.resize(rot_img,(880,600),interpolation=cv2.INTER_CUBIC)
+    result = cv2.imshow("WarpImg", rot_img)
+    
+else:
+    print("Not enough matches are found - %d/%d") % (len(good),MIN_MATCH_COUNT)
+    matchesMask = None
+cv2.waitKey(0)
+
+4、截取不同的区域
+
+#功能：ROI区域采取配置文件坐标的方式截取规定区域  名称+ 尺寸
+import os
+import cv2
+import numpy as np
+
+
+img = cv2.imread('001.jpg',1)
+#标出矩形区域
+cv2.rectangle(img,(212,317)(290,436)(0,255,0),4)
+#坐标文件
+font = cv2.FONT_HERSHEY_SUPLEX
+text ='001'
+cut_text = cv2.putText(img,text,(212,310),font,2,(0,0,255),1)
+cv2.imwrite('001_new.jpg',img)
+
+
+src = np.float32([[70, 550], [670, 50], [400, 965], [1030, 475]])
+dst = np.float32([[0, 0], [880, 0], [0, 600], [880, 600]])
+m = cv2.getPerspectiveTransform(src, dst)
+result = cv2.warpPerspective(img, m, (880, 600))
+cv2.imwrite("canny3.jpg", result)
+cv2.imshow("canny3.jpg",result)
+cv2.waitKey(0)
+
+#格式如下：
+#(名称，坐标)
+#print("区域一名称{}".format(img_size))
+# left = 120
+# upper = 16
+# right = 520
+# lower = 57
+# region = im.crop((left,upper,right,lower))
+# region.save("C:/Users/Administrator/Desktop/test/Crop_t111.jpg")
+# img_size = im.size
+# print("区域二名称{}".format(img_size))
+# left = 180
+# upper = 75
+# right = 485
+# lower = 115
+# region = im.crop((left,upper,right,lower))
+# region.save("C:/Users/Administrator/Desktop/test/Crop_t112.jpg")
+# img_size = im.size
+# print("区域三名称{}".format(img_size))
+# left = 30
+# upper = 114
+# right = 600
+# lower = 150
+# region = im.crop((left,upper,right,lower))
+# region.save("C:/Users/Administrator/Desktop/test/Crop_t113.jpg")
+
+
+4、图像直方图及直方图均衡化处理直观研究图像的像素分布方法
+import cv2 as cv
+import numpy as np
+
+#全局阈值
+def threshold_demo(image):
+    gray = cv.cvtColor(image, cv.COLOR_RGB2GRAY)  #把输入图像灰度化
+    #直接阈值化是对输入的单通道矩阵逐像素进行阈值分割。
+    ret, binary = cv.threshold(gray, 0, 255, cv.THRESH_BINARY | cv.THRESH_TRIANGLE)
+    print("threshold value %s"%ret)
+    cv.namedWindow("binary0", cv.WINDOW_NORMAL)
+    cv.imshow("binary0", binary)
+
+#局部阈值
+def local_threshold(image):
+    gray = cv.cvtColor(image, cv.COLOR_RGB2GRAY)  #把输入图像灰度化
+    #自适应阈值化能够根据图像不同区域亮度分布，改变阈值
+    binary =  cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C,cv.THRESH_BINARY, 25, 10)
+    cv.namedWindow("binary1", cv.WINDOW_NORMAL)
+    cv.imshow("binary1", binary)
+
+#用户自己计算阈值
+def custom_threshold(image):
+    gray = cv.cvtColor(image, cv.COLOR_RGB2GRAY)  #把输入图像灰度化
+    h, w =gray.shape[:2]
+    m = np.reshape(gray, [1,w*h])
+    mean = m.sum()/(w*h)
+    print("mean:",mean)
+    ret, binary =  cv.threshold(gray, mean, 255, cv.THRESH_BINARY)
+    cv.namedWindow("binary2", cv.WINDOW_NORMAL)
+    cv.imshow("binary2", binary)
+
+src = cv.imread('C:/Users/Administrator/Desktop/1010test/1102/光斑检测/1.jpg')
+cv.namedWindow('input_image', cv.WINDOW_NORMAL) #设置为WINDOW_NORMAL可以任意缩放
+cv.imshow('input_image', src)
+threshold_demo(src)
+local_threshold(src)
+custom_threshold(src)
+cv.waitKey(0)
+cv.destroyAllWindows()
+5、兴趣区域的检测
+import cv2
+import numpy as np
+
+
+def get_image(path):
+    #获取图片
+    img=cv2.imread(path)
+    gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+
+    return img, gray
+
+def Gaussian_Blur(gray):
+    # 高斯去噪
+    blurred = cv2.GaussianBlur(gray, (3, 3),0)
+
+    return blurred
+
+def Sobel_gradient(blurred):
+    # 索比尔算子来计算x、y方向梯度
+    gradX = cv2.Sobel(blurred, ddepth=cv2.CV_32F, dx=1, dy=0)
+    gradY = cv2.Sobel(blurred, ddepth=cv2.CV_32F, dx=0, dy=1)
+
+    gradient = cv2.subtract(gradX, gradY)
+    gradient = cv2.convertScaleAbs(gradient)
+
+    return gradX, gradY, gradient
+
+def Thresh_and_blur(gradient):
+
+    blurred = cv2.GaussianBlur(gradient, (9, 9),0)
+    (_, thresh) = cv2.threshold(blurred, 90, 255, cv2.THRESH_BINARY)
+
+    return thresh
+
+def image_morphology(thresh):
+    # 建立一个椭圆核函数
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (25, 25))
+    # 执行图像形态学, 细节直接查文档，很简单
+    closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
+    closed = cv2.erode(closed, None, iterations=4)
+    closed = cv2.dilate(closed, None, iterations=4)
+
+    return closed
+
+def findcnts_and_box_point(closed):
+    # 这里opencv3返回的是三个参数
+    (_, cnts, _) = cv2.findContours(closed.copy(),
+        cv2.RETR_LIST,
+        cv2.CHAIN_APPROX_SIMPLE)
+    c = sorted(cnts, key=cv2.contourArea, reverse=True)[0]
+    # compute the rotated bounding box of the largest contour
+    rect = cv2.minAreaRect(c)
+    box = np.int0(cv2.boxPoints(rect))
+
+    return box
+
+def drawcnts_and_cut(original_img, box):
+    # 因为这个函数有极强的破坏性，所有需要在img.copy()上画
+    # draw a bounding box arounded the detected barcode and display the image
+    draw_img = cv2.drawContours(original_img.copy(), [box], -1, (0, 0, 255), 3)
+
+    Xs = [i[0] for i in box]
+    Ys = [i[1] for i in box]
+    x1 = min(Xs)
+    x2 = max(Xs)
+    y1 = min(Ys)
+    y2 = max(Ys)
+    hight = y2 - y1
+    width = x2 - x1
+    crop_img = original_img[y1:y1+hight, x1:x1+width]
+
+    return draw_img, crop_img
+
+def walk():
+
+    img_path = r'C:/Users/Administrator/Desktop/1010test/123456.jpg'
+    save_path = r'C:/Users/Administrator/Desktop/1010test/1678_save.png'
+    original_img, gray = get_image(img_path)
+    blurred = Gaussian_Blur(gray)
+    gradX, gradY, gradient = Sobel_gradient(blurred)
+    thresh = Thresh_and_blur(gradient)
+    closed = image_morphology(thresh)
+    box = findcnts_and_box_point(closed)
+    draw_img, crop_img = drawcnts_and_cut(original_img,box)
+
+    # 暴力一点，把它们都显示出来看看
+
+    cv2.imshow('original_img', original_img)
+    cv2.imshow('blurred', blurred)
+    cv2.imshow('gradX', gradX)
+    cv2.imshow('gradY', gradY)
+    cv2.imshow('final', gradient)
+    cv2.imshow('thresh', thresh)
+    cv2.imshow('closed', closed)
+    cv2.imshow('draw_img', draw_img)
+    cv2.imwrite('draw_img',draw_img)
+    cv2.imshow('crop_img', crop_img)
+    cv2.waitKey(20171219)
+    cv2.imwrite(save_path, crop_img)
+
+walk()
+
