@@ -295,7 +295,7 @@ cv2.waitKey(0)
 # region.save("C:/Users/Administrator/Desktop/test/Crop_t113.jpg")
 
 
-4、图像直方图及直方图均衡化处理直观研究图像的像素分布方法
+5、图像直方图及直方图均衡化处理直观研究图像的像素分布方法
 import cv2 as cv
 import numpy as np
 
@@ -335,7 +335,7 @@ local_threshold(src)
 custom_threshold(src)
 cv.waitKey(0)
 cv.destroyAllWindows()
-5、兴趣区域的检测
+6、兴趣区域的检测
 import cv2
 import numpy as np
 
@@ -437,4 +437,79 @@ def walk():
     cv2.imwrite(save_path, crop_img)
 
 walk()
+7、不同方法处理后的图像
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+imagepath =('C:/Users/Administrator/Desktop/1010test/15.png')
+img = cv2.imread(imagepath)
+
+lenna_img = cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
+GrayImage = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+print(u"读入lenna图的shape为",GrayImage.shape)
+
+Gaussian = cv2.GaussianBlur(GrayImage,(3,3),0,0,cv2.BORDER_DEFAULT)
+Median = cv2.medianBlur(Gaussian,5)
+
+x  = cv2.Sobel(Median,cv2.CV_32F,1,0,ksize = 3)
+y  = cv2.sobel(Median,cv2.CV_32F,0,1,ksize = 3)
+
+gradient = cv2.subtract(x,y)
+Sobel = cv2.convertScaleAbs(gradient)
+cv2.imshow('dilation2',Sobel)
+cv2.waitKey(0)
+
+blurred = cv2.GaussianBlur(Sobel,(9,9),0)
+ret,Binary = cv2.threshold(blurred,175,255,cv2.THRESH_BINARY)
+cv2.imshow('dilation2',Binary)
+cv2.waitKey(0)
+
+element1 = cv2.getStructuringElement(cv2.MORPH_RECT,(9,1))
+element2 = cv2.getStructuringElement(cv2.MORPH_RECT,(9,7))
+
+Dilation = cv2.dilate(Binary,element2,iterations= 1)
+Erosion = cv2.erode(Dilation,element1,iterations=1)
+
+Dilation2 = cv2.dilate(Erosion,element2,iterations=3)
+cv2.imshow('Dilation2',Dilation2)
+cv2.waitKey(0)
+
+kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(25,25))
+closed = cv2.morphologyEx(Binary,cv2.MORPH_CLOSE,kernel)
+closed = cv2.erode(closed,None,iterations=4)
+closed = cv2.dilate(closed,None,iterations=4)
+
+cv2.imshow('erode dilate',closed)
+cv2.waitKey(0)
+
+titles = ['Source Image','Gray Image','Gaussian Image','Median Image','Sobel Image','Binary Image','Dilation Image','Erosiom Image','Dilation2 image']
+images = [lenna_img,GrayImage,Gaussian,Median,Sobel,Binary,Dilation,Erosion,closed]
+
+for i  in range(9):
+    plt.subplot(3,3,i+1),plt.imshow(images[i],'gray')
+    plt.title(titles[i])
+    plt.xticks([]),plt.yticks([])
+
+plt.show()
+cv2.imshow('Gray',GrayImage)
+cv2.waitKey(0)
+
+(_, cnts, _) = cv2.findContours(closed.copy(),
+                                                 cv2.RETR_LIST,
+                                                 cv2.CHAIN_APPROX_SIMPLE)
+c = sorted(cnts, key = cv2.contourArea,reverse=True)[0]
+print (c)
+rect = cv2.minAreaRect(c)
+print('rectt',rect)
+Box = np.int0(cv2.boxPoints(rect))
+print ('BOx',Box)
+
+Final_img = cv2.drawContours(img.copy(),[Box],-1,(0,0,255),3)
+cv2.imshow('Final_img',Final_img)
+cv2.waitKey(0)
+
+
+
+
 
