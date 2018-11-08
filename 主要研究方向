@@ -1,4 +1,4 @@
-1、场景识别
+一、场景识别
 https://mp.weixin.qq.com/s/8WKy9KTUp_U8UK8FAR78Jg
 GitHub地址：https://github.com/bei21/img2poem
 DA-GAN
@@ -15,3 +15,6 @@ RA-CNN
 变分鉴别器瓶颈（VDB）导致对抗性学习算法在三个不同应用领域得到显着改进
 https://chillee.github.io/OpenReviewExplorer/index.html?conf=iclr2019
 https://mp.weixin.qq.com/s/2rqwGRjl5YdP_rvkACkY4g
+二、视频与3D图像分割与生成
+http://m.sohu.com/a/237503823_610300
+在github上已经有人用faster修改实现了视频的多维高速识别和编解码
