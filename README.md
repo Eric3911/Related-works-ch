@@ -236,3 +236,6 @@ Github 项目地址：
 https://github.com/tensorflow/adanet
 教程 notebook：
 https://github.com/tensorflow/adanet/tree/v0.1.0/adanet/examples/tutorials
+
+gituhb开源的精品AI项目
+https://blog.csdn.net/guyuealian/article/details/81223084?tdsourcetag=s_pcqq_aiomsg
