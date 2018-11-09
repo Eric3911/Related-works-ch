@@ -437,6 +437,7 @@ def walk():
     cv2.imwrite(save_path, crop_img)
 
 walk()
+
 7、不同方法处理后的图像
 import cv2
 import numpy as np
@@ -546,6 +547,11 @@ cv2.imshow('contours',img)
 cv2.waitKey()
 cv2.destroyAllWindows()
 
+8、显示循环进度迭代器
+import time
+from tqdm import *
+for i tqdm(range(1000)):
+    time.sleep(.01)
 
 
 
