@@ -1,0 +1,385 @@
+python机器视觉与
+
+
+一、python模板匹配算法（该算法对相似度的要求极高并且不支持任意角度）
+
+import cv2 as cv
+import numpy as np
+
+def template_demo():
+    #读取模板图像
+    tpl = cv.imread("D:/1110/9.png")
+    #读取实例图像
+    target = cv.imread("D:/1110/7.png")
+    #cv.imshow("template image",tpl)
+    #cv.imshow("target image",target)
+    # 匹配方法 ：平方差匹配、相关性匹配、相关性系数（相关性是越接近1越大越好，）
+    methods = [cv.TM_SQDIFF_NORMED,cv.TM_CCORR_NORMED,cv.TM_CCOEFF_NORMED]
+    th,tw = tpl.shape[:2]
+    for md in methods:
+        result = cv.matchTemplate(target,tpl,md)
+        # result是我们各种算法下匹配后的图像
+        #cv.imshow("%s"%md,result)
+        #获取的是每种公式中计算出来的值，每个像素点都对应一个值
+        min_val,max_val,min_loc,max_loc = cv.minMaxLoc(result)
+        if md == cv.TM_SQDIFF_NORMED:
+            tl = min_loc    #tl是左上角点
+        else:
+            tl = max_loc
+        br = (tl[0]+tw,tl[1]+th)    #右下点
+        cv.rectangle(target,tl,br,(0,0,255),2)
+        cv.imshow("match-%s"%md,target)
+
+src = cv.imread("D:/1110/9.png")  #读取图片
+cv.namedWindow("input image",cv.WINDOW_AUTOSIZE)    #创建GUI窗口,形式为自适应
+cv.imshow("input image",src)    #通过名字将图像和窗口联系
+template_demo()
+cv.waitKey(0)   #等待用户操作，里面等待参数是毫秒，我们填写0，代表是永远，等待用户操作
+cv.destroyAllWindows()  #销毁所有窗口
+
+
+二、自由视角模板匹配模型
+
+import numpy as np
+import cv2
+from skimage import transform
+
+def calc_length(point1, point2):
+    x = (point1[0] - point2[0]) ** 2
+    y = (point1[1] - point2[1]) ** 2
+    return (x + y) ** 0.5
+#阈值参数
+MIN_MATCH_COUNT = 10
+#标准的证件模板
+dst_img = cv2.imread('C:/Users/Administrator/Desktop/1010test/1.jpg', 0)
+#需要检测的证件读入路径
+ori_img_ori = cv2.imread('C:/Users/Administrator/Desktop/1010test/canny1.jpg', 1)
+# 使用SIFT检测角点
+sift = cv2.xfeatures2d.SIFT_create()
+# 获取关键点和描述符
+kp1, des1 = sift.detectAndCompute(dst_img, None)
+kp2, des2 = sift.detectAndCompute(ori_img_ori, None)
+
+# 定义FLANN匹配器
+index_params = dict(algorithm = 1, trees = 5)
+search_params = dict(checks = 50)
+flann = cv2.FlannBasedMatcher(index_params, search_params)
+# 使用KNN算法匹配
+matches = flann.knnMatch(des1,des2,k=2)
+
+# 去除错误匹配
+good = []
+for m,n in matches:
+    if m.distance < 0.7*n.distance:
+        good.append(m)
+
+# 单应性
+if len(good) > MIN_MATCH_COUNT:
+    # 改变数组的表现形式，不改变数据内容，数据内容是每个关键点的坐标位置
+    src_pts = np.float32([ kp1[m.queryIdx].pt for m in good ]).reshape(-1,1,2)
+    dst_pts = np.float32([ kp2[m.trainIdx].pt for m in good ]).reshape(-1,1,2)
+    # findHomography 函数是计算变换矩阵
+    # 参数cv2.RANSAC是使用RANSAC算法寻找一个最佳单应性矩阵H，即返回值M
+    # 返回值：M 为变换矩阵，mask是掩模
+    M, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC,5.0)
+    # ravel方法将数据降维处理，最后并转换成列表格式
+    matchesMask = mask.ravel().tolist()
+    # 获取img1的图像尺寸
+    h,w = dst_img.shape
+    # pts是图像img1的四个顶点
+    pts = np.float32([[0,0],[0,h-1],[w-1,h-1],[w-1,0]]).reshape(-1,1,2)
+    # 计算变换后的四个顶点坐标位置
+    ori = cv2.perspectiveTransform(pts, M)
+
+    dst = [(ele[0][0], ele[0][1]) for ele in ori]
+    length_width = int(max(calc_length(dst[3], dst[0]), calc_length(dst[1], dst[2])))
+    length_hight = int(max(calc_length(dst[0], dst[1]), calc_length(dst[2], dst[3])))
+    tar = np.float32([[0,0],[length_hight,0],[length_hight,length_width], [0,length_width]])
+    warp_matrix = cv2.getPerspectiveTransform(ori, tar)
+    res = cv2.warpPerspective(ori_img_ori, warp_matrix, (length_hight, length_width))
+    rot_img = transform.rotate(res[::-1,:], -90, resize=True)
+    result = cv2.imshow("WarpImg", rot_img)
+    cv2.imwrite('C:/Users/Administrator/Desktop/1010test/WarpImg.png',rot_img)
+    res = cv2.imread('C:/Users/Administrator/Desktop/1010test/WarpImg.png')
+    dst1 = cv2.resize(res,(880,600),interpolation=cv2.INTER_CUBIC)
+
+    # # 根据四个顶点坐标位置在源图像画出找到的边框
+    # ori_img = cv2.polylines(ori_img,[np.int32(dst)],True,(255,0,0),3, cv2.LINE_AA)
+    # cv2.imshow('findu', ori_img)
+else:
+    print("Not enough matches are found - %d/%d") % (len(good),MIN_MATCH_COUNT)
+    matchesMask = None
+    
+   三、兴趣区域检测
+   
+   import numpy as np
+import cv2
+
+#读取图片
+img = cv2.imread('C:/Users/Administrator/Desktop/1010test/16.jpg')
+#二值化，canny检测
+img = cv2.GaussianBlur(img,(3,3),0)
+binaryImg = cv2.Canny(img,10,150)
+#寻找轮廓
+#也可以这么写：binary,contours, hierarchy = cv2.findContours(binaryImg,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+#这样，可以直接用contours表示
+h = cv2.findContours(binaryImg,cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)
+#提取轮廓
+contours = h[1]
+#打印返回值，这是一个元组
+print(type(h))
+#打印轮廓类型，这是个列表
+print(type(h[1]))
+#查看轮廓数量
+print (len(contours))
+
+#创建白色幕布
+temp = np.ones(binaryImg.shape,np.uint8)*255
+#画出轮廓：temp是白色幕布，contours是轮廓，-1表示全画，然后是颜色，厚度
+cv2.drawContours(temp,contours,-1,(0,255,0),3)
+
+cv2.imshow("contours",temp)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+四、霍夫曼概率直线投票实现白纸转正问题纸张（仿射变换问题）
+
+import cv2
+import numpy as np
+
+img = cv2.imread("C:/Users/Administrator/Desktop/1010test/16.jpg")
+
+img = cv2.GaussianBlur(img,(3,3),0)
+gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+
+edges = cv2.Canny(gray,50,150,apertureSize = 3)
+result1 = cv2.imwrite("canny.jpg", edges)
+#霍夫曼概率投票之间检测获得兴趣区域
+lines = cv2.HoughLinesP(edges,1,np.pi/180,50,minLineLength=90,maxLineGap=10)
+result2 = 0
+img1 = cv2.GaussianBlur(img,(3,3),0)
+for i in range(9):
+    for x1,y1,x2,y2 in lines[i]:
+        result2 = cv2.line(img1,(x1,y1),(x2,y2),(0,0,255),1)
+        cv2.imwrite("canny1.jpg", result2)
+
+result3 = cv2.circle(img,(207,151),2,(0,255,0),2)
+
+result3 = cv2.circle(result3,(517,285),2,(0,255,0),2)
+result3 = cv2.circle(result3,(17,601),2,(0,255,0),2)
+result3 = cv2.circle(result3,(343,731),2,(0,255,0),2)
+cv2.imwrite("canny2.jpg", result3)
+
+img = cv2.imread("C:/Users/Administrator/Desktop/1010test/16.jpg")
+src = np.float32([[207, 151], [517, 285], [17, 601], [343, 731]])
+dst = np.float32([[0, 0], [337, 0], [0, 488], [337, 488]])
+m = cv2.getPerspectiveTransform(src, dst)
+result = cv2.warpPerspective(img, m, (337, 488))
+cv2.imwrite("canny3.jpg", result)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+五、#提取矩形的边框返回四个顶点参数
+
+import numpy as np
+import cv2
+import os
+im = cv2.imread('/home/csnt-dlu/Desktop/lc/project/canny.jpg')
+imgray = cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
+ret,thresh = cv2.threshold(imgray,127,255,0)
+image, contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+
+for i in range(0,len(contours)):
+    x, y, w, h = cv2.boundingRect(contours[i])
+    cv2.rectangle(image, (x,y), (x+w,y+h), (153,153,0), 5)
+
+    newimage=image[y+2:y+h-2,x+2:x+w-2] # 先用y确定高，再用x确定宽
+    nrootdir=("./")
+    if not os.path.isdir(nrootdir):
+        os.makedirs(nrootdir)
+    cv2.imwrite( nrootdir+str(i)+".jpg",newimage)
+    print(i)
+
+六、圆形的检测
+
+import numpy as np
+import matplotlib.pyplot as plt
+from skimage import measure,draw
+
+#生成二值测试图像
+img=np.zeros([100,100])
+img[20:40,60:80]=1  #矩形
+rr,cc=draw.circle(60,60,10)  #小圆
+rr1,cc1=draw.circle(20,30,15) #大圆
+img[rr,cc]=1
+img[rr1,cc1]=1
+
+#检测所有图形的轮廓
+contours = measure.find_contours(img, 0.5)
+
+#绘制轮廓
+fig, (ax0,ax1) = plt.subplots(1,2,figsize=(8,8))
+ax0.imshow(img,plt.cm.gray)
+ax1.imshow(img,plt.cm.gray)
+for n, contour in enumerate(contours):
+    ax1.plot(contour[:, 1], contour[:, 0], linewidth=2)
+ax1.axis('C:/Users/Administrator/Desktop/1010test/1.png',0)
+ax1.set_xticks([])
+ax1.set_yticks([])
+plt.show()
+
+七、空间书本转正问题（透射变换）
+#1、解决了手机的稍微倾斜问题仿透射变换
+import cv2
+import numpy as np
+def rad(x):
+    return x * np.pi / 180
+
+img = cv2.imread("C:/Users/Administrator/Desktop/1010test/21.jpg")
+#cv2.imshow("original", img)
+
+img = cv2.copyMakeBorder(img, 200, 200, 200, 200, cv2.BORDER_CONSTANT, 0)
+w, h = img.shape[0:2]
+
+anglex =-10
+angley = 0
+anglez = 0
+fov = 42
+while 1:
+    # 镜头与图像间的距离，21为半可视角，算z的距离是为了保证在此可视角度下恰好显示整幅图像
+    z = np.sqrt(w ** 2 + h ** 2) / 2 / np.tan(rad(fov / 2))
+    # 齐次变换矩阵
+    rx = np.array([[1, 0, 0, 0],
+                   [0, np.cos(rad(anglex)), -np.sin(rad(anglex)), 0],
+                   [0, -np.sin(rad(anglex)), np.cos(rad(anglex)), 0, ],
+                   [0, 0, 0, 1]], np.float32)
+
+    ry = np.array([[np.cos(rad(angley)), 0, np.sin(rad(angley)), 0],
+                   [0, 1, 0, 0],
+                   [-np.sin(rad(angley)), 0, np.cos(rad(angley)), 0, ],
+                   [0, 0, 0, 1]], np.float32)
+
+    rz = np.array([[np.cos(rad(anglez)), np.sin(rad(anglez)), 0, 0],
+                   [-np.sin(rad(anglez)), np.cos(rad(anglez)), 0, 0],
+                   [0, 0, 1, 0],
+                   [0, 0, 0, 1]], np.float32)
+
+    r = rx.dot(ry).dot(rz)
+
+    # 四对点的生成
+    pcenter = np.array([h / 2, w / 2, 0, 0], np.float32)
+
+    p1 = np.array([0, 0, 0, 0], np.float32) - pcenter
+    p2 = np.array([w, 0, 0, 0], np.float32) - pcenter
+    p3 = np.array([0, h, 0, 0], np.float32) - pcenter
+    p4 = np.array([w, h, 0, 0], np.float32) - pcenter
+
+    dst1 = r.dot(p1)
+    dst2 = r.dot(p2)
+    dst3 = r.dot(p3)
+    dst4 = r.dot(p4)
+
+    list_dst = [dst1, dst2, dst3, dst4]
+
+    org = np.array([[0, 0],
+                    [w, 0],
+                    [0, h],
+                    [w, h]], np.float32)
+
+    dst = np.zeros((4, 2), np.float32)
+
+    # 投影至成像平面
+    for i in range(4):
+        dst[i, 0] = list_dst[i][0] * z / (z - list_dst[i][2]) + pcenter[0]
+        dst[i, 1] = list_dst[i][1] * z / (z - list_dst[i][2]) + pcenter[1]
+
+    warpR = cv2.getPerspectiveTransform(org, dst)
+
+    result = cv2.warpPerspective(img, warpR, (h, w))
+    cv2.imshow("result", result)
+    c = cv2.waitKey(0)
+
+    # anglex += 3            #auto rotate
+    # anglez += 1             #auto rotate
+    # angley += 2            #auto rotate
+
+    # 键盘控制
+    if 27 == c:  # Esc quit
+        break;
+    if c == ord('w'):
+        anglex += 1
+    if c == ord('s'):
+        anglex -= 1
+    if c == ord('a'):
+        angley += 1
+        # dx=0
+    if c == ord('d'):
+        angley -= 1
+    if c == ord('u'):
+        anglez += 1
+    if c == ord('p'):
+        anglez -= 1
+    if c == ord('t'):
+        fov += 1
+    if c == ord('r'):
+        fov -= 1
+    if c == ord(' '):
+        anglex = angley = anglez = 0
+    if c == ord('q'):
+        print("==============")
+        print('旋转矩阵：\n', r)
+        print("angle alpha: ", anglex, 'angle beta: ', angley, "dz: ", anglez, ": ", z)
+
+cv2.destroyAllWindows()
+
+八、边缘检测（直线检测提取矩形）
+# coding=utf-8
+import cv2
+import numpy as np
+
+img = cv2.imread("C:/Users/Administrator/Desktop/1010test/16.jpg")
+
+img = cv2.GaussianBlur(img, (3, 3), 0)
+edges = cv2.Canny(img, 50, 100, apertureSize=3)
+lines = cv2.HoughLines(edges, 1, np.pi / 180, 118)  # 这里对最后一个参数使用了经验型的值
+result = img.copy()
+for line in lines[0]:
+    rho = line[0]  # 第一个元素是距离rho
+    theta = line[1]  # 第二个元素是角度theta
+    if (theta < (np.pi / 4.)) or (theta > (3. * np.pi / 4.0)):  # 垂直直线
+        # 该直线与第一行的交点
+        pt1 = (int(rho / np.cos(theta)), 0)
+        # 该直线与最后一行的焦点
+        pt2 = (int((rho - result.shape[0] * np.sin(theta)) / np.cos(theta)), result.shape[0])
+        # 绘制一条白线
+        cv2.line(result, pt1, pt2, (255))
+    else:  # 水平直线
+        # 该直线与第一列的交点
+        pt1 = (0, int(rho / np.sin(theta)))
+        # 该直线与最后一列的交点
+        pt2 = (result.shape[1], int((rho - result.shape[1] * np.cos(theta)) / np.sin(theta)))
+        # 绘制一条直线
+        cv2.line(result, pt1, pt2, (255), 1)
+
+#cv2.imshow('Canny', edges)
+cv2.imshow('Result', result)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+九、harr角点检测
+
+#角点检测
+import cv2
+import numpy as np
+
+img = cv2.imread('C:/Users/Administrator/Desktop/1010test/19.jpg')
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+gray = np.float32(gray)
+
+dst = cv2.cornerHarris(gray, 2, 3, 0.20)
+dst = cv2.dilate(dst, None)
+
+img[dst > 0.01 * dst.max()] = [0, 0, 250]
+cv2.imshow('dst', img)
+if cv2.waitKey(0) & 0xff == 25:
+    cv2.destroyAllWindows()
