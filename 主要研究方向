@@ -1,29 +1,72 @@
 一、场景识别
-https://mp.weixin.qq.com/s/8WKy9KTUp_U8UK8FAR78Jg
-GitHub地址：https://github.com/bei21/img2poem
-解决repo模型存在问题和修改方向性识别问题
-https://github.com/jiangxiluning/chinese-ocr
-DA-GAN
-Big-GAN
-Large Scale GAN Training for High Fidelity Natural Image Synthesis
-RA-CNN
-2、细粒度问题在图像和自然语言上应用
-3、注意力在语言和图像上应用
-4、图像的厚度问题，反卷积
-5、迁移学习
-6、强化学习、逆强化学习、后验推理
-7、多模态融合
-8、ICLR ：https://chillee.github.io
-变分鉴别器瓶颈（VDB）导致对抗性学习算法在三个不同应用领域得到显着改进
-https://chillee.github.io/OpenReviewExplorer/index.html?conf=iclr2019
-https://mp.weixin.qq.com/s/2rqwGRjl5YdP_rvkACkY4g
+
+  https://mp.weixin.qq.com/s/8WKy9KTUp_U8UK8FAR78Jg
+  GitHub地址：https://github.com/bei21/img2poem
+
+  解决repo模型存在问题和修改方向性识别问题
+  https://github.com/jiangxiluning/chinese-ocr
+  DA-GAN
+  Big-GAN
+  《Large Scale GAN Training for High Fidelity Natural Image Synthesis》
+  注意力机制模型RA-CNN
+  
+  2、细粒度问题在图像和自然语言上应用
+
+  3、注意力在语言和图像上应用
+
+  4、图像的厚度问题，反卷积
+  5、迁移学习
+  6、强化学习、逆强化学习、后验推理
+  7、多模态融合
+  8、ICLR ：https://chillee.github.io
+  变分鉴别器瓶颈（VDB）导致对抗性学习算法在三个不同应用领域得到显着改进
+  https://chillee.github.io/OpenReviewExplorer/index.html?conf=iclr2019
+  https://mp.weixin.qq.com/s/2rqwGRjl5YdP_rvkACkY4g
+
 二、视频与3D图像分割与生成
-http://m.sohu.com/a/237503823_610300
-在github上已经有人用faster修改实现了视频的多维高速识别和编解码
+  http://m.sohu.com/a/237503823_610300
+  在github上已经有人用faster修改实现了视频的多维高速识别和编解码
 
 sci-hub论文下载网站
-http://tool.yovisun.com/scihub/
+  http://tool.yovisun.com/scihub/
 
 三，计算机视觉研究体系
 
-第一章计算机视觉yu
+  第一章：计算机视觉数字图像
+  
+    1、计算机视觉研究的意义
+    
+    2、计算机视觉的难点
+    
+    3、当前研究的问题热点
+    
+    4、数字图像的相关开源库（opencv、tensorflow、keras、pytorch）
+    
+  第二章：图像预处理
+  
+    1、图像的平滑和去燥（高斯滤波、中值滤波、曲率驱动滤波等）
+    
+    2、基于直方图的对比度增强：CLAHE
+    
+    3、颜色图像HSV变化
+    
+    4、边缘检测算子（sobel、canny、拉普拉斯算子、RFC、EGB、MCG、SE、OEF、HFL、RFC-MS）
+    
+    5、高斯及拉普拉斯金字塔
+    
+    6、频域分析和变换（卷积计算、傅立叶变化、小波变换）
+    
+    7、应用实践：边缘分割，平滑、边缘检测、CIAHE、FFT等
+    
+  第三章：图像特征提取
+    1、颜色特征（直方图、聚类直方图）
+    
+    2、几何特征（Edge、Corner、Blob等）
+    
+    3、Harris角点和FAST角点
+    
+    4、基于关键点的特征描述（SIFT、SURF、ORB）
+    
+    5、其他特征描述方法（LBP、Gabo）
+    
+    6、SIFT、图像拼接
