@@ -82,6 +82,7 @@ def convert_image():
 	cv2.waitKey()
 	
 2、图像中光斑问题是按照读取像素的分布函数来确定
+
 #1、python实现两个列表相加
 
 #利用操作符+（生成一个新对象）
@@ -169,6 +170,8 @@ array([[0,1,2]
        [6,7,8]])
     print(np.where(a == np.max(a)))
     (array([1,2],dtype = int64),array([0,2],dtype=int64))
+
+
 #3、数组中最大的元素
 
 3、FLANN匹配
@@ -244,6 +247,7 @@ cv2.waitKey(0)
 
 4、截取不同的区域
 
+
 #功能：ROI区域采取配置文件坐标的方式截取规定区域  名称+ 尺寸
 import os
 import cv2
@@ -296,6 +300,8 @@ cv2.waitKey(0)
 
 
 5、图像直方图及直方图均衡化处理直观研究图像的像素分布方法
+
+
 import cv2 as cv
 import numpy as np
 
@@ -438,6 +444,7 @@ def walk():
 
 walk()
 
+
 7、不同方法处理后的图像
 import cv2
 import numpy as np
@@ -509,10 +516,10 @@ print ('BOx',Box)
 Final_img = cv2.drawContours(img.copy(),[Box],-1,(0,0,255),3)
 cv2.imshow('Final_img',Final_img)
 cv2.waitKey(0)
+
+
 8、轮廓检测
-'''
-轮廓检测
-'''
+
 
 #加载图像img
 img = cv2.imread('./image/img6.jpg',cv2.IMREAD_COLOR)
@@ -547,12 +554,42 @@ cv2.imshow('contours',img)
 cv2.waitKey()
 cv2.destroyAllWindows()
 
+
 8、显示循环进度迭代器
 import time
 from tqdm import *
 for i tqdm(range(1000)):
     time.sleep(.01)
+    
+    
+9、图加减法的背景过滤
+#固定区域识别图像背景过滤（图像加减法）
+import numpy as np
+import cv2
 
+img = cv2.imread("C:/pythonPro/Smoke-Object/test_images/org/1540795740384.jpg")
+#区域坐标
+pts = np.array([[460,110],[280,360],[340,700],[800,700],[840,340],[710,110]])
+rect = cv2.boundingRect(pts)
+x,y,w,h = rect
+croped = img[y:y+h, x:x+w].copy()
+pts = pts - pts.min(axis=0)
+mask = np.zeros(croped.shape[:2], np.uint8)
+cv2.drawContours(mask, [pts], -1, (255, 255, 255), -1, cv2.LINE_AA)
+
+dst = cv2.bitwise_and(croped, croped, mask=mask)
+
+bg = np.ones_like(croped, np.uint8)*255
+cv2.bitwise_not(bg,bg, mask=mask)
+dst2 = bg+ dst
+
+
+cv2.imshow("croped.jpg", croped)
+cv2.imshow("mask.jpg", mask)
+cv2.imshow("dst.jpg", dst)
+cv2.imshow("dst2.jpg", dst2)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 
