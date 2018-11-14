@@ -239,3 +239,6 @@ https://github.com/tensorflow/adanet/tree/v0.1.0/adanet/examples/tutorials
 
 gituhb开源的精品AI项目
 https://blog.csdn.net/guyuealian/article/details/81223084?tdsourcetag=s_pcqq_aiomsg
+
+OCR（文本检测）
+https://blog.csdn.net/u011394059/article/details/77076190
