@@ -9,7 +9,9 @@
   Big-GAN
   《Large Scale GAN Training for High Fidelity Natural Image Synthesis》
   注意力机制模型RA-CNN
-  
+    《注意力与细粒度解决小目标问题》
+    https://github.com/YapengTian/Single-Image-Super-Resolution
+    《遮挡的和跨尺度检测问题》A-Faster-RCNN（Adversarial SpatialDropout Network）/ECCV2018的Bi-box行人遮挡检测及OR-CNN
   2、细粒度问题在图像和自然语言上应用
 
   3、注意力在语言和图像上应用
