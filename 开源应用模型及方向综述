@@ -1,0 +1,42 @@
+
+一、OCR文字识别
+
+https://handong1587.github.io/deep_learning/2015/10/09/ocr.html
+https://blog.csdn.net/qq_14845119/article/details/77979161
+https://blog.csdn.net/u011394059/article/details/77076190
+比较好的
+seglink
+R2CNN
+CRNN+yolo3
+  简单的数字识别应用
+  https://www.cnblogs.com/sjzh/p/6104105.html
+  
+二、python计算机视觉编程
+
+http://yongyuan.name/pcvwithpython/
+http://yongyuan.name/pcvwithpython/chapter1.html
+
+三、pytorch教程
+
+https://github.com/L1aoXingyu/code-of-learn-deep-learning-with-pytorch
+
+四、目标检测
+
+https://blog.paperspace.com/
+yolo3目标检测
+https://blog.paperspace.com/how-to-implement-a-yolo-v3-object-detector-from-scratch-in-pytorch-part-2/
+
+五、3D感知物体检测
+MC-CNN
+FlowNet
+
+六、人群密度估计
+SaCNN
+CrowdNet
+CCNN
+The Counting CNN 
+MSCNN
+SubCNN
+
+
+
