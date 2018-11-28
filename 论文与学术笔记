@@ -11,10 +11,11 @@
 8、3D神经网络可视化
     TensorSpace
 9、ONNX workshop
-
-10、模型
-
-9、ONNX workshop
+10、模型优化框架学习
+    PocketFlow
+    NCNN
+    MMdnn
+    ONNNX
 时代意义的论文解读：
 R-CNN
 RPN
@@ -38,6 +39,12 @@ VINet
 Light-head-RCNN
 MegDet
 DetNet
+DocUnet
+WPOD-NET
+NetVLAD
+CornerNet
+GhostVLAD
+HyperNet
 LayoutNet
 pointnet++
 DropBlock
