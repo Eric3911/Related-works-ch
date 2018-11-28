@@ -1,11 +1,20 @@
 1、如何把卷积当作特征提取器使用
 2、如何使用细粒度与注意力解决目标检测的定位不准
 3、图像的稀疏特征操作
+    EDH、RFC
 4、小目标检测的专用技术
+    FCHD
 5、密集目标检测的专用技术
+    CrowdNet  MVCNN 
 6、fine-turn
 7、模型融合（解释器、中间件、直接编解码关联）
+8、3D神经网络可视化
+    TensorSpace
+9、ONNX workshop
 
+10、模型
+
+9、ONNX workshop
 时代意义的论文解读：
 R-CNN
 RPN
@@ -16,3 +25,22 @@ FCN
 FPN
 STDN
 M2Det
+DCN（深度交叉网络）
+GNN
+Deformable ConvNet2
+Capsule
+yolo—LITE
+YOLT
+ASDN
+SimGAN
+BiGAN
+VINet
+Light-head-RCNN
+MegDet
+DetNet
+LayoutNet
+pointnet++
+DropBlock
+Targeted
+
+
