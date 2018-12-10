@@ -198,6 +198,59 @@ def rotate_imge(src,angle,scale=1):
     tree.write(rotate_xmlpath+a+'_'+str(angle)+'d.xml')
 	print(str(a)+'.xml has been rotated for'+str(angle)+'。')
 	
+#七通过四个点坐标提起区域其他背景全mask为黑
+
+# scale的问题  图片宽高scale多少，咱们的框也相应scale多少就行
+
+
+
+import numpy as np
+import cv2
+
+# 读取原始图像
+img = cv2.imread('./sample.jpg')
+
+# 显示图像
+cv2.imshow("original", img)
+
+# 定义roi列表,按(xmin,xmax,ymin,ymax)格式存放所有roi
+roi_list = list()
+
+# rois的ndarray对象
+# 四个顶点坐标:依次为左上,右上,右下,左下
+# 取roi区域时,只需要知道xmin,xmax,ymin,ymax即可,对应左上和右下的两个点
+rois = np.array([
+    [[14, 29], [499, 29], [499, 44], [14, 44]],
+    [[66, 63], [275, 63], [275, 105], [66, 105]]
+    ])
+
+# 遍历rois的ndarray对象,按照指定格式存入roi_list
+# 第一种方式:取第1个点和第3个点
+# 局限性:只对顺时针有效
+# for roi in rois:
+#     roi_list.append((roi[0][0], roi[2][0], roi[0][1], roi[2][1]))
+
+# 第二种方式:直接使用最大最小值来取
+# 优点:不用管各个点的顺序是顺时针或者逆时针.无序也可
+# 局限性:必须是矩形的四个顶点
+for roi in rois:
+    xmin = np.min([coordinates[0] for coordinates in roi])
+    xmax = np.max([coordinates[0] for coordinates in roi])
+    ymin = np.min([coordinates[1] for coordinates in roi])
+    ymax = np.max([coordinates[1] for coordinates in roi])
+    roi_list.append((xmin, xmax, ymin, ymax))
+
+# 构建一个新的结果图像
+result = np.zeros_like(img)
+
+# 取原始图像中取对应roi数据,赋值给结果图像对应位置,注意y在前x在后
+for roi in roi_list:
+    result[roi[2]:roi[3], roi[0]:roi[1]] = img[roi[2]:roi[3], roi[0]:roi[1]]
+
+# 显示结果图像
+cv2.imshow("result", result)
+cv2.waitKey(0)
+
   
   
 	
