@@ -1,0 +1,59 @@
+作者	                发表年份	发表处	          论文
+Ross Girshick	        2014	CVPR	Rich feature hierarchies for accurate object detection and semantic segmentation
+Dumitru Erhan	        2014	CVPR	Scalable Object Detection using Deep Neural Networks
+Sermanet	            2014    CVPR	OverFeat:       Integrated Recognition, Localization and Detection using Convolutional Networks
+He, Kaiming	            2014    ECCV	Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition
+Gidaris	                2015	ICCV	Object detection via a multi-region & semantic segmentation-aware CNN model
+Weicheng Kuo	        2015	ICCV	DeepBox:        Learning Objectness with Convolutional Networks
+Donggeun Yoo	        2015	ICCV	AttentionNet:  Aggregating Weak Directions for Accurate Object Detection
+Ross Girshick	        2015	CVPR	Fast R-CNN
+Amir Ghodrati	        2015	ICCV	DeepProposal:    Hunting Objects by Cascading Deep Convolutional Layers
+Ren	                    2015	NIPS	Faster R-CNN:   Towards real-time object detection with region proposal networks
+Redmon	                2016	CVPR	You Only Look Once:     Unified, Real-Time Object Detection
+Mahyar Najibi	        2016	CVPR	G-CNN:          an Iterative Grid Based Object Detector
+Spyros Gidaris	        2016	CVPR	LocNet:         Improving Localization Accuracy for Object Detection. 
+Tao Kong	            2016	CVPR	HyperNet:       Towards Accurate Region Proposal Generation and Joint Object Detection
+Sean Bell	            2016	CVPR	Inside-Outside Net: Detecting Objects in Context with Skip Pooling and Recurrent Neural Networks
+Shrivastava	            2016	CVPR	Training Region-based Object Detectors with Online Hard Example Mining
+Liu, Wei	            2016	ECCV	Single Shot MultiBox Detector
+Xingyu Zeng	            2016	ECCV	Crafting GBD-Net for Object Detection
+Yongxi Lu	            2016	CVPR	Adaptive Object Detection Using Adjacency and Zoom Prediction
+ Bin Yang	            2016	CVPR	CRAFT Objects from Images
+Sergey Zagoruyko	    2016	BMVC	A MultiPath Network for Object Detection
+Abhinav Shrivastava	    2016	ECCV	Contextual Priming and Feedback for Faster R-CNN
+Zhaowei Cai	            2016	ECCV	A Unified Multi-scale Deep Convolutional Neural Network for Fast Object Detection
+Jifeng Dai	            2016	NIPS	R-FCN: Object Detection via Region-based Fully Convolutional Networks
+Kye-Hyeon Kim	        2016	NIPSW	PVANET: Deep but Lightweight Neural Networks for Real-time Object Detection
+Wanli Ouyang	        2016	PAMI	DeepID-Net: Deformable Deep Convolutional Neural Networks for Object Detection
+Shaoqing Ren	        2016	TPAMI	Object Detection Networks on Convolutional Feature Maps
+Cheng-Yang Fu	        2017	arxiv	DSSD : Deconvolutional Single Shot Detector
+Abhinav Shrivastava	    2017	CVPR	Beyond Skip Connections: Top-Down Modulation for Object Detection
+ Tsung-Yi Lin	        2017	CVPR	Feature Pyramid Networks for Object Detection
+Joseph Redmon	        2017	CVPR	 YOLO9000: Better, Faster, Stronger
+Tao Kong	            2017	CVPR	RON: Reverse Connection with Objectness Prior Networks for Object Detection
+Jifeng Dai	            2017	ICCV	Deformable Convolutional Networks
+ Lachlan Tychsen-Smith	2017	ICCV	DeNet: Scalable Real-time Object Detection with Directed Sparse Sampling
+ Yousong Zhu	        2017	ICCV	CoupleNet: Coupling Global Structure with Local Parts for Object Detection
+Tsung-Yi Lin	        2017	ICCV	Focal Loss for Dense Object Detection
+Kaiming He	            2017	ICCV	Mask R-CNN
+Zhiqiang Shen	        2017	ICCV	DSOD: Learning Deeply Supervised Object Detectors from Scratch
+Xinlei Chen	            2017	ICCV	Spatial Memory for Context Reasoning in Object Detection
+Joseph Redmon	        2018	arxiv	YOLOv3: An Incremental Improvement
+Hongyang Li	            2018	IJCV	Zoom Out-and-In Network with Recursive Training for Object Proposal
+Yong Liu	            2018	CVPR	Structure Inference Net: Object Detection Using Scene-Level Context and Instance-Level Relationships
+ Peng Zhou	            2018	CVPR	Scale-Transferrable Object Detection
+Shifeng Zhang	        2018	CVPR	Single-Shot Refinement Neural Network for Object Detection
+Chao Peng	            2018	CVPR	MegDet: A Large Mini-Batch Object Detector
+Yuhua Chen	            2018	CVPR	Domain Adaptive Faster R-CNN for Object Detection in the Wild
+Bharat Singh	        2018	CVPR	An Analysis of Scale Invariance in Object Detection – SNIP
+Han Hu	                2018	CVPR	Relation Networks for Object Detection
+Zhaowei Cai	            2018	CVPR	Cascade R-CNN: Delving into High Quality Object Detection
+Yancheng Bai	        2018	CVPR	Finding Tiny Faces in the Wild with Generative Adversarial Network
+Brais Bosquet	        2018	BMVC	 STDnet: A ConvNet for Small Target Detection
+Songtao Liu	            2018	ECCV	Receptive Field Block Net for Accurate and Fast Object Detection
+Qingyi Tao	            2018	ECCV	Zero-Annotation Object Detection with Web Knowledge Transfer
+Li Liu			                        Deep Learning for Generic Object Detection: A Survey
+Shivang Agarwal			                Recent Advances in Object Detection in the Age of Deep Convolutional Neural Networks
+light head rcnn
+apollo单目识别 跟踪 测距
+SNIP	An Analysis of Scale Invariance in Object Detection
