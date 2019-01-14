@@ -32,3 +32,36 @@ https://mmcheng.net/code-data/
   3、混合域注意力
   4、时间域注意力RNN
   
+一、学术方向
+二、行业水平
+三、研究意义
+四、转换周期
+
+斯坦福大学计算机视觉实验室
+http://vision.stanford.edu/research.html
+微软亚洲研究院计算机视觉
+https://www.microsoft.com/en-us/research/research-area/computer-vision/
+图像分割
+http://blog.qure.ai/notes/semantic-segmentation-deep-learning-review
+
+细粒度（递归注意力）
+  1、基于图像重要区域定位的方法
+  2、基于图像精细化特征表达的方法
+
+显著性检测
+南开大学
+https://mmcheng.net/tag/salient-object-detection/
+https://mmcheng.net/code-data/
+  1、LC算法
+  2、HC算法
+  3、AC算法
+  4、FT算法
+  Visual attention detection in video sequences using spatiotemporal cues  
+  https://blog.csdn.net/touch_dream/article/details/78716507
+
+注意力机制
+  （软、硬注意力机制）
+  1、空间域注意力STN
+  2、通道域注意力SENet
+  3、混合域注意力
+  4、时间域注意力RNN
