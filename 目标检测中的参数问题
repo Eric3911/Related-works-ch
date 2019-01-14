@@ -1,5 +1,14 @@
 如何优化常见模型的相关参数问题：
-  1，分类
-  2，定位
-  3，语义分割（实例分割）
+  1：分类
+    alexnet
+    VGGNet
+    Googlenet
+    ResNet
+    ResxNet
+    Nasnet
+    PNasNet
+    MnasNet
+  2：定位
+  
+  3：语义分割（实例分割）
   
