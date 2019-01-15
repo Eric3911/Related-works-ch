@@ -1,0 +1,22 @@
+ECCV   
+ECCV 2016 ：Towards perspective-free object counting with deep learning 
+https://github.com/gramuah/ccnn
+
+CVPR
+CVPR 2016：CrowdNet: A Deep Convolutional Network for Dense Crowd Counting
+https://github.com/davideverona/deep-crowd-counting_crowdnet
+
+CVPR 2016：Slicing Convolutional Neural Network for Crowd Video Understanding
+https://github.com/amandajshao/Slicing-CNN
+
+CVPR2016 ：Single-Image Crowd Counting via Multi-Column Convolutional Neural Network 
+https://github.com/svishwa/crowdcount-mcnn 
+
+CVPR2017 ：Switching Convolutional Neural Network for Crowd Counting
+https://github.com/val-iisc/crowd-counting-scnn
+
+AAAI 2017：Deep Spatio-Temporal residual networks for citywide crowd flows prediction
+https://github.com/lucktroy/DeepST/tree/master/scripts/papers/AAAI17
+
+AVSS 2017：CNN-based Cascaded Multi-task Learning of High-level Prior and Density Estimation for Crowd Counting（Singel Image Crowd Counting）
+https://github.com/svishwa/crowdcount-cascaded-mtl
