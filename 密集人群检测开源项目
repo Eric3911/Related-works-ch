@@ -1,3 +1,5 @@
+https://github.com/gjy3035/Awesome-Crowd-Counting
+
 ECCV   
 ECCV 2016 ：Towards perspective-free object counting with deep learning 
 https://github.com/gramuah/ccnn
@@ -20,3 +22,9 @@ https://github.com/lucktroy/DeepST/tree/master/scripts/papers/AAAI17
 
 AVSS 2017：CNN-based Cascaded Multi-task Learning of High-level Prior and Density Estimation for Crowd Counting（Singel Image Crowd Counting）
 https://github.com/svishwa/crowdcount-cascaded-mtl
+
+SAnet：
+
+      Multi-Scale Context Aggregation by Dilated Convolutions
+      Cross-Scale Cost Aggregation for Stereo Matching
+      https://github.com/gjy3035/Awesome-Crowd-Counting
