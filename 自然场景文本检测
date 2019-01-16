@@ -1,10 +1,19 @@
+
 这个工程是我最近的一个项目下实现的。
 
 数据集：ICDAR，SynthText
 
 目前国内最新的模型
   
-  云从科技Pixel-Anchor、南京大学和南京理工PSEnet、旷视科技Mask Text、商汤科技FOTS、阿里巴巴IncepText
+  云从科技Pixel-Anchor
+  
+  南京大学和南京理工PSEnet
+  
+  旷视科技Mask Text
+  
+  商汤科技FOTS
+  
+  阿里巴巴IncepText
   
   其他模型：SLPR、Pixel-Link、R2CNN、TextBoxes++、EAST、WordSup、SSTD、Seglink、CTPN 、CRNN、GRU。
   
