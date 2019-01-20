@@ -2,3 +2,51 @@
 
 模态融合
 
+多源域联合分布强化协调过滤特征学习和耦合学习是目前强化学习和端到端的主要实现思路，医学和交通领域是前沿技术应用的主要试验方向，因为我开始从去年关注
+全景分割和多源强化学习的全局最优化方法。这样做为以后的亚像素零样本的多深度分割技术过渡。分割是提取图像纹理、边缘的主要方法，当然我目前在尝试亚像素
+相关的技术应用。
+
+
+图像的特征描述一般思路是特征描述子方法来表达，而这种描述方式有全局特征描述子和局部特征描述子，通常情况下不同的特征描述是为了表达在边缘检测和纹理识别
+上不同任务而设计。
+
+边缘检测的工作分为以下3个研究方向：
+
+(1)传统的检测算子：Sobel ,Canny
+
+(2)基于信息理论设计的手工特征：Statistical Edges ,Pb ,gPb
+
+(3)基于学习方法设计的手工特征：BEL , Multi-scale , Sketch Tokens, Structured Edges
+
+
+边缘检测
+一、HDE（）
+https://github.com/s9xie/hed
+二、HOLY
+https://github.com/moabitcoin/holy-edge
+三、RCF
+
+目标表现主流及最好的边缘分割算法如下：
+  Canny
+  EGB
+  Mshift
+  gPb-UCM
+  Sketch Tokens
+  MCG
+  SE
+  OEF
+  
+  DeepContour
+  DeepEdge
+  HFL
+  N4-fields
+  HED
+  RDS
+  CEDN
+  MIL+DSN+MS+NCuts
+  
+  RFC
+  RFC+MS
+  
+  匹配方法是sift、lift
+  
