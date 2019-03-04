@@ -1,3 +1,18 @@
+金典模型学习
+
+R-CNN三件套（R-CNN Fast R-CNN和Faster R-CNN）
+Light-Head R-CNN
+Cascade R-CNN
+YOLO三件套（YOLOv1 YOLOv2 YOLOv3）
+SSD（SSD DSSD FSSD ESSD Pelee）
+R-FCN
+FPN
+DSOD
+FSSD
+RetinaNet
+DetNet
+M2Det
+RFBNet
 作者	                发表年份	发表处	          论文
 Ross Girshick	        2014	CVPR	Rich feature hierarchies for accurate object detection and semantic segmentation
 Dumitru Erhan	        2014	CVPR	Scalable Object Detection using Deep Neural Networks
