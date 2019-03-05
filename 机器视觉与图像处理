@@ -1,86 +1,4 @@
-python机器视觉与计算视觉基础
-
-第一章：数字图像
-
-第二章：图像点运算
-
-第三章：图像的几何变换
-
-第四章：空间域图像增强
-
-第五章：频率图像增强
-
-第六章：小波变换
-
-第七章：图像复原
-
-第八章：彩色图像处理
-
-第九章：图像压缩
-
-第十章：形态学图像处理
-
-第十一章：图像分割
-
-第十二章：特征提取
-
-第十三章：图像识别初步
-
-第十四章：人工神经网络
-
-第十五章：支持向量机
-
-第十六章：Adabbost
-
-
-计算机视觉20个经典算法（计算机视觉20讲）
-    
-    1、k-means
-    
-    2、KNN学习
-    
-    3、回归学习
-    
-    4、决策树学习
-    
-    5、Random Forest学习
-    
-    6、贝叶斯学习
-    
-    7、EM算法
-    
-    8、Adaboost
-    
-    9、SVM算法
-    
-    10、增强学习
-    
-    11、流行学习
-    
-    12、RBF学习
-    
-    13、稀疏表示
-    
-    14、字典学习
-    
-    15、BP学习
-    
-    16、CNN学习
-    
-    17、RBM学习
-    
-    18、深度学习
-    
-    19、遗传学习
-    
-    20、蚁群学习
-    
-    
-
-
-
 一、python模板匹配算法（该算法对相似度的要求极高并且不支持任意角度）
-
 import cv2 as cv
 import numpy as np
 
@@ -117,7 +35,6 @@ cv.destroyAllWindows()  #销毁所有窗口
 
 
 二、自由视角模板匹配模型
-
 import numpy as np
 import cv2
 from skimage import transform
@@ -187,10 +104,10 @@ if len(good) > MIN_MATCH_COUNT:
 else:
     print("Not enough matches are found - %d/%d") % (len(good),MIN_MATCH_COUNT)
     matchesMask = None
-    
-   三、兴趣区域检测
-   
-   import numpy as np
+ 
+ 
+三、兴趣区域检测  
+import numpy as np
 import cv2
 
 #读取图片
@@ -210,7 +127,6 @@ print(type(h))
 print(type(h[1]))
 #查看轮廓数量
 print (len(contours))
-
 #创建白色幕布
 temp = np.ones(binaryImg.shape,np.uint8)*255
 #画出轮廓：temp是白色幕布，contours是轮廓，-1表示全画，然后是颜色，厚度
@@ -220,8 +136,8 @@ cv2.imshow("contours",temp)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-四、霍夫曼概率直线投票实现白纸转正问题纸张（仿射变换问题）
 
+四、霍夫曼概率直线投票实现白纸转正问题纸张（仿射变换问题）
 import cv2
 import numpy as np
 
@@ -257,8 +173,8 @@ cv2.imwrite("canny3.jpg", result)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-五、#提取矩形的边框返回四个顶点参数
 
+五、#提取矩形的边框返回四个顶点参数
 import numpy as np
 import cv2
 import os
@@ -278,8 +194,8 @@ for i in range(0,len(contours)):
     cv2.imwrite( nrootdir+str(i)+".jpg",newimage)
     print(i)
 
-六、圆形的检测
 
+六、圆形的检测
 import numpy as np
 import matplotlib.pyplot as plt
 from skimage import measure,draw
@@ -305,6 +221,7 @@ ax1.axis('C:/Users/Administrator/Desktop/1010test/1.png',0)
 ax1.set_xticks([])
 ax1.set_yticks([])
 plt.show()
+
 
 七、空间书本转正问题（透射变换）
 #1、解决了手机的稍微倾斜问题仿透射变换
@@ -410,6 +327,7 @@ while 1:
 
 cv2.destroyAllWindows()
 
+
 八、边缘检测（直线检测提取矩形）
 # coding=utf-8
 import cv2
@@ -444,8 +362,8 @@ cv2.imshow('Result', result)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-九、harr角点检测
 
+九、harr角点检测
 #角点检测
 import cv2
 import numpy as np
