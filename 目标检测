@@ -1,4 +1,4 @@
-金典模型学习
+经典模型学习
 
 R-CNN三件套（R-CNN Fast R-CNN和Faster R-CNN）
 Light-Head R-CNN
@@ -13,6 +13,57 @@ RetinaNet
 DetNet
 M2Det
 RFBNet
+
+参考论文：《 Bag of Tricks for Image Classification with Convolutional Neural Networks》
+代码地址：https://github.com/dmlc/gluon-cv
+
+一、如何优化常见模型的相关参数问题：
+    
+    Epoch
+    Iteration
+    Batchszie
+    
+          训练误差training error
+          泛化误差generalization error
+          测试误差test error
+          欠拟合underfitting：模型在训练集上不能获得足够低的误差，也就是模型不能很好收敛
+          过拟合overfitting：模型在训练集上的误差何测试集上的误差两者距离太大
+          合理容量Appropriate capacity：通过调节训练数据量和模型合理容量控制拟合情况。
+    
+    inputsize
+    batchsize：一批样本的样本数量，每个batchszie后更新一次参数
+    subdivision： batch/subdivision 一次性送入训练器样本数量
+    
+    （内存/显存小时候batch改小一些，batch在硬件允许情况下越大训练效果越好
+    subdivision越大显卡就显存越容易计算负担越小。通过分更多的组，每个计算组量就变小）
+    
+    width/height主要是影响网络数据图像的分辨率，通道其实是数字图像的三组八位二进制表示RGB，
+p    类别有2的24次方种组合从而影响precision（精度）。
+    
+    为什么只能是32的整数倍？这是因为下采样参数为32，在不要的尺寸大学为32的整数倍。
+    最小320*320，最大608*608.网络自动修改尺寸并继续训练。
+    
+    下采样：（subsampled下采样/downsampled降采样）让图像调整为一个符合显示区域小的缩略图（缩小/生成缩略图）
+    上采样：（upsampling上采样/interpolating图像插值）让图像调整为一个符合显示区域大的高分辨图（放大/生成图像）
+    特此说明：图像插值既能上采样又能下采样。
+    
+     下采样我们在卷积是靠池化来实现的图像高保真信息一定程度可以防止过拟合（来源与信息论）。
+      但是池化操作主要是为了实现旋转、平移、伸缩不变形，主要有：最大、平均值、随机、求和区域池化 。
+  1：分类
+    alexnet
+    VGGNet
+    Googlenet
+    ResNet
+    ResxNet
+    Inception
+    DenseNet
+    NASNet
+    PNasNet
+    MnasNet
+  2：定位
+  3：语义分割（实例分割）
+  
+  
 作者	                发表年份	发表处	          论文
 Ross Girshick	        2014	CVPR	Rich feature hierarchies for accurate object detection and semantic segmentation
 Dumitru Erhan	        2014	CVPR	Scalable Object Detection using Deep Neural Networks
