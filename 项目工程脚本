@@ -318,6 +318,21 @@ if __name__ == "__main__":
     txtToXml(pic_path, data_path )
 
 
+八、 
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+img = cv2.imread('C:/Users/Administrator/Desktop/15.jpg',1)
+
+#第一个为纵坐标参数，第二个为横坐标
+points = np.array([[50, 1], [1, 50], [98, 98], [98, 1]])
+
+cv2.fillConvexPoly(img, points,1)
+plt.imshow(img, cmap='gray')
+plt.show()
+
+
 
   
   
