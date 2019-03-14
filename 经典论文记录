@@ -3,3 +3,8 @@
 PyraNet：基于特征金字塔网络的人体姿态估计 
 代码地址：https://github.com/IcewineChen/pytorch-PyraNet
 代码地址：https://github.com/sunguanxiong/PyraAttention
+代码地址:https://github.com/princeton-vl/pose-hg-demo
+
+实时边缘感知深度预处理的引导层次细化立体网络模型
+代码地址：https://github.com/meteorshowers/StereoNet
+
