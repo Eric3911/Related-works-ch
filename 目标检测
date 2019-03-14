@@ -50,20 +50,6 @@ p    类别有2的24次方种组合从而影响precision（精度）。
     
      下采样我们在卷积是靠池化来实现的图像高保真信息一定程度可以防止过拟合（来源与信息论）。
       但是池化操作主要是为了实现旋转、平移、伸缩不变形，主要有：最大、平均值、随机、求和区域池化 。
-  1：分类
-    alexnet
-    VGGNet
-    Googlenet
-    ResNet
-    ResxNet
-    Inception
-    DenseNet
-    NASNet
-    PNasNet
-    MnasNet
-  2：定位
-  3：语义分割（实例分割）
-  
   
 作者	                发表年份	发表处	          论文
 Ross Girshick	        2014	CVPR	Rich feature hierarchies for accurate object detection and semantic segmentation
