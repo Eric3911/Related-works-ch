@@ -22,4 +22,9 @@ FCHD：一种快速准确的人头检测模型
 论文地址：https://arxiv.org/abs/1809.08766v1
 代码地址：https://github.com/aditya-vora/FCHD-Fully-Convolutional-Head-Detector
 
+CCNN
+代码地址：https://github.com/gramuah/ccnn
+
+Crowd-counting-scnn
+代码地址：https://github.com/val-iisc/crowd-counting-scnn
 
