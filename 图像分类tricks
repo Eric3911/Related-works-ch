@@ -1,0 +1,31 @@
+
+
+图像分类任务中的tricks总结
+
+
+计算机视觉主要问题有图像分类、目标检测和图像分割等。针对图像分类任务，提升准确率的方法路线有两条，一个是模型的修改，另一个是各种数据处理和训练的技巧(tricks)。图像分类中的各种技巧对于目标检测、图像分割等任务也有很好的作用，因此值得好好总结。本文在精读论文的基础上，总结了图像分类任务的各种tricks如下：
+
+Warmup
+
+
+
+Linear scaling learning rate
+
+Label-smoothing
+
+Random image cropping and patching
+
+Knowledge Distillation
+
+Cutout
+
+Random erasing
+
+Cosine learning rate decay
+
+Mixup training
+
+AdaBoud
+
+AutoAugment
+
