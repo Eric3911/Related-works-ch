@@ -18,4 +18,8 @@
 参考工程二：MTCNN实现公交车人头检测情况
 项目地址：https://blog.csdn.net/weixin_36474809/article/details/83305490
 
+FCHD
+论文地址：https://arxiv.org/abs/1809.08766v1
+代码地址：https://github.com/aditya-vora/FCHD-Fully-Convolutional-Head-Detector
+
 
