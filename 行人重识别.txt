@@ -1,0 +1,8 @@
+
+行人重识别
+
+论文地址：https://arxiv.org/abs/1703.05693
+
+代码地址：https://github.com/syfafterzy/SVDNet-for-Pedestrian-Retrieval
+		：https://github.com/Simon4Yan/SVDNet-for-Pedestrian-Retrieval
+		
