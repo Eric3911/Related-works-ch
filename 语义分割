@@ -1,3 +1,4 @@
 
-一、双重注意力场景分割
-代码地址：https://github.com/xinntao/BasicSR
+一、双注意力场景分割DANet（CVPR2019）
+论文链接：https://arxiv.org/pdf/1809.02983.pdf
+代码链接：https://github.com/junfu1115/DANet
