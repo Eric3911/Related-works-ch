@@ -1,3 +1,15 @@
+（1）3D ObejectDetection（三维物体检测）
+
+（2）Real-Time ObjectDetection（实时物体检测）
+
+（3）Weakly Supervised ObjectDetection（弱监督物体检测）
+
+（4）Salient ObjectDetection（显著性物体检测）
+
+（5）ObjectDetection Generation（物体提取生成）
+
+
+
 https://github.com/amusi/awesome-object-detection
 https://handong1587.github.io/deep_learning/2015/10/09/object-detection.html
 经典模型学习
