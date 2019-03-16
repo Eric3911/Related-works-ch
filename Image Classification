@@ -1,0 +1,26 @@
+六大方向：
+（1）Few-shot Image Classification(零样本图像图像识别)
+
+ (2)Fine-Frained Image Classification（细粒度图像识别）
+ 
+（3）Hyperspectal Image Classification（高光谱图像识别）
+
+ (4)Sequential Image Classification（连续图像识别）
+ 
+ (5)Semi-Supervised Image Classification（半监督图像识别）
+ 
+ (6)Document Image Classification(文本图像识别)
+
+一：FishNet
+代码地址：https://github.com/kevin-ssy/FishNet
+
+二：NASNet
+代码地址：https://github.com/tensorflow/models/tree/master/research/slim/nets/nasnet
+
+三：CapsNet
+
+
+
+
+
+
