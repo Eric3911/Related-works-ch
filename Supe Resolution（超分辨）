@@ -16,3 +16,18 @@ MFSR
 VSRNet
 
 SPMC  layer
+
+https://github.com/LongguangWang/SOF-VSR
+
+SRGAN
+PyTorch:https://github.com/aitorzip/PyTorch-SRGAN
+TensorFlow:https://github.com/brade31919/SRGAN-tensorflow
+
+ESRGAN
+PyTorch代码地址：https://github.com/xinntao/ESRGAN
+论文地址：https://arxiv.org/abs/1809.00219
+
+去雨滴雨雾算法
+Attention GAN
+论文地址：https://arxiv.org/pdf/1711.10098.pdf
+TensorFlow地址：https://github.com/MaybeShewill-CV/attentive-gan-derainnet
