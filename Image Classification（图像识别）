@@ -19,17 +19,22 @@
 
 三：CapsNet
 
-alexnet
-    VGGNet
-    Googlenet
-    ResNet
-    ResxNet
-    Inception
-    DenseNet
-    NASNet
-    PNasNet
-    MnasNet
-
+Alexnet
+VGGNet
+Googlenet
+ResNet
+ResxNet
+Inception
+DenseNet
+NASNet
+PNasNet
+MnasNet
+    
+    
+SENet
+   
+SkNet
+代码地址：https://github.com/implus/SKNet
 
 
 
