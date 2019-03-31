@@ -1,0 +1,17 @@
+密集人群检测
+
+
+行人重识别
+论文地址：https://arxiv.org/abs/1703.05693
+代码地址：https://github.com/syfafterzy/SVDNet-for-Pedestrian-Retrieval
+       ：https://github.com/Simon4Yan/SVDNet-for-Pedestrian-Retrieval
+       
+遮挡行人检测Repulsion Loss
+论文地址：https://arxiv.org/abs/1711.07752
+
+提高行人检测分辨率PS-GAN
+论文地址：https://arxiv.org/abs/1804.02047
+
+无监督时空关联行人识别TFusion
+论文地址：https://arxiv.org/abs/1803.07293
+代码地址：https://github.com/ahangchen/TFusion
