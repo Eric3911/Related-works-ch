@@ -10,8 +10,10 @@
 值得注意的是，本次挑战赛吸引了多个重量级赞助商：包括美国国家情报总监（Office of the Director of National Intelligence，ODNI）、美国情报高等研究计划
 署（Intelligence Advanced Research Projects Activity ，IARPA）。
 
-可见，美国情报的最高研究机构对无人机航空影像的重视程度！它们赞助的挑战是“Video object classification and detection from unconstrained mobility 
+可见，美国情报的最高研究机构对无人机航空影像的重视程度它们赞助的挑战是“Video object classification and detection from unconstrained mobility 
 platforms”，即非限制的移动平台视频目标分类与检测提供5万美金的总奖池！
+
+
 
 另外来自企业界的风头正劲的互联网公司快手、美图、世界知名的传统计算机视觉技术厂商NEC和大型零售业巨头沃尔玛也进行了赞助，它们赞助的挑战是
 “Object Detection in Poor Visibility Environments”，即较差视觉环境的目标检测总奖池1万美元。
@@ -33,3 +35,14 @@ platforms”，即非限制的移动平台视频目标分类与检测提供5万�
   小目标
   遮挡
   不规则物
+  
+  
+ 航空遥感几个金典论文：
+    城市图像语言分割：https://blog.csdn.net/qq_36446671/article/details/77841808
+    CCF城市遥感图像分割：https://blog.csdn.net/Real_Myth/article/details/79432456
+    YOLT：https://blog.csdn.net/u014380165/article/details/81556805
+    船只识别：https://blog.csdn.net/baidu_32145209/article/details/82078424?utm_source=blogxgwz0
+    数据集：
+    http://levir.buaa.edu.cn/Publication.htm
+    
+    STN：https://github.com/kevinzakka/spatial-transformer-network
