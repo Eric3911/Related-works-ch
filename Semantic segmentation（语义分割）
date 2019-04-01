@@ -9,5 +9,12 @@
 (5)Panoptic Segmentation（全景分割）
 
 一、双注意力场景分割DANet（CVPR2019）
-论文链接：https://arxiv.org/pdf/1809.02983.pdf
-代码链接：https://github.com/junfu1115/DANet
+论文地址：https://arxiv.org/pdf/1809.02983.pdf
+代码地址：https://github.com/junfu1115/DANet
+
+二、语义分割结构化知识蒸馏
+论文地址：https://arxiv.org/abs/1903.04197
+  论文特点：pixel-wise distillation
+          pair-wise distillation
+          holistic distillation
+          
