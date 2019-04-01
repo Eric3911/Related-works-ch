@@ -1,5 +1,5 @@
 # Stage
-工程学习与笔记：该项工作主要是推动和监督自己从研究方法论和工程学综合考虑学习的一个工作，长期通过学术指导工程问题实现系统工程学方向的建树，于此同时欢迎大家一起交流学习。深度学习的核心：GMMhttps://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
+工程学习与笔记：该项工作主要是推动和监督自己从研究方法论和工程学综合考虑学习的一个工作，长期通过学术指导工程问题实现系统工程学方向的建树，于此同时欢迎大家一起交流学习。深度学习的核心：GMMhttps://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/   ，https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html
 
     一、数字图像基础
     1、什么是数字图像？
