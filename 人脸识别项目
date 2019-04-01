@@ -19,3 +19,7 @@
 DSFD人脸识别模型
 特点：解决了多尺度、模糊图像、光照和姿态变换问题
 代码地址：https://github.com/TencentYoutuResearch/FaceDetection-DSFD
+
+实时人脸检测
+https://github.com/zuoqing1988/ZQCNN-MTCNN-vs-libfacedetection
+
