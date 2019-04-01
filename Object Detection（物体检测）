@@ -1,6 +1,8 @@
 （1）3D ObejectDetection（三维物体检测）
 
 （2）Real-Time ObjectDetection（实时物体检测）
+AdaScale：实时视频物体检测
+论文地址：https://arxiv.org/abs/1902.02910
 
 （3）Weakly Supervised ObjectDetection（弱监督物体检测）
 
