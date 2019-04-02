@@ -1,0 +1,38 @@
+Convlution
+
+TensorFlow工程地址：https://github.com/taki0112/Tensorflow-Cookbook
+
+一、basic Convlution
+
+二、扩张卷积（Dilated Convolution）
+  论文地址：DilatedNet — Dilated Convolution (Semantic Segmentation)
+
+三、空洞卷积（dilated Convolution）
+  论文地址：《MULTI-SCALE CONTEXT AGGREGATION BY DILATED CONVOLUTIONS》
+  代码地址： https://github.com/fyu/dilation
+
+四、Deformable Convolution
+
+五、Partial Convolution
+
+六、Atrous Convolution
+
+Full-connected
+
+一、pixel shuffle
+
+Block
+
+一、residual block
+二、dense block
+三、residual-dense block
+四、attention block
+
+Normalization
+
+一、Swithable Norm
+二、Batch Norm
+三、Instance Norm
+四、Layer Norm
+
+
