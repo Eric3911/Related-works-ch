@@ -2,7 +2,18 @@
   CVPR2019-SiamMask
   论文地址：https://arxiv.org/abs/1812.05050
   代码地址：https://github.com/foolwood/SiamMask#environment-setup
-
+  FCN全卷积神经网络
+    特征：卷积化（Convolutional）、上采样（Upsample/反卷积）、跳跃结构（Skip Layer）
+  DenseCRF全链接条件随机场
+    CRFasRNN
+  MRF马尔科夫随机场
+    Deep Parsing Network
+  G-CRF高斯条件随机场
+  DCN交叉卷积
+  GNN图卷积
+  AOGNet与或网络
+  GPM概率图卷积
+  PyDenseCRF
 
 
 (2)Scence Segmentation（场景分割）
