@@ -9,6 +9,9 @@ AdaScale：实时视频物体检测
 （4）Salient ObjectDetection（显著性物体检测）
 
 （5）ObjectDetection Generation（物体提取生成）
+    椭圆检测与提取
+    论文地址：https://arxiv.org/abs/1810.03243
+    代码地址：（Matlab实现的）https://github.com/AlanLuSun/High-quality-ellipse-detection
 
 
 
