@@ -14,5 +14,11 @@
 麻省理工寒假科研交流项目
 （那些年年冬日里的MIT）
 ![](https://github.com/Eric3911/Stage/blob/master/MIT.jpg)
-
-
+![](https://github.com/Eric3911/Stage/blob/master/1.jpg)
+![](https://github.com/Eric3911/Stage/blob/master/2.jpg)
+![](https://github.com/Eric3911/Stage/blob/master/3.jpg)
+![](https://github.com/Eric3911/Stage/blob/master/4.jpg)
+![](https://github.com/Eric3911/Stage/blob/master/4.jpg)
+![](https://github.com/Eric3911/Stage/blob/master/5.jpg)
+![](https://github.com/Eric3911/Stage/blob/master/6.jpg)
+![](https://github.com/Eric3911/Stage/blob/master/7.jpg)
