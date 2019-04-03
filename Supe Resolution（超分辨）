@@ -1,3 +1,4 @@
+去除雨滴、去雾、去除噪声、去尘土、去模糊等都是低级图像处理/图像复原视觉任务），目前主流的是GAN和采用视网膜等技术复原。
 （1）Image Super—Resolution
 
 （2）Video Super—ResolutResolutionion
@@ -14,7 +15,6 @@ VSRNet
 
 SPMC  layer
 https://github.com/LongguangWang/SOF-VSR
-
 SRGAN
 PyTorch:https://github.com/aitorzip/PyTorch-SRGAN
 TensorFlow:https://github.com/brade31919/SRGAN-tensorflow
@@ -28,4 +28,39 @@ Attention GAN
 论文地址：https://arxiv.org/pdf/1711.10098.pdf
 TensorFlow地址：https://github.com/MaybeShewill-CV/attentive-gan-derainnet
 
+PIRM-SR
 https://github.com/pnavarre/pirm-sr-2018
+
+DID-MDN（CVPR2018）密度感知多路密集网络联合完成雨点密度估计和雨点去除   （这个方法是工程上比较强）
+论文地址：https://arxiv.org/abs/1802.07412
+代码地址：https://github.com/hezhangsprinter/DID-MDN
+
+IDCGAN
+代码地址：https://github.com/hezhangsprinter/ID-CGAN
+
+去雨算法：Attentive Generative Adversarial Network for Raindrop Removal from a Single Image （CVPR2018）
+论文地址：https://arxiv.org/abs/1711.10098
+该模型基于pix2pix增加了attention-recurrent network效果上比eigen2013的论文第一个使用DL解决该问题的工作也比pix2pix好。但是给论文没有和其他算法比。
+
+Densely Connected Pyramid Dehazing Network （CVPR2018）
+去雾算法：
+论文地址：https://arxiv.org/abs/1803.08396
+代码地址：https://github.com/hezhangsprinter/DCPDN
+
+官方主页：http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html
+Deep Joint Rain Detection and Removal from a Single Image CVPR2017
+论文地址：https://arxiv.org/abs/1609.07769
+代码地址：http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html
+
+5、Image De-raining Using a Conditional Generative Adversarial Network 2017类似pix2pix，[paper]、[code]1中作者的以前工作，
+类似pix2pix。6、Clearing the Skies: A Deep Network Architecture for Single-Image Rain Removal TIP2017[paper]
+7、Removing rain from single images via a deep detail network CVPR2017[paper]
+8、Rain Streak Removal Using Layer Priors 
+CVPR2016[paper]Single Image Rain Streak Decomposition Using Layer Priors TIP2017[paper]
+9、Perceptual Adversarial Networks for Image-to-Image Transformation 2017类似pix2pix，有感知损失，[paper]
+
+
+
+
+
+
