@@ -12,7 +12,7 @@
 遥感小目标检测
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
 2017年麻省理工寒假科研交流项目
-17年冬日里的MIT
+（17年冬日里的MIT）
 ![](https://github.com/Eric3911/Stage/blob/master/MIT.jpg)
 
 
