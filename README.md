@@ -25,5 +25,5 @@
     十三、传统图像识别（图像分类）
     十四、支持向量机
     十五、AdaBoost
-  ![视网膜超分辨识别](视网膜超分辨重建https://github.com/Eric3911/Stage/blob/master/%E8%A7%86%E7%BD%91%E8%86%9C%E5%8E%BB%E9%9B%BE%E7%BB%93%E6%9E%9C.png)
-  ![](超载项目：https://github.com/Eric3911/Stage/blob/master/%E8%BD%A6%E8%BE%86%E8%B6%85%E8%BD%BD%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%B8%80.jpg)
+  ![视网膜超分辨识别](https://github.com/Eric3911/Stage/blob/master/%E8%A7%86%E7%BD%91%E8%86%9C%E5%8E%BB%E9%9B%BE%E7%BB%93%E6%9E%9C.png)
+  ![](https://github.com/Eric3911/Stage/blob/master/%E8%BD%A6%E8%BE%86%E8%B6%85%E8%BD%BD%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%B8%80.jpg)
