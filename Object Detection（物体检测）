@@ -13,8 +13,6 @@ AdaScale：实时视频物体检测
     论文地址：https://arxiv.org/abs/1810.03243
     代码地址：（Matlab实现的）https://github.com/AlanLuSun/High-quality-ellipse-detection
 
-
-
 https://github.com/amusi/awesome-object-detection
 https://handong1587.github.io/deep_learning/2015/10/09/object-detection.html
 经典模型学习
@@ -127,4 +125,44 @@ light head rcnn
 apollo单目识别 跟踪 测距
 SNIP	An Analysis of Scale Invariance in Object Detection
 
+目标检测近几年形成如下发展趋势：
+参考前段时间一个文章总结发现目标检测由两阶段向一阶段转移，2018CVPR、ECCV、ICCV和2019年近期开源文章看一阶段是接下来重点方向。而目前在模型结构上基本形成如下稳定的趋势：
+1、二维方向
+一、Backbone特征提取器
+		从新设计感受野和分类器，因为过多的下采用导致特征图很小而这种小的特征图具有丰富的语义信息丢失来浅层的高分辨信息小目标容易漏检。在特征提取方向主流进展如下：
+VGG、R-CNN、ResNet、Xception、DenseNet、Mobilnet、FPN、SENet、DetNet、PANet、SkNet。
+DetNet: A Backbone network for Object Detection（ECCV2018为物体检测而设计的backbone）
+ 论文链接：https://arxiv.org/abs/1804.06215
+二、IoU优化算法（个人认为这里可以使用强化学习实现更好迁移学习）
+		在IoU优化算法的发展过程中，IoU-Net、UnitBox一般采用非监督学习和监督学习两种思路设计，IoU-Net中采用了神经网络单元修正bbox是一种比较经典的思路。
+三、LOSS优化算法
+		目标常见的L1、L2、Focal loss、skrinkage loss、repulsion loss
+四、NMS框合并算法
+		Soft-NMS、Softer-NMS、RelationNetwork、ConvNMS、NMSNetwork、Yes-Net、dice coefficient loss   metric 与loss、lossless Triplet Loss(Siamese)
+五、anchor预测算法
+		Sliding window、Region Proposal Network、CornerNet、Meta-anchor、TridentNet
+Guided Anchoring: 物体检测器也能自己学 Anchor
+论文地址：https://arxiv.org/abs/1901.03278
+六、one shot learning
+		RepNet:
+七、zero shot learning
+
+2、三维方向
+	Stereo R-CNN
+
+
+2019CVPR几个经典论文简述
+GloU：出自斯坦福大学（这个代码有个Darknet版本个人认为非常由研究价值）
+		Motavation：（卷积神经网络天生具备旋转不变性，但是平移不变问题涉及欧式几何目标个人没法在模型中准确理解，但是我实验表面，对bbox平移能提高检测的mAP），IOU具备如下特点：
+							1、对尺度不敏感可能导致loss为零无法训练
+							2、无法准确计算重合度面积及loss方向
+							3、从定义上看IOU=0不能说明两个重合度
+			本文设计：generalized IoU特点：
+							1、对scale不敏感
+							2、距离度量中采用-1描述距离（两者没交集）
+							3、GIoU替换BBox regression（如果anchor越稀疏效果越好，yolov3比fasterrcnn和maskrcnn效果更好）
+		同时该论文指出了L1和L2作为regression损失函数时候缺点，说明IoU指标作为损失函数核心部分的缺陷，提出了metric替换L1、L2损失，操作简单高效但是相比state-of-art没有突破性进展。
+							
+GA-RPN:
+				GA-RPN是，
 
