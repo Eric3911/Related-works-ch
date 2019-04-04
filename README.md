@@ -1,7 +1,6 @@
-# Stage本人主要研究低质量高分辨多尺度亚像素图像的底层编码的量化卷积和RSIC芯片
-工程学习与笔记：该项工作主要是推动和监督自己从研究方法论和工程学综合考虑学习的一个工作，长期通过学术指导工程问题实现系统工程学方向的建树，于此同时欢迎大家一起交流学习。
-深度学习的核心：GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/   ，
-           https://opencv-pythontutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html
+# Stage本人主要研究低质量高分辨多尺度亚像素图像的底层编码的量化卷积和RSIC芯片工程学习与笔记：
+该项工作主要是推动监督自己从研究方法论和工程学综合考虑的一个笔记，长期通过学术指导工程问题实现系统工程学方向的建树，于此同时欢迎大家一起交流学习。
+深度学习的核心：GMM https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/   ，          https://opencvpythontutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html
 
 视网膜重建问题
 ![视网膜超分辨识别](https://github.com/Eric3911/Stage/blob/master/%E8%A7%86%E7%BD%91%E8%86%9C%E5%8E%BB%E9%9B%BE%E7%BB%93%E6%9E%9C.png)
