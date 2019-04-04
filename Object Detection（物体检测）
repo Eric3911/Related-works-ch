@@ -1,51 +1,53 @@
-（1）3D ObejectDetection（三维物体检测）
-
-（2）Real-Time ObjectDetection（实时物体检测）
-AdaScale：实时视频物体检测
-论文地址：https://arxiv.org/abs/1902.02910
-
-（3）Weakly Supervised ObjectDetection（弱监督物体检测）
-
-（4）Salient ObjectDetection（显著性物体检测）
-
-（5）ObjectDetection Generation（物体提取生成）
-    椭圆检测与提取
-    论文地址：https://arxiv.org/abs/1810.03243
-    代码地址：（Matlab实现的）https://github.com/AlanLuSun/High-quality-ellipse-detection
-
-https://github.com/amusi/awesome-object-detection
-https://handong1587.github.io/deep_learning/2015/10/09/object-detection.html
-经典模型学习
-
-R-CNN三件套（R-CNN Fast R-CNN和Faster R-CNN）
-Light-Head R-CNN
-Cascade R-CNN
-YOLO三件套（YOLOv1 YOLOv2 YOLOv3）
-SSD（SSD DSSD FSSD ESSD Pelee）
-R-FCN
-FPN
-DSOD
-FSSD
-RetinaNet
-DetNet
-M2Det
-RFBNet
-
-参考论文：《 Bag of Tricks for Image Classification with Convolutional Neural Networks》
-代码地址：https://github.com/dmlc/gluon-cv
-
-一、如何优化常见模型的相关参数问题：
-    Epoch
-    Iteration
-    Batchszie
-    训练误差training error
-    泛化误差generalization error
-    测试误差test error
-    欠拟合underfitting：模型在训练集上不能获得足够低的误差，也就是模型不能很好收敛
-    过拟合overfitting：模型在训练集上的误差何测试集上的误差两者距离太大
-    合理容量Appropriate capacity：通过调节训练数据量和模型合理容量控制拟合情况。
-    
-    inputsize
+--|（1）3D ObejectDetection（三维物体检测）
+--|
+--|（2）Real-Time ObjectDetection（实时物体检测）
+--|
+-----|AdaScale：实时视频物体检测
+-----|论文地址：https://arxiv.org/abs/1902.02910
+--|
+--|（3）Weakly Supervised ObjectDetection（弱监督物体检测）
+--|
+--|（4）Salient ObjectDetection（显著性物体检测）
+--|
+--|（5）ObjectDetection Generation（物体提取生成）
+--|
+-----|椭圆检测
+-----|论文地址：https://arxiv.org/abs/1810.03243
+-----|代码地址：https://github.com/AlanLuSun/High-quality-ellipse-detection[matlab版]
+--|
+--|https://github.com/amusi/awesome-object-detection
+--|https://handong1587.github.io/deep_learning/2015/10/09/object-detection.html
+--|
+--|经典模型学习
+--|
+-----|R-CNN三件套（R-CNN Fast R-CNN和Faster R-CNN）
+-----|Light-Head R-CNN
+-----|Cascade R-CNN
+-----|YOLO三件套（YOLOv1 YOLOv2 YOLOv3）
+-----|SSD（SSD DSSD FSSD ESSD Pelee）
+-----|R-FCN
+-----|FPN
+-----|DSOD
+-----|FSSD
+-----|RetinaNet
+-----|DetNet
+-----|M2Det
+-----|RFBNet
+--|
+-----|参考论文：《 Bag of Tricks for Image Classification with Convolutional Neural Networks》
+-----|代码地址：https://github.com/dmlc/gluon-cv
+--|1、如何优化常见模型的相关参数问题：
+-----|Epoch
+-----|Iteration
+-----|Batchszie
+-----|训练误差training error
+-----|泛化误差generalization error
+-----|测试误差test error
+-----|欠拟合underfitting：模型在训练集上不能获得足够低的误差，也就是模型不能很好收敛
+-----|过拟合overfitting：模型在训练集上的误差何测试集上的误差两者距离太大
+-----|合理容量Appropriate capacity：通过调节训练数据量和模型合理容量控制拟合情况。
+-----|
+-----|inputsize
     batchsize：一批样本的样本数量，每个batchszie后更新一次参数
     subdivision： batch/subdivision 一次性送入训练器样本数量
     
@@ -53,7 +55,7 @@ RFBNet
     subdivision越大显卡就显存越容易计算负担越小。通过分更多的组，每个计算组量就变小）
     
     width/height主要是影响网络数据图像的分辨率，通道其实是数字图像的三组八位二进制表示RGB，
-p   类别有2的24次方种组合从而影响precision（精度）。
+    p类别有2的24次方种组合从而影响precision（精度）。
     
     为什么只能是32的整数倍？这是因为下采样参数为32，在不要的尺寸大学为32的整数倍。
     最小320*320，最大608*608.网络自动修改尺寸并继续训练。
@@ -61,7 +63,7 @@ p   类别有2的24次方种组合从而影响precision（精度）。
     下采样：（subsampled下采样/downsampled降采样）让图像调整为一个符合显示区域小的缩略图（缩小/生成缩略图）
     上采样：（upsampling上采样/interpolating图像插值）让图像调整为一个符合显示区域大的高分辨图（放大/生成图像）
     特此说明：图像插值既能上采样又能下采样。
-    
+   
     下采样我们在卷积是靠池化来实现的图像高保真信息一定程度可以防止过拟合（来源与信息论）。
     但是池化操作主要是为了实现旋转、平移、伸缩不变形，主要有：最大、平均值、随机、求和区域池化 。
   
@@ -90,79 +92,83 @@ Sergey Zagoruyko	    2016	BMVC	A MultiPath Network for Object Detection
 Abhinav Shrivastava	    2016	ECCV	Contextual Priming and Feedback for Faster R-CNN
 Zhaowei Cai	            2016	ECCV	A Unified Multi-scale Deep Convolutional Neural Network for Fast Object Detection
 Jifeng Dai	            2016	NIPS	R-FCN: Object Detection via Region-based Fully Convolutional Networks
-Kye-Hyeon Kim	        2016	NIPSW	PVANET: Deep but Lightweight Neural Networks for Real-time Object Detection
-Wanli Ouyang	        2016	PAMI	DeepID-Net: Deformable Deep Convolutional Neural Networks for Object Detection
-Shaoqing Ren	        2016	TPAMI	Object Detection Networks on Convolutional Feature Maps
-Cheng-Yang Fu	        2017	arxiv	DSSD : Deconvolutional Single Shot Detector
+Kye-Hyeon Kim	            2016	NIPSW	PVANET: Deep but Lightweight Neural Networks for Real-time Object Detection
+Wanli Ouyang	            2016	PAMI	DeepID-Net: Deformable Deep Convolutional Neural Networks for Object Detection
+Shaoqing Ren	            2016	TPAMI	Object Detection Networks on Convolutional Feature Maps
+Cheng-Yang Fu	            2017	arxiv	DSSD : Deconvolutional Single Shot Detector
 Abhinav Shrivastava	    2017	CVPR	Beyond Skip Connections: Top-Down Modulation for Object Detection
- Tsung-Yi Lin	        2017	CVPR	Feature Pyramid Networks for Object Detection
-Joseph Redmon	        2017	CVPR	 YOLO9000: Better, Faster, Stronger
+ Tsung-Yi Lin	            2017	CVPR	Feature Pyramid Networks for Object Detection
+Joseph Redmon	            2017	CVPR	 YOLO9000: Better, Faster, Stronger
 Tao Kong	            2017	CVPR	RON: Reverse Connection with Objectness Prior Networks for Object Detection
 Jifeng Dai	            2017	ICCV	Deformable Convolutional Networks
- Lachlan Tychsen-Smith	2017	ICCV	DeNet: Scalable Real-time Object Detection with Directed Sparse Sampling
- Yousong Zhu	        2017	ICCV	CoupleNet: Coupling Global Structure with Local Parts for Object Detection
-Tsung-Yi Lin	        2017	ICCV	Focal Loss for Dense Object Detection
+ Lachlan Tychsen-Smith	    2017	ICCV	DeNet: Scalable Real-time Object Detection with Directed Sparse Sampling
+ Yousong Zhu	            2017	ICCV	CoupleNet: Coupling Global Structure with Local Parts for Object Detection
+Tsung-Yi Lin	            2017	ICCV	Focal Loss for Dense Object Detection
 Kaiming He	            2017	ICCV	Mask R-CNN
-Zhiqiang Shen	        2017	ICCV	DSOD: Learning Deeply Supervised Object Detectors from Scratch
+Zhiqiang Shen	            2017	ICCV	DSOD: Learning Deeply Supervised Object Detectors from Scratch
 Xinlei Chen	            2017	ICCV	Spatial Memory for Context Reasoning in Object Detection
-Joseph Redmon	        2018	arxiv	YOLOv3: An Incremental Improvement
+Joseph Redmon	            2018	arxiv	YOLOv3: An Incremental Improvement
 Hongyang Li	            2018	IJCV	Zoom Out-and-In Network with Recursive Training for Object Proposal
 Yong Liu	            2018	CVPR	Structure Inference Net: Object Detection Using Scene-Level Context and Instance-Level Relationships
  Peng Zhou	            2018	CVPR	Scale-Transferrable Object Detection
-Shifeng Zhang	        2018	CVPR	Single-Shot Refinement Neural Network for Object Detection
+Shifeng Zhang	            2018	CVPR	Single-Shot Refinement Neural Network for Object Detection
 Chao Peng	            2018	CVPR	MegDet: A Large Mini-Batch Object Detector
 Yuhua Chen	            2018	CVPR	Domain Adaptive Faster R-CNN for Object Detection in the Wild
-Bharat Singh	        2018	CVPR	An Analysis of Scale Invariance in Object Detection – SNIP
-Han Hu	                2018	CVPR	Relation Networks for Object Detection
+Bharat Singh	            2018	CVPR	An Analysis of Scale Invariance in Object Detection – SNIP
+Han Hu	                    2018	CVPR	Relation Networks for Object Detection
 Zhaowei Cai	            2018	CVPR	Cascade R-CNN: Delving into High Quality Object Detection
-Yancheng Bai	        2018	CVPR	Finding Tiny Faces in the Wild with Generative Adversarial Network
-Brais Bosquet	        2018	BMVC	 STDnet: A ConvNet for Small Target Detection
+Yancheng Bai	            2018	CVPR	Finding Tiny Faces in the Wild with Generative Adversarial Network
+Brais Bosquet	            2018	BMVC	 STDnet: A ConvNet for Small Target Detection
 Songtao Liu	            2018	ECCV	Receptive Field Block Net for Accurate and Fast Object Detection
 Qingyi Tao	            2018	ECCV	Zero-Annotation Object Detection with Web Knowledge Transfer
 Li Liu			                        Deep Learning for Generic Object Detection: A Survey
 Shivang Agarwal			                Recent Advances in Object Detection in the Age of Deep Convolutional Neural Networks
 light head rcnn
 apollo单目识别 跟踪 测距
-SNIP	An Analysis of Scale Invariance in Object Detection
+SNIP	                                        An Analysis of Scale Invariance in Object Detection
 
-目标检测近几年形成如下发展趋势：
-参考前段时间一个文章总结发现目标检测由两阶段向一阶段转移，2018CVPR、ECCV、ICCV和2019年近期开源文章看一阶段是接下来重点方向。而目前在模型结构上基本形成如下稳定的趋势：
-1、二维方向
-一、Backbone特征提取器
-		从新设计感受野和分类器，因为过多的下采用导致特征图很小而这种小的特征图具有丰富的语义信息丢失来浅层的高分辨信息小目标容易漏检。在特征提取方向主流进展如下：
-VGG、R-CNN、ResNet、Xception、DenseNet、Mobilnet、FPN、SENet、DetNet、PANet、SkNet。
-DetNet: A Backbone network for Object Detection（ECCV2018为物体检测而设计的backbone）
- 论文链接：https://arxiv.org/abs/1804.06215
-二、IoU优化算法（个人认为这里可以使用强化学习实现更好迁移学习）
-		在IoU优化算法的发展过程中，IoU-Net、UnitBox一般采用非监督学习和监督学习两种思路设计，IoU-Net中采用了神经网络单元修正bbox是一种比较经典的思路。
-三、LOSS优化算法
-		目标常见的L1、L2、Focal loss、skrinkage loss、repulsion loss
-四、NMS框合并算法
-		Soft-NMS、Softer-NMS、RelationNetwork、ConvNMS、NMSNetwork、Yes-Net、dice coefficient loss   metric 与loss、lossless Triplet Loss(Siamese)
-五、anchor预测算法
-		Sliding window、Region Proposal Network、CornerNet、Meta-anchor、TridentNet
-Guided Anchoring: 物体检测器也能自己学 Anchor
-论文地址：https://arxiv.org/abs/1901.03278
-六、one shot learning
-		RepNet:
-七、zero shot learning
-
-2、三维方向
-	Stereo R-CNN
-
-
-2019CVPR几个经典论文简述
-GloU：出自斯坦福大学（这个代码有个Darknet版本个人认为非常由研究价值）
-		Motavation：（卷积神经网络天生具备旋转不变性，但是平移不变问题涉及欧式几何目标个人没法在模型中准确理解，但是我实验表面，对bbox平移能提高检测的mAP），IOU具备如下特点：
-							1、对尺度不敏感可能导致loss为零无法训练
-							2、无法准确计算重合度面积及loss方向
-							3、从定义上看IOU=0不能说明两个重合度
-			本文设计：generalized IoU特点：
-							1、对scale不敏感
-							2、距离度量中采用-1描述距离（两者没交集）
-							3、GIoU替换BBox regression（如果anchor越稀疏效果越好，yolov3比fasterrcnn和maskrcnn效果更好）
-		同时该论文指出了L1和L2作为regression损失函数时候缺点，说明IoU指标作为损失函数核心部分的缺陷，提出了metric替换L1、L2损失，操作简单高效但是相比state-of-art没有突破性进展。
+--|目标检测近几年形成如下发展趋势：
+--|
+参考前段时间一个文章总结发现目标检测由两阶段向一阶段转移2018CVPR、ECCV、ICCV和2019年近期开源文章看一阶段是接下来重点方向。而目前在模型结构上基本形成
+如下稳定的趋势：
+--|二维方向
+---|Backbone特征提取器
+-----|从新设计感受野和分类器，因为过多的下采用导致特征图很小而这种小的特征图具有丰富的语义信息丢失来浅层的高分辨信息小目标容易漏检。在特征提取方向主流：
+-----|VGG、R-CNN、ResNet、Xception、DenseNet、Mobilnet、FPN、SENet、DetNet、PANet、SkNet。DetNet: A Backbone network for Object 
+-----|Detection（ECCV2018为物体检测而设计的backbone）
+-----|从新设计感受野和分类器，因为过多的下采用导致特征图很小而这种小的特征图具有丰富的语义信息丢失来浅层的高分辨信息小目标容易漏检。在特征提取方向主流进展如下：
+-----|论文链接：https://arxiv.org/abs/1804.06215
+--|
+--|二、IoU优化算法（个人认为这里可以使用强化学习实现更好迁移学习）
+-----在IoU优化算法的发展过程中，IoU-Net、UnitBox一般采用非监督学习和监督学习两种思路设计，IoU-Net中采用了神经网络单元修正bbox是一种比较经典的思路。
+--|
+--|三、LOSS优化算法
+---|目标常见的L1、L2、Focal loss、skrinkage loss、repulsion loss
+--|四、NMS框合并算法
+---|Soft-NMS、Softer-NMS、RelationNetwork、ConvNMS、NMSNetwork、Yes-Net、dice coefficient loss   metric 与loss、lossless Triplet Loss(Siamese)
+--|
+--|五、anchor预测算法
+-----|Sliding window、Region Proposal Network、CornerNet、Meta-anchor、TridentNet
+-----|Guided Anchoring: 物体检测器也能自己学 Anchor
+-----|论文地址：https://arxiv.org/abs/1901.03278
+--|六、one shot learning
+-----|RepNet:
+--|七、zero shot learning
+--|2、三维方向
+-----|Stereo R-CNN
+-----|2019CVPR几个经典论文简述
+-----|GloU：出自斯坦福大学（这个代码有个Darknet版本个人认为非常由研究价值）
+-----|Motavation：（卷积神经网络天生具备旋转不变性，但是平移不变问题涉及欧式几何目标个人没法在模型中准确理解，但是我实验表面，对bbox平移能提高检测的mAP），
+IOU具备如下特点：
+1、对尺度不敏感可能导致loss为零无法训练
+2、无法准确计算重合度面积及loss方向
+3、从定义上看IOU=0不能说明两个重合度
+本文设计generalized IoU特点：
+1、对scale不敏感
+2、距离度量中采用-1描述距离（两者没交集）
+3、GIoU替换BBox regression（如果anchor越稀疏效果越好，yolov3比fasterrcnn和maskrcnn效果更好）同时该论文指出了L1和L2作为regression损失函数时候
+缺点，说明IoU指标作为损失函数核心部分的缺陷，提出了metric替换L1、L2损失，操作简单高效但是相比state-of-art没有突破性进展。
 							
 GA-RPN:
-				GA-RPN是，
+GA-RPN是，
 
