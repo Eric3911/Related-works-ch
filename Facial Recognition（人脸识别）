@@ -45,7 +45,7 @@ Face Detection学术方向
 --|Face Image Retrieval
 --|
 #工程方向
---|
+--|人脸检测MTCNN->人脸对齐PRNet->人脸关键点特征提取（5、16、32、64、128特征点）-人脸匹配
 --|人证匹配
 ----|代码地址：https://github.com/seasonSH/DocFace
 
