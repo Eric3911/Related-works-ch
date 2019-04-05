@@ -1,5 +1,4 @@
-  #Convlution
---|
+#Convlution
 --|TensorFlow工程地址：https://github.com/taki0112/Tensorflow-Cookbook
 --|
 --|常规卷积basic Convlution（1*1、3*3、5*5，7*7）
@@ -8,7 +7,6 @@
 ----|论文地址：DilatedNet — Dilated Convolution (Semantic Segmentation)
 --|
 --|空洞卷积dilated-Convolution
---|
 ----|论文地址：《MULTI-SCALE CONTEXT AGGREGATION BY DILATED CONVOLUTIONS》
 ----|代码地址： https://github.com/fyu/dilation
 --|
@@ -30,9 +28,14 @@
 --|
 --|residual block
 --|
+--|se block
+--|
 --|dense block
+--|
 --|residual-dense block
+--|
 --|attention block
+--|
 --|
 #Normalization
 --|
