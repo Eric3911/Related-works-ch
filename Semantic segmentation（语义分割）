@@ -1,36 +1,37 @@
-(1)Real-Time Segmantic Segmentation(实时语义分割)
-  CVPR2019-SiamMask
-  论文地址：https://arxiv.org/abs/1812.05050
-  代码地址：https://github.com/foolwood/SiamMask#environment-setup
-  FCN全卷积神经网络
-    特征：卷积化（Convolutional）、上采样（Upsample/反卷积）、跳跃结构（Skip Layer）
-  DenseCRF全链接条件随机场
-    CRFasRNN
-  MRF马尔科夫随机场
-    Deep Parsing Network
-  G-CRF高斯条件随机场
-  DCN交叉卷积
-  GNN图卷积
-  AOGNet与或网络
-  GPM概率图卷积
-  PyDenseCRF
-
-
-(2)Scence Segmentation（场景分割）
-
-(3)Weakly-Supervised Semantic Segmentation（弱监督语义分割）
-
-(4)Semi-Spuervised Semanetic Segmentation（半监督语义分割）
-
-(5)Panoptic Segmentation（全景分割）
-
-一、双注意力场景分割DANet（CVPR2019）
-论文地址：https://arxiv.org/pdf/1809.02983.pdf
-代码地址：https://github.com/junfu1115/DANet
-
-二、语义分割结构化知识蒸馏
-论文地址：https://arxiv.org/abs/1903.04197
-  论文特点：pixel-wise distillation
-          pair-wise distillation
-          holistic distillation
+#语义分割
+--|
+--|Real-Time Segmantic Segmentation(实时语义分割)
+----|CVPR2019SiamMask
+----|论文地址：https://arxiv.org/abs/1812.05050
+----|代码地址：https://github.com/foolwood/SiamMask#environment-setup
+----|语义分割结构化知识蒸馏
+----|论文地址：https://arxiv.org/abs/1903.04197
+----|论文特点：pixel-wise distillation、pair-wise distillation、holistic distillation
+--|
+--|FCN全卷积神经网络
+----|特征：卷积化（Convolutional）、上采样（Upsample/反卷积）、跳跃结构（Skip Layer）
+----|DenseCRF全链接条件随机场
+----|CRFasRNN
+----|MRF马尔科夫随机场
+----|Deep Parsing Network
+----|G-CRF高斯条件随机场
+----|DCN交叉卷积
+----|GNN图卷积
+----|AOGNet与或网络
+----|GPM概率图卷积
+----|PyDenseCRF
+--|
+--|Scence Segmentation（场景分割）
+--|
+----|双注意力场景分割DANet（CVPR2019）
+----|论文地址：https://arxiv.org/pdf/1809.02983.pdf
+----|代码地址：https://github.com/junfu1115/DANet
+--|Weakly-Supervised Semantic Segmentation（弱监督语义分割）
+--|
+--|Semi-Spuervised Semanetic Segmentation（半监督语义分割）
+--|
+--|Panoptic Segmentation（全景分割）
+--|
+----|DeeperLab（MIT和Google2019论文）
+----|论文地址：https://arxiv.org/abs/1902.05093
           
