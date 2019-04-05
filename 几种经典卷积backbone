@@ -24,6 +24,8 @@
 --|
 --|反卷积Drconvolution/转置卷积 
 --|
+--|GCN图卷积
+--|
 #Block
 --|
 --|residual block
