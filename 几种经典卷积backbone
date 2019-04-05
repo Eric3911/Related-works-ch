@@ -1,0 +1,47 @@
+#Convlution
+--|
+--|TensorFlow工程地址：https://github.com/taki0112/Tensorflow-Cookbook
+--|
+--|常规卷积basic Convlution（1*1、3*3、5*5，7*7）
+--|
+--|扩张卷积Dilated-Convolution
+----|论文地址：DilatedNet — Dilated Convolution (Semantic Segmentation)
+--|
+--|空洞卷积dilated-Convolution
+--|
+----|论文地址：《MULTI-SCALE CONTEXT AGGREGATION BY DILATED CONVOLUTIONS》
+----|代码地址： https://github.com/fyu/dilation
+--|
+--|Deformable-Convolution
+--|
+--|Partial-Convolution
+--|
+--|Atrous-Convolution
+--|
+--|Full-connected
+--|
+--|pixel-shuffle
+--|
+--|Het-ConVolution
+--|
+--|反卷积Drconvolution/转置卷积 
+--|
+#Block
+--|
+--|residual block
+--|
+--|dense block
+--|residual-dense block
+--|attention block
+--|
+#Normalization
+--|
+--|Swithable Norm
+--|
+--|Batch Norm
+--|
+--|Instance Norm
+--|
+--|Layer Norm
+--|
+
