@@ -1,12 +1,16 @@
 #语义分割
 --|
 --|Real-Time Segmantic Segmentation(实时语义分割)
+--|
 ----|CVPR2019SiamMask
 ----|论文地址：https://arxiv.org/abs/1812.05050
 ----|代码地址：https://github.com/foolwood/SiamMask#environment-setup
+--|
 ----|语义分割结构化知识蒸馏
 ----|论文地址：https://arxiv.org/abs/1903.04197
 ----|论文特点：pixel-wise distillation、pair-wise distillation、holistic distillation
+--|
+--|DFANet实时语义分割（高清虚化问题）
 --|
 --|FCN全卷积神经网络
 ----|特征：卷积化（Convolutional）、上采样（Upsample/反卷积）、跳跃结构（Skip Layer）
@@ -34,4 +38,3 @@
 --|
 ----|DeeperLab（MIT和Google2019论文）
 ----|论文地址：https://arxiv.org/abs/1902.05093
-          
