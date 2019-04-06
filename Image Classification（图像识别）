@@ -11,40 +11,36 @@
  
  (6)Document Image Classification(文本图像识别)
 
-backobone
-（1）https://github.com/Cadene/pretrained-models.pytorch
-
-一：
-Alexnet
-VGGNet
-Googlenet
-ResNet
-ResxNet
-CapsNet
-代码地址：https://github.com/gram-ai/capsule-networks
-Inceptionv4
-代码地址：https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_v4.py
-DenseNet
-https://github.com/liuzhuang13/DenseNet
-NASNet
-代码地址：https://github.com/tensorflow/models/blob/master/research/slim/nets/nasnet/nasnet.py
-PNasNet
-代码地址：https://github.com/chenxi116/PNASNet.pytorch
-MnasNet
-代码地址：https://github.com/abhoi/Keras-MnasNet   
-SENet
-代码地址：https://github.com/hujie-frank/SENet
-SKNet
-代码地址：https://github.com/implus/SKNet
-GENet
-代码地址：https://github.com/hujie-frank/GENet
-ConddenseNet
-代码地址：https://github.com/ShichenLiu/CondenseNet
-
-一：FishNet
-代码地址：https://github.com/kevin-ssy/FishNet
-二：NASNet
-代码地址：https://github.com/tensorflow/models/tree/master/research/slim/nets/nasnet
-三：CapsGAN
-代码地址：https://github.com/raeidsaqur/CapsGAN
+————|backobone
+     ——|https://github.com/Cadene/pretrained-models.pytorch
+————|Alexnet、VGGNet、Googlenet、ResNet、ResxNet
+————|CapsNet
+     ——|代码地址：https://github.com/gram-ai/capsule-networks
+————|Inceptionv4
+     ——|代码地址：https://github.com/tensorflow/models/blob/master/research/slim/nets/inception_v4.py
+————|DenseNet
+     ——|https://github.com/liuzhuang13/DenseNet
+————|NASNet
+     ——|代码地址：https://github.com/tensorflow/models/blob/master/research/slim/nets/nasnet/nasnet.py
+————|PNasNet
+     ——|代码地址：https://github.com/chenxi116/PNASNet.pytorch
+————|MnasNet
+     ——|代码地址：https://github.com/abhoi/Keras-MnasNet   
+————|SENet
+     ——|代码地址：https://github.com/hujie-frank/SENet
+————|SKNet
+     ——|代码地址：https://github.com/implus/SKNet
+————|GENet
+     ——|代码地址：https://github.com/hujie-frank/GENet
+————|ConddenseNet
+     ——|代码地址：https://github.com/ShichenLiu/CondenseNet
+————|FishNet
+     ——|代码地址：https://github.com/kevin-ssy/FishNet
+————|NASNet
+     ——|代码地址：https://github.com/tensorflow/models/tree/master/research/slim/nets/nasnet
+————|CapsGAN
+     ——|代码地址：https://github.com/raeidsaqur/CapsGAN
+————|DCN交叉卷积
+     ——|https://yangxudong.github.io/dcn/
+     ——|https://github.com/yangxudong/deeplearning/tree/master/DCN
 
