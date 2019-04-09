@@ -41,6 +41,8 @@
 ————|CapsGAN
      ——|代码地址：https://github.com/raeidsaqur/CapsGAN
 ————|DCN交叉卷积
-     ——|https://yangxudong.github.io/dcn/
-     ——|https://github.com/yangxudong/deeplearning/tree/master/DCN
+    |——https://yangxudong.github.io/dcn/
+    ——https://github.com/yangxudong/deeplearning/tree/master/DCN
+————|
+    |——Res2Net
 
