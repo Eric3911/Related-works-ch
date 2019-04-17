@@ -2,6 +2,11 @@
 该项工作主要是推动监督自己从研究方法论和工程学综合考虑的一个笔记，长期通过学术指导工程问题实现系统工程学方向的建树，于此同时欢迎大家一起交流学习。
 深度学习的核心：GMM https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/   ，          https://opencvpythontutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html
 
+计算机图形学
+          Jim Blinn's Corner: Dirty Pixels
+          Jim Blinn's Corner: A Trip Down The Graphics Pipeline
+          Jim Blinn's Corner: Notation, Notation, Notation
+
 视网膜重建问题
 ![视网膜超分辨识别](https://github.com/Eric3911/Stage/blob/master/%E8%A7%86%E7%BD%91%E8%86%9C%E5%8E%BB%E9%9B%BE%E7%BB%93%E6%9E%9C.png)
 
