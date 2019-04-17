@@ -7,7 +7,7 @@
           Jim Blinn's Corner: A Trip Down The Graphics Pipeline
           Jim Blinn's Corner: Notation, Notation, Notation
 
-视网膜重建问题
+视网膜去雨雾问题
 ![视网膜超分辨识别](https://github.com/Eric3911/image/blob/master/%E8%A7%86%E7%BD%91%E8%86%9C%E5%8E%BB%E9%9B%BE%E7%BB%93%E6%9E%9C.png)
 
 成像质量分析
