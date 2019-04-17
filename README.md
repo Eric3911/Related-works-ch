@@ -11,8 +11,8 @@
 ![](https://github.com/Eric3911/image/blob/master/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BB%B7%E5%8F%82%E8%80%83Evaluation.png)
 
  交通超载项目
- ![](https://github.com/Eric3911/Stage/blob/master/%E8%BD%A6%E8%BE%86%E8%B6%85%E8%BD%BD%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%B8%80.jpg)
-![](https://github.com/Eric3911/Stage/blob/master/%E8%BD%A6%E8%BE%86%E8%B6%85%E8%BD%BD%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%BA%8C.jpg)
+ ![](https://github.com/Eric3911/image/blob/master/%E8%BD%A6%E8%BE%86%E8%B6%85%E8%BD%BD%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%B8%80.jpg)
+![](https://github.com/Eric3911/image/blob/master/%E8%BD%A6%E8%BE%86%E8%B6%85%E8%BD%BD%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%BA%8C.jpg)
 遥感小目标检测
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
 麻省理工寒假科研交流项目
