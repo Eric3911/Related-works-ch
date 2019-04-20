@@ -49,6 +49,6 @@
 
 ![](https://github.com/Eric3911/image/blob/master/01.png)
 
-舞姿同步识别
+舞姿同步项目
 
 ![](https://github.com/Eric3911/image/blob/master/0418.jpg)
