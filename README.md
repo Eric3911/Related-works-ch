@@ -25,10 +25,6 @@
 遥感小目标检测
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
 
-舞姿同步识别
-
-![](https://github.com/Eric3911/image/blob/master/0418.jpg)
-
 麻省理工寒假科研交流项目
 （那些年里眷恋的您——MIT）
 ![](https://github.com/Eric3911/image/blob/master/MIT.jpg)
@@ -39,3 +35,11 @@
 ![](https://github.com/Eric3911/Stage/blob/master/5.jpg)
 ![](https://github.com/Eric3911/image/blob/master/6.jpg)
 ![](https://github.com/Eric3911/image/blob/master/7.jpg)
+
+蒙版弹幕项目
+
+![](https://github.com/Eric3911/image/blob/master/01.png)
+
+舞姿同步识别
+
+![](https://github.com/Eric3911/image/blob/master/0418.jpg)
