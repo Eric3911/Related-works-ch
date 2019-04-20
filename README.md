@@ -8,7 +8,8 @@
           Jim Blinn's Corner: Notation, Notation, Notation
 
 视网膜去雨雾项目
-![视网膜超分辨识别](https://github.com/Eric3911/image/blob/master/%E8%A7%86%E7%BD%91%E8%86%9C%E5%8E%BB%E9%9B%BE%E7%BB%93%E6%9E%9C.png)
+
+![](https://github.com/Eric3911/image/blob/master/%E8%A7%86%E7%BD%91%E8%86%9C%E5%8E%BB%E9%9B%BE%E7%BB%93%E6%9E%9C.png)
 
 成像质量分析项目
 ![](https://github.com/Eric3911/image/blob/master/123456.png)
@@ -21,10 +22,12 @@
 ![](https://github.com/Eric3911/image/blob/master/%E8%BD%A6%E8%BE%86%E8%B6%85%E8%BD%BD%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%BA%8C.jpg)
 
 遥感小目标检测项目
+
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
 
 麻省理工寒假科研交流项目
 （那些年里眷恋的您——MIT）
+
 ![](https://github.com/Eric3911/image/blob/master/MIT.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/1.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/2.jpg)
@@ -34,8 +37,12 @@
 ![](https://github.com/Eric3911/image/blob/master/6.jpg)
 ![](https://github.com/Eric3911/image/blob/master/7.jpg)
 
-公交车超载评估模型
+公交车超载评估项目
+
 ![]( https://github.com/Eric3911/image/blob/master/bilatera.jpg)
+
+密集人群检测项目
+
 ![](https://github.com/Eric3911/image/blob/master/WX20190420-092259.png)
 
 蒙版弹幕项目
