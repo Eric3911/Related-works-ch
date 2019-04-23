@@ -13,22 +13,22 @@
 --|经典模型学习
 --|https://github.com/amusi/awesome-object-detection
 --|https://handong1587.github.io/deep_learning/2015/10/09/object-detection.html
-    --|二阶段R-CNN系列：R-CNN 、Fast R-CNN、Faster R-CNN、Light-Head R-CNN、Cascade R-CNN
-    --|一阶段YOLO系列：YOLOv1 、YOLOv2 、YOLOv3
-    --|一阶段SSD系列：DSSD、 FSSD、 ESSD、 Pelee、DSOD、FSSD
+   ---|二阶段R-CNN系列：R-CNN 、Fast R-CNN、Faster R-CNN、Light-Head R-CNN、Cascade R-CNN
+   ---|一阶段YOLO系列：YOLOv1 、YOLOv2 、YOLOv3
+   ---|一阶段SSD系列：DSSD、 FSSD、 ESSD、 Pelee、DSOD、FSSD
 -----|R-FCN
 -----|FPN
 -----|RetinaNet
 -----|DetNet
 -----|M2Det
 -----|RFBNet
-————|参数指标：
+————-|参数指标：
      ——|https://github.com/rafaelpadilla/Object-Detection-Metric
 ————|目标检测trick
      --|参考论文：《 Bag of Tricks for Image Classification with Convolutional Neural Networks》
      --|代码地址：https://github.com/dmlc/gluon-cv
 
-——————|如何优化常见模型的相关参数问题：
+————|如何优化常见模型的相关参数问题：
         --|Epoch
         --|Iteration
         --|Batchszie
