@@ -1,6 +1,9 @@
-# Stage本人主要研究低质量高分辨多尺度亚像素图像的底层编码的量化卷积和RSIC芯片工程学习与笔记：
+# Stage本人主要从事低质量成像多尺度亚像素图像的底层编码的量化卷积和RSIC芯片工程学习：
+
 该项工作主要是推动监督自己从研究方法论和工程学综合考虑的一个笔记，长期通过学术指导工程问题实现系统工程学方向的建树，于此同时欢迎大家一起交流学习。
-深度学习的核心：GMM https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/   ，          https://opencvpythontutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html
+深度学习的核心：
+# GMM https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/   ，         
+# https://opencvpythontutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html
 
 计算机图形学
           Jim Blinn's Corner: Dirty Pixels
