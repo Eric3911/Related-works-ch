@@ -7,6 +7,7 @@
 
 
 # 计算机图形学
+
           Jim Blinn's Corner: Dirty Pixels
           Jim Blinn's Corner: A Trip Down The Graphics Pipeline
           Jim Blinn's Corner: Notation, Notation, Notation
@@ -21,6 +22,8 @@
 ![](https://github.com/Eric3911/image/blob/master/%E5%9F%BA%E4%BA%8ESCB%E7%AE%97%E6%B3%95%E7%9A%84%E5%A2%9E%E5%BC%BA.png)
 ![](https://github.com/Eric3911/image/blob/master/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BB%B7%E5%8F%82%E8%80%83Evaluation.png)
 
+# 证件拍摄阴影去除
+![](https://github.com/Eric3911/image/blob/master/QQ%E6%88%AA%E5%9B%BE20190425135959.jpg)
  # 交通ADAS项目
  ![](https://github.com/Eric3911/image/blob/master/%E8%BD%A6%E8%BE%86%E8%B6%85%E8%BD%BD%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%B8%80.jpg)
 ![](https://github.com/Eric3911/image/blob/master/%E8%BD%A6%E8%BE%86%E8%B6%85%E8%BD%BD%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%BA%8C.jpg)
