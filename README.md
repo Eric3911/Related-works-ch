@@ -7,6 +7,8 @@
 
 # 图像开源代码库
 
+https://github.com/Eric3911/Code-with-Life
+
 # 计算机图形学
 
           Jim Blinn's Corner: Dirty Pixels
