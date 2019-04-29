@@ -13,7 +13,7 @@ https://github.com/Eric3911/Code-with-Life
 
 https://github.com/Eric3911/Paper-Sharing
 
-# 大数据工程项目
+# 大数据比赛学习
 
 https://github.com/Eric3911/CDCS
 
