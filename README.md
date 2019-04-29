@@ -9,6 +9,10 @@
 
 https://github.com/Eric3911/Code-with-Life
 
+# 经典论文阅读库
+
+https://github.com/Eric3911/Paper-Sharing
+
 # 计算机图形学
 
           Jim Blinn's Corner: Dirty Pixels
