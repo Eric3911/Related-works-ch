@@ -1,6 +1,6 @@
-# Stage本人主要从事低质量成像多尺度亚像素图像的底层编码的量化卷积和RSIC芯片工程学习：
+# Stage：本人主要从事低质量成像多尺度亚像素图像的底层编码的量化卷积和RSIC芯片工程学习：
 
-该项工作主要是推动监督自己从研究方法论和工程学综合考虑的一个笔记，长期通过学术指导工程问题实现系统工程学方向的建树，于此同时欢迎大家一起交流学习。
+该项工作主要是监督自己融合研究方法与工程学结合笔记，通过学术指导工程实现系统工程，同时欢迎大家一起交流学习。
 
 深度学习的核心教程：GMM https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/，         
 **https://opencvpythontutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html
@@ -12,6 +12,10 @@ https://github.com/Eric3911/Code-with-Life
 # 经典论文阅读库
 
 https://github.com/Eric3911/Paper-Sharing
+
+# 大数据工程项目
+
+https://github.com/Eric3911/CDCS
 
 # 计算机图形学
 
