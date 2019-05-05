@@ -24,6 +24,10 @@ https://github.com/Eric3911/Super-Paper
 
 https://github.com/Eric3911/CDCS
 
+# 计算机视觉科学竞赛
+
+https://github.com/Eric3911/Visual-Science-Competition
+
 # 计算机图形学
 
           Jim Blinn's Corner: Dirty Pixels
