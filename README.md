@@ -8,6 +8,7 @@
 # 图像算法个人开源代码库
 
 https://github.com/Eric3911/Code-with-Life
+https://github.com/Eric3911/Coding-learning
 
 # 经典论文阅读库
 
