@@ -1,23 +1,23 @@
 密集人群检测
 
 ————|SVDNet行人重识别
-  ——|https://arxiv.org/abs/1703.05693
-  ——|https://github.com/syfafterzy/SVDNet-for-Pedestrian-Retrieval
-  ——|https://github.com/Simon4Yan/SVDNet-for-Pedestrian-Retrieval
+    ————|https://arxiv.org/abs/1703.05693
+    ————|https://github.com/syfafterzy/SVDNet-for-Pedestrian-Retrieval
+    ————|https://github.com/Simon4Yan/SVDNet-for-Pedestrian-Retrieval
        
 ————|Repulsion Loss遮挡行人检测
-  ——|https://arxiv.org/abs/1711.07752
+    ————|https://arxiv.org/abs/1711.07752
 
 ————|PS-GAN提高行人检测分辨率
-  ——|https://arxiv.org/abs/1804.02047
+    ————|https://arxiv.org/abs/1804.02047
 
 ————|TFusion无监督时空关联行人识别
-  ——|论文地址：https://arxiv.org/abs/1803.07293
-  ——|代码地址：https://github.com/ahangchen/TFusion
+    ————|论文地址：https://arxiv.org/abs/1803.07293
+    ————|代码地址：https://github.com/ahangchen/TFusion
   
 ————|Multi-task learning
-   -|identification+verification loss
+    ————|identification+verification loss
    
 ————|Triplet loss
 
-————|
+		
