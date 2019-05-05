@@ -12,7 +12,7 @@ https://github.com/Eric3911/Code-with-Life
 # 经典论文阅读库
 
 https://github.com/Eric3911/Paper-Sharing
-
+https://github.com/Eric3911/Super-Paper
 # 大数据比赛学习
 
 https://github.com/Eric3911/CDCS
