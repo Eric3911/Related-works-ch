@@ -1,4 +1,4 @@
-# Stage：本人主要从事低质量成像的底层尺度编码量化卷积和RSIC芯片工程学习：
+# Stage：本人主要从事低质量多尺度成像量化卷积编码和RSIC芯片工程学习：
 
 该项工作主要是监督自己融合研究方法与工程学结合笔记，通过学术指导实现系统工程同时欢迎大家一起交流学习。
 
@@ -12,6 +12,7 @@ https://github.com/Eric3911/Code-with-Life
 # 经典论文阅读库
 
 https://github.com/Eric3911/Paper-Sharing
+
 https://github.com/Eric3911/Super-Paper
 # 大数据比赛学习
 
