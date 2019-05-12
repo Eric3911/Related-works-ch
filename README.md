@@ -23,6 +23,10 @@ https://github.com/Eric3911/Coding-learning
 https://github.com/Eric3911/Paper-Sharing
 
 https://github.com/Eric3911/Super-Paper
+
+# 对偶学习：一种全新的深度学习范式
+# 深度学习走向何方？ 非线性动力学与分数阶非线性方程在群论中的模态融合知识表示体系
+
 # 大数据比赛学习
 
 https://github.com/Eric3911/CDCS
