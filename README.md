@@ -40,6 +40,10 @@ https://github.com/Eric3911/Visual-Science-Competition
           Jim Blinn's Corner: Dirty Pixels
           Jim Blinn's Corner: A Trip Down The Graphics Pipeline
           Jim Blinn's Corner: Notation, Notation, Notation
+
+#计算机摄影学
+          
+          光流场和光线追踪在相控矩阵77GHZ的毫米波雷达融合
           
 # 个人对学术理解
 
