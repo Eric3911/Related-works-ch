@@ -1,4 +1,4 @@
-# Stage：本人主要从事低质量多尺度成像量化卷积编码和RSIC芯片工程学习：
+# Stage：本人从事低质量多尺度成像量化卷积编码和RSIC芯片工程学习：
 
 该项工作主要是监督自己研究过程与工程学结合通过学术指导实现工程学上系统问题同时欢迎大家一起交流学习。
 
@@ -41,7 +41,7 @@ https://github.com/Eric3911/Visual-Science-Competition
           Jim Blinn's Corner: A Trip Down The Graphics Pipeline
           Jim Blinn's Corner: Notation, Notation, Notation
 
-#计算机摄影学
+# 计算机摄影学
           
           光流场和光线追踪在相控矩阵77GHZ的毫米波雷达融合
           
