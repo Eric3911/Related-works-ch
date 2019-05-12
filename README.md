@@ -4,9 +4,8 @@
 
 深度学习的核心教程：
 
-GMM https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/，
-
-https://opencvpythontutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html
+GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/，
+opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
 
 # 个人参与视觉开源学习项目
 
