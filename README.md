@@ -20,6 +20,8 @@ https://github.com/Eric3911/Coding-learning
 
 # 经典论文阅读库
 
+https://arxiv.org/list/cs.AI/recent
+
 https://github.com/Eric3911/Paper-Sharing
 
 https://github.com/Eric3911/Super-Paper
