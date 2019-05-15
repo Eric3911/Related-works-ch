@@ -56,7 +56,9 @@ https://github.com/Eric3911/Visual-Science-Competition
 ![](https://github.com/Eric3911/image/blob/master/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BB%B7%E5%8F%82%E8%80%83Evaluation.png)
 
 # 证件拍摄阴影去除
+https://github.com/Eric3911/icpr2018_ocr_papers
 ![](https://github.com/Eric3911/image/blob/master/QQ%E6%88%AA%E5%9B%BE20190425135959.jpg)
+
 # 版面分析
 ![](https://github.com/Eric3911/image/blob/master/Text_20181101153336.png)
  # 交通ADAS项目
