@@ -1,16 +1,34 @@
 一、文字定位
 
+https://handong1587.github.io/deep_learning/2015/10/09/ocr.html
+
+这个工程是我最近的一个项目下实现的。
+
+数据集：ICDAR，SynthText
+
+目前国内最新的模型
+  
+  云从科技Pixel-Anchor
+  
+  南京大学和南京理工PSEnet
+  
+  旷视科技Mask Text
+  
+  商汤科技FOTS
+  
+  阿里巴巴IncepText
+  
+  其他模型：SLPR、Pixel-Link、R2CNN、TextBoxes++、EAST、WordSup、SSTD、Seglink、CTPN 、CRNN、GRU。
+  
+  
+
+
+
 二、文字识别
 
-自然常见文本检测=文字识别+文字定位
-
-目前定位方法随着目标检测和语义分割已经获得很高的工程结果
-
-文字识别主要是以下三个
-
-一、CRNN
-二、attention-ocr
-三、FAN    FAN论文地址：https://arxiv.org/abs/1709.02054
+2.1 CRNN
+2.2 attention-ocr
+2.3 FAN    FAN论文地址：https://arxiv.org/abs/1709.02054
 
 
 一、OCR文字识别
