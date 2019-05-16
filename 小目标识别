@@ -1,4 +1,69 @@
-小目标与难分样本学习
+小目标与难分样本学习(首先区分一下题目是两个不同概念领域)
+
+[1]FPN论文：feature pyramid networks for object detection 
+论文链接：https://arxiv.org/abs/1612.03144
+
+[2]NAS-FPN论文：NAS-FPN: Learning Scalable Feature Pyramid Architecture for Object Detection
+论文链接：https://arxiv.org/abs/1904.07392
+
+[3]SNIP论文：An Analysis of Scale Invariance in Object Detection 
+论文链接：https://arxiv.org/abs/1805.09300
+代码链接：https://github.com/mahyarnajibi/SNIPER
+
+[4]Cascade R-CNN论文：Cascade R-CNN: Delving into High Quality Object Detection
+论文链接：https://arxiv.org/abs/1712.00726 
+代码链接：https://github.com/zhaoweicai/cascade-rcnn 
+
+[5]ALFNet论文：Learning Efficient Single-stage Pedestrian Detectors by Asymptotic Localization Fitting
+这篇论文的主要方向：解决高效的行人检测
+代码链接：https://github.com/VideoObjectSearch/ALFNet
+
+[6]PGAN论文：Perceptual Generative Adversarial Networks for Small Object Detection
+论文链接：https://arxiv.org/abs/1706.05274v2
+
+[7]DetNet论文：A Backbone network for Object Detection
+论文地址：https://arxiv.org/abs/1804.06215
+代码链接：https://github.com/tsing-cv/DetNet
+
+[8]FTF论文：Finding Tiny Faces
+论文链接：https://www.cs.cmu.edu/~peiyunh/tiny/
+代码链接：https://github.com/peiyunh/tiny
+
+[9]论文：Improving Small Object Detection
+
+[10]论文：Image Restoration Using Convolutional Auto-encoders with Symmetric Skip Connections
+论文链接：https://arxiv.org/abs/1606.08921
+
+[11]论文：AZNet
+论文链接：https://arxiv.org/pdf/1512.07711.pdf
+
+[12]论文：RetinaNet
+https://github.com/kuangliu/pytorch-retinanet
+https://github.com/CasiaFan/tensorflow_retinanet
+https://github.com/fizyr/keras-retinanet
+
+[13]FSAF论文：采用RoIAlign在GA-RPN实现instance anchor学习了RetinaNet
+
+小目标的研究目前的模型容易漏检这个可能存在很多原因
+
+（1）backbone特征提取出现的深浅层语义信息和空间位置信息没法很好融合改进Resnet、Xception、DensNet、FPN、DetNet、PANet
+（2）iou方面unitbox、iou-net、Giou
+ (3)loss方面Focal loss、交叉信息损失熵
+ (4)nms方面softnms、softernms、Relation Network、Convnms、nms Network、Yes-Net
+ (5)anchor：meta-anchor、RPN、conernet、centernet
+
+核心任务解决：Global Context +Local Context
+
+成功例子：
+MRCNN：MultiRegion CNN
+GBDNet：Gated BiDirectional CNN
+ACCNN：Attention to Context CNN
+CoupleNet:Improve on RFCN
+SMN:Spatial Memory Network
+ORN:Object Relation Network
+SIN：Structure Inference Net
+
+
 
 主要采用分割、对抗、显著性、注意力、细粒度识别技术实现问题
 
@@ -64,9 +129,3 @@ https://mmcheng.net/code-data/
   Visual attention detection in video sequences using spatiotemporal cues  
   https://blog.csdn.net/touch_dream/article/details/78716507
 
-注意力机制
-  （软、硬注意力机制）
-  1、空间域注意力STN
-  2、通道域注意力SENet
-  3、混合域注意力
-  4、时间域注意力RNN
