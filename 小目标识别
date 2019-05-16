@@ -44,6 +44,10 @@ https://github.com/fizyr/keras-retinanet
 
 [13]FSAF论文：采用RoIAlign在GA-RPN实现instance anchor学习了RetinaNet
 
+[14]R-FCN
+
+[15]Perceptual Generative Adversarial Networks for Small Object Detection feature pyramid networks for object detection 
+
 小目标的研究目前的模型容易漏检这个可能存在很多原因
 
 （1）backbone特征提取出现的深浅层语义信息和空间位置信息没法很好融合改进Resnet、Xception、DensNet、FPN、DetNet、PANet
