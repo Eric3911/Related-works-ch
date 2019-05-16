@@ -18,6 +18,10 @@ https://github.com/Eric3911/Code-with-Life
 
 https://github.com/Eric3911/Coding-learning
 
+# 边缘分割
+
+https://github.com/MarkMoHR/Awesome-Edge-Detection-Papers
+
 # 经典论文阅读库
 
 https://arxiv.org/list/cs.AI/recent
