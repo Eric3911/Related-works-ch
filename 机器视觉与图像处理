@@ -1,3 +1,992 @@
+https://antkillerfarm.github.io/
+   
+
+   一、数字图像基础
+        1、什么是数字图像？
+        2、数字图像分类有那些？
+        3、数字图像实质是什么？
+        4、数字图像的表示方法？
+    二、数字图像处理
+        1、图像的邻接、连通、区域、边界
+        2、距离度量的几种方法
+        3、图像的运算:点运算、零域运算、线性和非线性操作（单副图像的滤波，多幅图像的求和、求差）
+        4、RGB图像、索引图像、二值图像、多帧图像
+    三、图像点运算
+    四、图像几何变换
+    五、图像空间域增强
+    六、图像频域增强
+    七、小波变换
+    八、图像复原
+    九、图像压缩
+    十、形态学处理
+    十一、图像分割
+    十二、特征提取
+    十三、传统图像识别（图像分类）
+    十四、支持向量机
+    十五、AdaBoost
+
+《数字图像数学原理》
+
+第1章 必不可少的数学基础
+1.1        极限及其应用
+    1.1.1  数列的极限
+    1.1.2  级数的敛散
+    1.1.3  函数的极限
+    1.1.4  极限的应用
+
+1.2        微分中值定理
+    1.2.1  罗尔中值定理
+    1.2.2  拉格朗日中值定理
+    1.2.3  柯西中值定理
+    1.2.4  泰勒公式
+    1.2.5  海塞矩阵与多元函数极值
+
+1.3        向量代数与场论
+    1.3.1  牛顿-莱布尼茨公式
+    1.3.2  内积与外积
+    1.3.3  方向导数与梯度
+    1.3.4  曲线积分
+    1.3.5  格林公式
+    1.3.6  积分与路径无关条件
+    1.3.7  曲面积分
+    1.3.8  高斯公式与散度
+    1.3.9  斯托克斯公式与旋度
+
+
+第2章 更进一步的数学内容
+2.1        傅立叶级数展开
+    2.1.1  函数项级数的概念
+    2.1.2  函数项级数的性质
+    2.1.3  傅立叶级数的概念
+    2.1.4  傅立叶变换的由来
+    2.1.5  卷积定理及其证明
+
+2.2        复变函数论初步
+    2.2.1  解析函数
+    2.2.2  复变积分
+    2.2.3  基本定理
+    2.2.4  级数展开
+
+2.3        凸函数与詹森不等式
+    2.3.1  凸函数的概念
+    2.3.2  詹森不等式及其证明
+    2.3.3  詹森不等式的应用
+
+2.4        常用经典数值解法
+    2.4.1  牛顿迭代法
+    2.4.2  雅各比迭代
+    2.4.3  高斯迭代法
+    2.4.4  托马斯算法
+    
+第3章      泛函分析以及变分法
+3.1        勒贝格积分理论
+    3.1.1  点集的勒贝格测度
+    3.1.2  可测函数及其性质
+    3.1.3  勒贝格积分的定义
+    3.1.4  积分序列极限定理
+    
+3.2        泛函与抽象空间
+    3.2.1  线性空间
+    3.2.2  距离空间
+    3.2.3  赋范空间
+    3.2.4  巴拿赫空间
+    3.2.5  内积空间
+    3.2.6  希尔伯特空间
+    3.2.7  索伯列夫空间
+    
+3.3        从泛函到变分法
+    3.3.1  理解泛函的概念
+    3.3.2  关于的变分概念
+    3.3.3  变分法的基本方程
+    3.3.4  理解哈密尔顿原理
+    3.3.5  等式约束下的变分
+    3.3.6  巴拿赫不动点定理
+    3.3.7  有界变差函数空间
+
+第4章 概率论与统计学基础
+4.1         概率论的基本概念
+4.2         随机变量数字特征
+    4.2.1  期望
+    4.2.2  方差
+    4.2.3  矩与矩母函数
+    4.2.4  协方差与协方差矩阵
+
+4.3  基本概率分布模型
+    4.3.1  离散概率分布
+    4.3.2  连续概率分布
+    
+4.4  概率论中的重要定理
+    4.4.1  大数定理
+    4.4.2  中央极限定理
+
+4.5  随机采样
+    4.5.1  随机采样分布
+    4.5.2  蒙特卡洛采样
+
+4.6  参数估计
+4.7  假设检验
+    4.7.1  基本概念
+    4.7.2  两类错误
+    4.7.3  均值检验
+
+4.8  极大似然估计
+    4.8.1  极大似然法的基本原理
+    4.8.2  求极大似然估计的方法
+
+4.9  贝叶斯推断
+    4.9.1  先验概率与后验概率
+    4.9.2  共轭分布
+
+第5章 子带编码与小波变换
+5.1        图像编码的理论基础
+    5.1.1  率失真函数
+    5.1.2  香农下边界
+    5.1.3  无记忆高斯信源
+    5.1.4  有记忆高斯信源
+    
+5.2        子带编码基本原理
+    5.2.1  数字信号处理基础
+    5.2.2  多抽样率信号处理
+    5.2.3  图像信息子带分解
+    
+5.3        哈尔函数及其变换
+    5.3.1  哈尔函数的定义
+    5.3.2  哈尔函数的性质
+    5.3.3  酉矩阵与酉变换
+    5.3.4  二维离散线性变换
+    5.3.5  哈尔基函数
+    5.3.6  哈尔变换
+    
+5.4        小波及其数学原理
+    5.4.1  小波的历史
+    5.4.2  理解小波的概念
+    5.4.3  多分辨率分析
+    5.4.4  小波函数的构建
+    5.4.5  小波序列展开
+    5.4.6  离散小波变换
+    5.4.7  连续小波变换
+    5.4.8  小波的容许条件与基本特征
+    
+5.5        快速小波变换算法
+    5.5.1  快速小波正变换
+    5.5.2  快速小波逆变换
+    5.5.3  图像的小波变换
+
+5.6        小波在图像处理中的应用
+
+第6章 正交变换与图像压缩
+6.1        傅立叶变换
+    6.1.1  信号处理中的傅立叶变换
+        1. 连续时间，连续频率——傅立叶变换
+        2. 连续时间，离散频率——傅立叶级数
+        3. 离散时间，连续频率——序列的傅立叶变换
+        4. 离散时间，离散频率——离散的傅立叶变换
+    6.1.2  数字图像的傅立叶变换
+    6.1.3  快速傅立叶变换的算法
+    
+6.2        离散余弦变换
+    6.2.1  基本概念及数学描述
+    6.2.2  离散余弦变换的快速算法
+    6.2.3  离散余弦变换的意义与应用
+    
+6.3        沃尔什-阿达马变换
+    6.3.1  沃尔什函数
+    6.3.2  离散沃尔什变换及其快速算法
+    6.3.3  沃尔什变换的应用
+    
+6.4        卡洛南-洛伊变换
+    6.4.1  一些必备的基础概念
+    6.4.2  主成分变换的推导
+    6.4.3  主成分变换的实现
+    6.4.4  基于K-L变换的图像压缩
+    
+第7章      无所不在的高斯分布
+7.1        卷积积分与邻域处理
+    7.1.1  卷积积分的概念
+    7.1.2  模板与邻域处理
+    7.1.3  图像的高斯平滑
+    
+7.2        边缘检测与微分算子
+    7.2.1  哈密尔顿算子
+    7.2.2  拉普拉斯算子
+    7.2.3  高斯-拉普拉斯算子
+    7.2.4  高斯差分算子
+    
+7.3        保持边缘的平滑处理
+    7.3.1  双边滤波算法应用
+    7.3.2  各向异性扩散滤波
+    7.3.3  基于全变差的方法
+    
+7.4        数学物理方程的应用
+    7.4.1  泊松方程的推导
+    7.4.2  图像的泊松编辑
+    7.4.3  离散化数值求解
+    7.4.4  基于稀疏矩阵的解法
+
+7.5        多尺度空间及其构建
+    7.5.1  高斯滤波与多尺度空间的构建
+    7.5.2  基于各向异性扩散的尺度空间
+
+第8章       处理彩色图像
+8.1        从认识色彩开始
+    8.1.1  什么是颜色
+    8.1.2  颜色的属性
+        1. 色相
+        2. 亮度
+        3. 纯度
+    8.1.3  光源能量分布图
+
+8.2        CIE色度图
+    8.2.1  CIE色彩模型的建立
+    8.2.2  CIE色度图的理解
+        1. 确定互补颜色
+        2. 确定色光主波
+        3. 定义颜色区域
+    8.2.3  CIE色度图的后续发展
+
+8.3        常用的色彩空间
+    8.3.1  RGB颜色空间
+    8.3.2  CMY/CMYK颜色空间
+    8.3.3  HSV/HSB颜色空间
+    8.3.4  HSI/HSL颜色空间
+    8.3.5  Lab颜色空间
+    8.3.6  YUV/YCbCr颜色空间
+
+8.4        色彩空间的转换方法
+    8.4.1  RGB转换到HSV的方法
+    8.4.2  RGB转换到HSI的方法
+    8.4.3  RGB转换到YUV的方法
+    8.4.4  RGB转换到YCbCr的方法
+
+8.5         基于直方图的色彩增强
+    8.5.1   普通直方图均衡
+    8.5.2   CLAHE算法
+    8.5.3   直方图规定化
+
+8.6        暗通道先验的去雾算法
+    8.6.1  暗通道的概念与意义
+    8.6.2  暗通道去雾霾的原理
+    8.6.3  算法实现与应用
+
+《小波十讲》
+
+第一章	什么是小波
+第二章	连续小波变换
+第三章	离散小波变换
+第四章	时-频密度正交基
+第五章	正交小波基与多分辨分析
+第六章	紧支撑小波的标准正交基
+第七章	紧支撑小波的正则性
+第八章	紧支撑小波的对称性
+第九章	泛函框架的小波划分
+第十章	正交小波基通论及其技巧
+
+python机器视觉与计算视觉基础
+
+第一章：数字图像
+
+第二章：图像点运算
+
+第三章：图像的几何变换
+
+第四章：空间域图像增强
+
+第五章：频率图像增强
+
+第六章：小波变换
+
+第七章：图像复原
+
+第八章：彩色图像处理
+
+第九章：图像压缩
+
+第十章：形态学图像处理
+
+第十一章：图像分割
+
+第十二章：特征提取
+
+第十三章：图像识别初步
+
+第十四章：人工神经网络
+
+第十五章：支持向量机
+
+第十六章：Adabbost
+
+
+计算机视觉20个经典算法（计算机视觉20讲）
+    
+    1、k-means
+    
+    2、KNN学习
+    
+    3、回归学习
+    
+    4、决策树学习
+    
+    5、Random Forest学习
+    
+    6、贝叶斯学习
+    
+    7、EM算法
+    
+    8、Adaboost
+    
+    9、SVM算法
+    
+    10、增强学习
+    
+    11、流行学习
+    
+    12、RBF学习
+    
+    13、稀疏表示
+    
+    14、字典学习
+    
+    15、BP学习
+    
+    16、CNN学习
+    
+    17、RBM学习
+    
+    18、深度学习
+    
+    19、遗传学习
+    
+    20、蚁群学习
+    
+
+1、图像编码及相互转换问题
+#图片编码格式转换问题 
+#base64用于传输8bit字节的编码方式之一，用64个字符表示二进制数据方法。
+#是一个从二进制到字符的过程可用在http中环境下传较长的标识信息。
+
+编码使用 base64.b64encode()
+解码使用 base64.b64decode()
+
+import base64
+
+def convert_image():
+	#图像的编码
+	with open('C:/123.jpg','rb') as fin:
+		image_data = fin.read()
+		base64_data = base64.b64encode(image_data)
+		
+		fout = open('C:/123.jpg','W')
+		fout.write(base64_data.decode())
+		fout.close()
+		
+	with open('C:/123.jpg','r') as fin:
+		base64_data = fin.read()
+		ori_image_data = base64.b64decode(base64_data)
+	
+		fout = open('C/123.jpg''wb')
+		fout = write(ori_image_data)
+		fout.close()
+		
+if __name__ =='__main__'
+	convert_image()
+	
+	
+import base64
+
+def convert_image():
+	with open('C/Hop_Despair.jpg''rb') as fin, open('C/base64_content.txt','w') as fout :
+		fout.write(base64.b64encode(fin.read()).decode())
+		
+	with open('C/base64_content','r') as fin ,open('C/Hope_Despair_2.jpg','wb') as fout :
+		fout.write(base64.b64decode(fin.read()))
+	if __name__ =='__main__':
+	convert_image()
+	
+	
+#python 图片base64解码还原PIL.Image或者opencv图像
+#前端图像用图片流base64编码传过来的
+
+#opencv：
+	img_data_base64 = request.POST.get("image_data")
+
+	img_data = base64.b64decode(img_data_base64)
+	arry = np.fromstring(image_data,np.uint8)
+	img = cv2.imdecode(arry,cv2.COLOR_BGR2RGB)
+
+#PIL.Image:
+	image_data_base64 = request.POST.get("img_data")
+	
+	image = io.BytesIO(image_data)
+	img = Image.open(image)
+	
+#python的opencv格式和PIL.Image格式互相转化
+
+#opencv转换为PIL.Image格式
+	import cv2
+	from PIL import Image
+	
+	img = cv2.imread('123.jpg')
+	cv2.imshow("opencv",img)
+	image = Image.fromarry(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
+	image.show()
+	image.waitKey()
+	
+#PIL.Image转换为opencv格式
+	import cv2
+	from PIL import Image
+	import numpy
+	
+	image = Image.open("123.jpg")
+	image.show()
+	img = cv2.cvtColor(numpy,asarray(image),cv2.COLOR_BGR2RGB)
+	cv2.imshow("opencv",img)
+	cv2.waitKey()
+	
+2、图像中光斑问题是按照读取像素的分布函数来确定
+
+#1、python实现两个列表相加
+
+#利用操作符+（生成一个新对象）
+a = [1,2,3]
+b = [4,5,6]
+c = a + b
+
+#利用extend实现两个列表相加（生成一个新对象）
+a = [1,2,3]
+b = [4,5,6]
+
+a.extend(b)
+
+#append的方法（往列表中添加新元素）
+a.append(4)#后面跟的是元素类型
+a的结果是：[1,2,3,4]
+
+
+#2、两链表相交点问题如果两个链表不想交返回空如果相交函数返回必须保持原有结构不破坏
+#时间复杂度0（n）空间复杂度0（1）
+def getIntersectionNode(self,HeadA,headB):
+    if not headA or not headB:
+        return None
+   aList = []
+   bList = []
+   tempA = headA
+   tempB = headB
+   #链表A转换成列表
+   while tempA is not None:
+       aList.append(tempA)
+       tempA = tempA.next
+   #链表B转列表
+   while tempB is not None:
+       BList.append(tempB)
+       tempB = tempB.next
+    while len(aList)>1 and len(bList)>1 and aList[-2]==bList[-2]:
+        aList.pop()
+        bList.pop()
+    if aList[-1]==bList[-1]:
+        return bList[1]
+    else:
+        return None
+#双指针法求交点
+def getInterctionNode(self,headA,headB):
+    
+    if not headA or not headB:
+        return None
+    tempA = headA
+    tempB = headB
+    while tempA! = tempB:
+        if not tempA and not tempB:
+            return None
+        if not tempA:
+            tempA =headB:
+        if not tempB:
+            tempB = headA
+        return tempA
+
+#pythonarray数组的最值及索引值用where.list列表直接用index。numpy中的array方法
+#arange元素个数，shape是行列数
+a = np.arange(9).shape((3,3))
+array([[0,1,2]
+       [9,4,5]
+       [6,7,8]])
+    #全局最大
+    print(np.max(a))
+    #每列最大
+    8
+    print(np.max(a,axis = 0))
+    #每行最大
+    [6,7,8]
+    print(np.max(a,axis = 1))
+    [2,5,8]
+    
+# where得到的返回值中前面的是array行后面是列
+print(np.where(a == np.max(x)))
+(array([2],dtpye = int64),array([2],dtype = int64))
+print(np.where(a ==np.max(a,axis=0)))
+(array([2,2,2],dtype = int64),array([0,1,2]dtype))
+
+#如果array中有相同的最大值where将其位置全部给出
+a[1,0] = 8
+array([[0,1,2]
+       [8,4,5]
+       [6,7,8]])
+    print(np.where(a == np.max(a)))
+    (array([1,2],dtype = int64),array([0,2],dtype=int64))
+
+
+#3、数组中最大的元素
+
+3、FLANN匹配
+import cv2	
+import numpy as np
+from PIL import Image
+from skimage import transform
+import matplotlib.pyplot as plt
+
+
+def calc_length(point1, point2):
+    x = (point1[0] - point2[0]) ** 2
+    y = (point1[1] - point2[1]) ** 2
+    return (x + y) ** 0.5
+
+MIN_MATCH_COUNT = 10 
+#标准的证件模板
+dst_img = cv2.imread('C:/Users/Administrator/Desktop/1010test/1234567.jpg', 0)
+#需要检测的证件读入路径
+ori_img_ori = cv2.imread('C:/Users/Administrator/Desktop/1010test/123456.jpg', 1)
+#使用SIFT检测角点
+sift = cv2.xfeatures2d.SIFT_create()
+# 获取关键点和描述符
+kp1, des1 = sift.detectAndCompute(dst_img, None)
+kp2, des2 = sift.detectAndCompute(ori_img_ori, None)
+
+# 定义FLANN匹配器
+index_params = dict(algorithm = 1, trees = 5)
+search_params = dict(checks = 50)
+flann = cv2.FlannBasedMatcher(index_params, search_params)
+# 使用KNN算法匹配
+matches = flann.knnMatch(des1,des2,k=2)
+
+# 去除错误匹配
+good = []
+for m,n in matches:
+    if m.distance < 0.9*n.distance:
+        good.append(m)
+
+# 单应性
+print(len(good))
+if len(good) > MIN_MATCH_COUNT:
+    # 改变数组的表现形式，不改变数据内容，数据内容是每个关键点的坐标位置
+    src_pts = np.float32([ kp1[m.queryIdx].pt for m in good ]).reshape(-1,1,2)
+    dst_pts = np.float32([ kp2[m.trainIdx].pt for m in good ]).reshape(-1,1,2)
+    # findHomography 函数是计算变换矩阵
+    # 参数cv2.RANSAC是使用RANSAC算法寻找一个最佳单应性矩阵H，即返回值M
+    # 返回值：M 为变换矩阵，mask是掩模
+    M, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC,5.0)
+    # ravel方法将数据降维处理，最后并转换成列表格式
+    matchesMask = mask.ravel().tolist()
+    # 获取img1的图像尺寸
+    h,w = dst_img.shape
+    # pts是图像img1的四个顶点
+    pts = np.float32([[0,0],[0,h-1],[w-1,h-1],[w-1,0]]).reshape(-1,1,2)
+    # 计算变换后的四个顶点坐标位置
+    ori = cv2.perspectiveTransform(pts, M)
+
+    dst = [(ele[0][0], ele[0][1]) for ele in ori]
+    length_width = int(max(calc_length(dst[3], dst[0]), calc_length(dst[1], dst[2])))
+    length_hight = int(max(calc_length(dst[0], dst[1]), calc_length(dst[2], dst[3])))
+    tar = np.float32([[0,0],[length_hight,0],[length_hight,length_width], [0,length_width]])
+    warp_matrix = cv2.getPerspectiveTransform(ori, tar)
+    res = cv2.warpPerspective(ori_img_ori, warp_matrix, (length_hight, length_width))
+    rot_img = transform.rotate(res[::-1,:], -90, resize=True)
+    #img_new =cv2.resize(rot_img,(880,600),interpolation=cv2.INTER_CUBIC)
+    result = cv2.imshow("WarpImg", rot_img)
+    
+else:
+    print("Not enough matches are found - %d/%d") % (len(good),MIN_MATCH_COUNT)
+    matchesMask = None
+cv2.waitKey(0)
+
+4、截取不同的区域
+
+
+#功能：ROI区域采取配置文件坐标的方式截取规定区域  名称+ 尺寸
+import os
+import cv2
+import numpy as np
+
+
+img = cv2.imread('001.jpg',1)
+#标出矩形区域
+cv2.rectangle(img,(212,317)(290,436)(0,255,0),4)
+#坐标文件
+font = cv2.FONT_HERSHEY_SUPLEX
+text ='001'
+cut_text = cv2.putText(img,text,(212,310),font,2,(0,0,255),1)
+cv2.imwrite('001_new.jpg',img)
+
+
+src = np.float32([[70, 550], [670, 50], [400, 965], [1030, 475]])
+dst = np.float32([[0, 0], [880, 0], [0, 600], [880, 600]])
+m = cv2.getPerspectiveTransform(src, dst)
+result = cv2.warpPerspective(img, m, (880, 600))
+cv2.imwrite("canny3.jpg", result)
+cv2.imshow("canny3.jpg",result)
+cv2.waitKey(0)
+
+#格式如下：
+#(名称，坐标)
+#print("区域一名称{}".format(img_size))
+# left = 120
+# upper = 16
+# right = 520
+# lower = 57
+# region = im.crop((left,upper,right,lower))
+# region.save("C:/Users/Administrator/Desktop/test/Crop_t111.jpg")
+# img_size = im.size
+# print("区域二名称{}".format(img_size))
+# left = 180
+# upper = 75
+# right = 485
+# lower = 115
+# region = im.crop((left,upper,right,lower))
+# region.save("C:/Users/Administrator/Desktop/test/Crop_t112.jpg")
+# img_size = im.size
+# print("区域三名称{}".format(img_size))
+# left = 30
+# upper = 114
+# right = 600
+# lower = 150
+# region = im.crop((left,upper,right,lower))
+# region.save("C:/Users/Administrator/Desktop/test/Crop_t113.jpg")
+
+
+5、图像直方图及直方图均衡化处理直观研究图像的像素分布方法
+
+
+import cv2 as cv
+import numpy as np
+
+#全局阈值
+def threshold_demo(image):
+    gray = cv.cvtColor(image, cv.COLOR_RGB2GRAY)  #把输入图像灰度化
+    #直接阈值化是对输入的单通道矩阵逐像素进行阈值分割。
+    ret, binary = cv.threshold(gray, 0, 255, cv.THRESH_BINARY | cv.THRESH_TRIANGLE)
+    print("threshold value %s"%ret)
+    cv.namedWindow("binary0", cv.WINDOW_NORMAL)
+    cv.imshow("binary0", binary)
+
+#局部阈值
+def local_threshold(image):
+    gray = cv.cvtColor(image, cv.COLOR_RGB2GRAY)  #把输入图像灰度化
+    #自适应阈值化能够根据图像不同区域亮度分布，改变阈值
+    binary =  cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C,cv.THRESH_BINARY, 25, 10)
+    cv.namedWindow("binary1", cv.WINDOW_NORMAL)
+    cv.imshow("binary1", binary)
+
+#用户自己计算阈值
+def custom_threshold(image):
+    gray = cv.cvtColor(image, cv.COLOR_RGB2GRAY)  #把输入图像灰度化
+    h, w =gray.shape[:2]
+    m = np.reshape(gray, [1,w*h])
+    mean = m.sum()/(w*h)
+    print("mean:",mean)
+    ret, binary =  cv.threshold(gray, mean, 255, cv.THRESH_BINARY)
+    cv.namedWindow("binary2", cv.WINDOW_NORMAL)
+    cv.imshow("binary2", binary)
+
+src = cv.imread('C:/Users/Administrator/Desktop/1010test/1102/光斑检测/1.jpg')
+cv.namedWindow('input_image', cv.WINDOW_NORMAL) #设置为WINDOW_NORMAL可以任意缩放
+cv.imshow('input_image', src)
+threshold_demo(src)
+local_threshold(src)
+custom_threshold(src)
+cv.waitKey(0)
+cv.destroyAllWindows()
+6、兴趣区域的检测
+import cv2
+import numpy as np
+
+
+def get_image(path):
+    #获取图片
+    img=cv2.imread(path)
+    gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+
+    return img, gray
+
+def Gaussian_Blur(gray):
+    # 高斯去噪
+    blurred = cv2.GaussianBlur(gray, (3, 3),0)
+
+    return blurred
+
+def Sobel_gradient(blurred):
+    # 索比尔算子来计算x、y方向梯度
+    gradX = cv2.Sobel(blurred, ddepth=cv2.CV_32F, dx=1, dy=0)
+    gradY = cv2.Sobel(blurred, ddepth=cv2.CV_32F, dx=0, dy=1)
+
+    gradient = cv2.subtract(gradX, gradY)
+    gradient = cv2.convertScaleAbs(gradient)
+
+    return gradX, gradY, gradient
+
+def Thresh_and_blur(gradient):
+
+    blurred = cv2.GaussianBlur(gradient, (9, 9),0)
+    (_, thresh) = cv2.threshold(blurred, 90, 255, cv2.THRESH_BINARY)
+
+    return thresh
+
+def image_morphology(thresh):
+    # 建立一个椭圆核函数
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (25, 25))
+    # 执行图像形态学, 细节直接查文档，很简单
+    closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
+    closed = cv2.erode(closed, None, iterations=4)
+    closed = cv2.dilate(closed, None, iterations=4)
+
+    return closed
+
+def findcnts_and_box_point(closed):
+    # 这里opencv3返回的是三个参数
+    (_, cnts, _) = cv2.findContours(closed.copy(),
+        cv2.RETR_LIST,
+        cv2.CHAIN_APPROX_SIMPLE)
+    c = sorted(cnts, key=cv2.contourArea, reverse=True)[0]
+    # compute the rotated bounding box of the largest contour
+    rect = cv2.minAreaRect(c)
+    box = np.int0(cv2.boxPoints(rect))
+
+    return box
+
+def drawcnts_and_cut(original_img, box):
+    # 因为这个函数有极强的破坏性，所有需要在img.copy()上画
+    # draw a bounding box arounded the detected barcode and display the image
+    draw_img = cv2.drawContours(original_img.copy(), [box], -1, (0, 0, 255), 3)
+
+    Xs = [i[0] for i in box]
+    Ys = [i[1] for i in box]
+    x1 = min(Xs)
+    x2 = max(Xs)
+    y1 = min(Ys)
+    y2 = max(Ys)
+    hight = y2 - y1
+    width = x2 - x1
+    crop_img = original_img[y1:y1+hight, x1:x1+width]
+
+    return draw_img, crop_img
+
+def walk():
+
+    img_path = r'C:/Users/Administrator/Desktop/1010test/123456.jpg'
+    save_path = r'C:/Users/Administrator/Desktop/1010test/1678_save.png'
+    original_img, gray = get_image(img_path)
+    blurred = Gaussian_Blur(gray)
+    gradX, gradY, gradient = Sobel_gradient(blurred)
+    thresh = Thresh_and_blur(gradient)
+    closed = image_morphology(thresh)
+    box = findcnts_and_box_point(closed)
+    draw_img, crop_img = drawcnts_and_cut(original_img,box)
+
+    # 暴力一点，把它们都显示出来看看
+
+    cv2.imshow('original_img', original_img)
+    cv2.imshow('blurred', blurred)
+    cv2.imshow('gradX', gradX)
+    cv2.imshow('gradY', gradY)
+    cv2.imshow('final', gradient)
+    cv2.imshow('thresh', thresh)
+    cv2.imshow('closed', closed)
+    cv2.imshow('draw_img', draw_img)
+    cv2.imwrite('draw_img',draw_img)
+    cv2.imshow('crop_img', crop_img)
+    cv2.waitKey(20171219)
+    cv2.imwrite(save_path, crop_img)
+
+walk()
+
+
+7、不同方法处理后的图像
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+imagepath =('C:/Users/Administrator/Desktop/1010test/15.png')
+img = cv2.imread(imagepath)
+
+lenna_img = cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
+GrayImage = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+print(u"读入lenna图的shape为",GrayImage.shape)
+
+Gaussian = cv2.GaussianBlur(GrayImage,(3,3),0,0,cv2.BORDER_DEFAULT)
+Median = cv2.medianBlur(Gaussian,5)
+
+x  = cv2.Sobel(Median,cv2.CV_32F,1,0,ksize = 3)
+y  = cv2.sobel(Median,cv2.CV_32F,0,1,ksize = 3)
+
+gradient = cv2.subtract(x,y)
+Sobel = cv2.convertScaleAbs(gradient)
+cv2.imshow('dilation2',Sobel)
+cv2.waitKey(0)
+
+blurred = cv2.GaussianBlur(Sobel,(9,9),0)
+ret,Binary = cv2.threshold(blurred,175,255,cv2.THRESH_BINARY)
+cv2.imshow('dilation2',Binary)
+cv2.waitKey(0)
+
+element1 = cv2.getStructuringElement(cv2.MORPH_RECT,(9,1))
+element2 = cv2.getStructuringElement(cv2.MORPH_RECT,(9,7))
+
+Dilation = cv2.dilate(Binary,element2,iterations= 1)
+Erosion = cv2.erode(Dilation,element1,iterations=1)
+
+Dilation2 = cv2.dilate(Erosion,element2,iterations=3)
+cv2.imshow('Dilation2',Dilation2)
+cv2.waitKey(0)
+
+kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(25,25))
+closed = cv2.morphologyEx(Binary,cv2.MORPH_CLOSE,kernel)
+closed = cv2.erode(closed,None,iterations=4)
+closed = cv2.dilate(closed,None,iterations=4)
+
+cv2.imshow('erode dilate',closed)
+cv2.waitKey(0)
+
+titles = ['Source Image','Gray Image','Gaussian Image','Median Image','Sobel Image','Binary Image','Dilation Image','Erosiom Image','Dilation2 image']
+images = [lenna_img,GrayImage,Gaussian,Median,Sobel,Binary,Dilation,Erosion,closed]
+
+for i  in range(9):
+    plt.subplot(3,3,i+1),plt.imshow(images[i],'gray')
+    plt.title(titles[i])
+    plt.xticks([]),plt.yticks([])
+
+plt.show()
+cv2.imshow('Gray',GrayImage)
+cv2.waitKey(0)
+
+(_, cnts, _) = cv2.findContours(closed.copy(),
+                                                 cv2.RETR_LIST,
+                                                 cv2.CHAIN_APPROX_SIMPLE)
+c = sorted(cnts, key = cv2.contourArea,reverse=True)[0]
+print (c)
+rect = cv2.minAreaRect(c)
+print('rectt',rect)
+Box = np.int0(cv2.boxPoints(rect))
+print ('BOx',Box)
+
+Final_img = cv2.drawContours(img.copy(),[Box],-1,(0,0,255),3)
+cv2.imshow('Final_img',Final_img)
+cv2.waitKey(0)
+
+
+8、轮廓检测
+
+
+#加载图像img
+img = cv2.imread('./image/img6.jpg',cv2.IMREAD_COLOR)
+cv2.imshow('img',img)
+
+
+#转换为灰色gray_img
+gray_img = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+cv2.imshow('gray_img',gray_img)
+
+
+#对图像二值化处理 输入图像必须为单通道8位或32位浮点型
+ret,thresh = cv2.threshold(gray_img,127,255,0)
+cv2.imshow('thresh',thresh)
+
+
+
+#寻找图像轮廓 返回修改后的图像 图像的轮廓  以及它们的层次
+image,contours,hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+cv2.imshow('image',image)
+print('contours[0]:',contours[0])
+print('len(contours)',len(contours))
+print('hierarchy,shape',hierarchy.shape)
+print('hierarchy[0]:',hierarchy[0])
+
+
+#在原图img上绘制轮廓contours
+img = cv2.drawContours(img,contours,-1,(0,255,0),2)
+cv2.imshow('contours',img)
+
+        
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+
+8、显示循环进度迭代器
+import time
+from tqdm import *
+for i tqdm(range(1000)):
+    time.sleep(.01)
+    
+    
+9、图加减法的背景过滤
+#固定区域识别图像背景过滤（图像加减法）
+import numpy as np
+import cv2
+
+img = cv2.imread("C:/pythonPro/Smoke-Object/test_images/org/1540795740384.jpg")
+#区域坐标
+pts = np.array([[460,110],[280,360],[340,700],[800,700],[840,340],[710,110]])
+rect = cv2.boundingRect(pts)
+x,y,w,h = rect
+croped = img[y:y+h, x:x+w].copy()
+pts = pts - pts.min(axis=0)
+mask = np.zeros(croped.shape[:2], np.uint8)
+cv2.drawContours(mask, [pts], -1, (255, 255, 255), -1, cv2.LINE_AA)
+
+dst = cv2.bitwise_and(croped, croped, mask=mask)
+
+bg = np.ones_like(croped, np.uint8)*255
+cv2.bitwise_not(bg,bg, mask=mask)
+dst2 = bg+ dst
+
+
+cv2.imshow("croped.jpg", croped)
+cv2.imshow("mask.jpg", mask)
+cv2.imshow("dst.jpg", dst)
+cv2.imshow("dst2.jpg", dst2)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+10、图像滤波
+
+#均值模糊、中值模糊、自定义模糊    模糊是卷积的一种表象
+import cv2 as cv
+import numpy as np
+
+def blur_demo(image):      #均值模糊  去随机噪声有很好的去燥效果
+    dst = cv.blur(image, (1, 15))    #（1, 15）是垂直方向模糊，（15， 1）还水平方向模糊
+    cv.namedWindow('blur_demo', cv.WINDOW_NORMAL)
+    cv.imshow("blur_demo", dst)
+
+def median_blur_demo(image):    # 中值模糊  对椒盐噪声有很好的去燥效果
+    dst = cv.medianBlur(image, 5)
+    cv.namedWindow('median_blur_demo', cv.WINDOW_NORMAL)
+    cv.imshow("median_blur_demo", dst)
+
+def custom_blur_demo(image):    # 用户自定义模糊
+    kernel = np.ones([5, 5], np.float32)/25   #除以25是防止数值溢出
+    dst = cv.filter2D(image, -1, kernel)
+    cv.namedWindow('custom_blur_demo', cv.WINDOW_NORMAL)
+    cv.imshow("custom_blur_demo", dst)
+
+src = cv.imread('C:/Users/Administrator/Desktop/13.jpg')
+cv.namedWindow('input_image', cv.WINDOW_NORMAL)
+cv.imshow('input_image', src)
+
+blur_demo(src)
+median_blur_demo(src)
+custom_blur_demo(src)
+
+cv.waitKey(0)
+cv.destroyAllWindows()
+
+
 一、python模板匹配算法（该算法对相似度的要求极高并且不支持任意角度）
 import cv2 as cv
 import numpy as np
