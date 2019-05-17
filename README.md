@@ -65,7 +65,8 @@ https://github.com/Eric3911/Visual-Science-Competition
 ![](https://github.com/Eric3911/image/blob/master/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BB%B7%E5%8F%82%E8%80%83Evaluation.png)
 
 # 证件拍摄阴影去除
-  文字识别使用超分辨和对抗生成宋体后使用FAN/Attention识别最具有工程意义和学术价值
+  文字识别使用超分辨和对抗生成宋体后使用FAN/Attention识别最具有工程意义和学术价值,其中金老师做的基于强化学习的模型FOTS模型也是一个很好方向。
+https://github.com/chongyangtao/Awesome-Scene-Text-Recognition
 https://github.com/Eric3911/icpr2018_ocr_papers
 
 ![](https://github.com/Eric3911/image/blob/master/QQ%E6%88%AA%E5%9B%BE20190425135959.jpg)
