@@ -30,6 +30,8 @@ https://github.com/Eric3911/Paper-Sharing
 
 https://github.com/Eric3911/Super-Paper
 
+https://github.com/Eric3911/Engineering-papers
+
 # 对偶学习：一种全新的深度学习范式
  深度学习走向何方？ 非线性动力学与分数阶非线性方程在群论中的模态融合知识表示体系
 
@@ -56,13 +58,16 @@ https://github.com/Eric3911/Visual-Science-Competition
 ![](https://github.com/Eric3911/image/blob/master/%E8%A7%86%E7%BD%91%E8%86%9C%E5%8E%BB%E9%9B%BE%E7%BB%93%E6%9E%9C.png)
 
 # 成像质量分析项目
+
 ![](https://github.com/Eric3911/image/blob/master/123456.png)
 ![](https://github.com/Eric3911/Stage/blob/master/%E5%9F%BA%E4%BA%8ESCB%E7%AE%97%E6%B3%95%E7%9A%84%E5%A2%9E%E5%BC%BA.png)
 ![](https://github.com/Eric3911/image/blob/master/%E5%9F%BA%E4%BA%8ESCB%E7%AE%97%E6%B3%95%E7%9A%84%E5%A2%9E%E5%BC%BA.png)
 ![](https://github.com/Eric3911/image/blob/master/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BB%B7%E5%8F%82%E8%80%83Evaluation.png)
 
 # 证件拍摄阴影去除
+  文字识别使用超分辨和对抗生成宋体后使用FAN/Attention识别最具有工程意义和学术价值
 https://github.com/Eric3911/icpr2018_ocr_papers
+
 ![](https://github.com/Eric3911/image/blob/master/QQ%E6%88%AA%E5%9B%BE20190425135959.jpg)
 
 # 版面分析
