@@ -96,7 +96,7 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 
 # 项目
 
-![]( https://github.com/Eric3911/image/blob/master/bilatera.jpg)
+![]( 111111111111111111111111111111111111111111111111111111111111111111111111111111111)
 
 # 密集人群检测项目
 
