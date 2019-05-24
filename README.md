@@ -85,7 +85,7 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 
 # 版面分析
 
-![]()
+![](https://github.com/Eric3911/image/blob/master/00003.jpg)
 ![](https://github.com/Eric3911/image/blob/master/Text_20181101153336.png)
 
  # 交通ADAS项目
