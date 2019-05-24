@@ -76,6 +76,8 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 # 文档及证件去除阴影项目
 ![](https://github.com/Eric3911/image/blob/master/00006.jpg)
 # 证件识别项目
+
+![](https://github.com/Eric3911/image/blob/master/00008.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00002.png)
 ![](https://github.com/Eric3911/image/blob/master/QQ%E6%88%AA%E5%9B%BE20190425135959.jpg)
 ![](https://github.com/Eric3911/image/blob/master/0002.png)
