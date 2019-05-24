@@ -73,9 +73,11 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 
 ![](https://github.com/Eric3911/image/blob/master/QQ%E6%88%AA%E5%9B%BE20190425135959.jpg)
 ![](https://github.com/Eric3911/image/blob/master/0002.png)
+![](https://github.com/Eric3911/image/blob/master/00005.jpg)
 
 # 版面分析
 ![](https://github.com/Eric3911/image/blob/master/Text_20181101153336.png)
+
  # 交通ADAS项目
  ![](https://github.com/Eric3911/image/blob/master/%E8%BD%A6%E8%BE%86%E8%B6%85%E8%BD%BD%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%B8%80.jpg)
 ![](https://github.com/Eric3911/image/blob/master/%E8%BD%A6%E8%BE%86%E8%B6%85%E8%BD%BD%E9%A1%B9%E7%9B%AE%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B%E5%9B%BE%E4%BA%8C.jpg)
