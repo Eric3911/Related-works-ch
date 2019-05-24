@@ -92,10 +92,9 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 ![](https://github.com/Eric3911/Stage/blob/master/3.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/4.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/5.jpg)
-![](https://github.com/Eric3911/image/blob/master/6.jpg)
-![](https://github.com/Eric3911/image/blob/master/7.jpg)
+![](https://github.com/Eric3911/image/blob/master/00001.jpg)
 
-# 公交车超载评估项目
+# 项目
 
 ![]( https://github.com/Eric3911/image/blob/master/bilatera.jpg)
 
