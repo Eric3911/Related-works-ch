@@ -120,3 +120,6 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 # 舞姿同步项目
 
 ![](https://github.com/Eric3911/image/blob/master/0418.jpg)
+
+# DF数钢筋比赛
+![](https://github.com/Eric3911/image/blob/master/00009.jpg)
