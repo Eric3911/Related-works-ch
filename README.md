@@ -3,12 +3,18 @@
 该项工作主要是监督自己研究过程与工程学结合通过学术指导实现工程学上系统问题同时欢迎大家一起交流学习。
 
 深度学习的核心教程：
-
 GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
-
 Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
 
-# 个人参与视觉开源学习项目
+国际信息神经处理会议NIPS ：https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018
+深度学习方向性会议ICLR ：https://openreview.net/group?id=ICLR.cc/2019/Conference
+国际计算机视觉模式识别CVPR ：http://cvpr2019.thecvf.com/
+国际计算机视觉会议ICCV ：http://iccv2019.thecvf.com/
+欧洲计算机视觉会议ECCV ：https://eccv2018.org/
+
+
+
+# 维护视觉开源学习项目
 
 https://github.com/Dikea/ML-Weekly-Learning/tree/master/CV
 
@@ -35,7 +41,7 @@ https://github.com/Eric3911/Engineering-papers
 ![](https://github.com/Eric3911/image/blob/master/model_list.png)
 
 # 对偶学习：一种全新的深度学习范式
- 深度学习走向何方？ 非线性动力学与分数阶非线性方程在群论中的模态融合知识表示体系
+ 深度学习走向何方？ 非线性动力学与分数阶非线性方程在群论中的模态融合知识表示体系，目前元学习继强化学习之后一种学习型学习方法和解决模型安全问题的联邦学习
 
 # 大数据比赛学习
 
