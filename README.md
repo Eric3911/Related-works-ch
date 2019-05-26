@@ -1,35 +1,35 @@
-# Stage：本人从事低质量多尺度成像量化卷积编码和RSIC芯片工程学习：
+# Stage：主要从事低质量多尺度图像量化卷积和MIPS架构芯片算法设计：
 
-该项工作主要是监督自己研究过程与工程学结合通过学术指导实现工程学上系统问题同时欢迎大家一起交流学习。
+该项工作主要是提高自己研究中与工程学结合通过学术指导实验工程学上系统问题笔记，通过QAS的
 
 深度学习的核心教程：
 GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
 Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
 
 国际信息神经处理会议NIPS ：https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018
+
 深度学习方向性会议ICLR ：https://openreview.net/group?id=ICLR.cc/2019/Conference
+
 国际计算机视觉模式识别CVPR ：http://cvpr2019.thecvf.com/
+
 国际计算机视觉会议ICCV ：http://iccv2019.thecvf.com/
+
 欧洲计算机视觉会议ECCV ：https://eccv2018.org/
 
 
 
 # 维护视觉开源学习项目
-
 https://github.com/Dikea/ML-Weekly-Learning/tree/master/CV
 
 # 图像算法个人开源代码库
-
 https://github.com/Eric3911/Code-with-Life
 
 https://github.com/Eric3911/Coding-learning
 
 # 边缘分割
-
 https://github.com/MarkMoHR/Awesome-Edge-Detection-Papers
 
 # 经典论文阅读库
-
 https://arxiv.org/list/cs.AI/recent
 
 https://github.com/Eric3911/Paper-Sharing
@@ -44,11 +44,9 @@ https://github.com/Eric3911/Engineering-papers
  深度学习走向何方？ 非线性动力学与分数阶非线性方程在群论中的模态融合知识表示体系，目前元学习继强化学习之后一种学习型学习方法和解决模型安全问题的联邦学习
 
 # 大数据比赛学习
-
 https://github.com/Eric3911/CDCS
 
 # 计算机视觉科学竞赛
-
 https://github.com/Eric3911/Visual-Science-Competition
 
 # 计算机图形学
@@ -62,11 +60,9 @@ https://github.com/Eric3911/Visual-Science-Competition
           光流场和光线追踪在相控矩阵77GHZ的毫米波雷达融合
           
 # 视网膜去雨雾项目
-
 ![](https://github.com/Eric3911/image/blob/master/%E8%A7%86%E7%BD%91%E8%86%9C%E5%8E%BB%E9%9B%BE%E7%BB%93%E6%9E%9C.png)
 
 # 成像质量分析项目
-
 ![](https://github.com/Eric3911/image/blob/master/00007.jpg)
 ![](https://github.com/Eric3911/image/blob/master/123456.png)
 ![](https://github.com/Eric3911/Stage/blob/master/%E5%9F%BA%E4%BA%8ESCB%E7%AE%97%E6%B3%95%E7%9A%84%E5%A2%9E%E5%BC%BA.png)
@@ -127,7 +123,6 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 ![](https://github.com/Eric3911/image/blob/master/01.png)
 
 # 舞姿同步项目
-
 ![](https://github.com/Eric3911/image/blob/master/0418.jpg)
 
 # DF数钢筋比赛
