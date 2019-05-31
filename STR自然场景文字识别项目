@@ -61,3 +61,35 @@ https://blog.paperspace.com/how-to-implement-a-yolo-v3-object-detector-from-scra
 五、3D感知物体检测
 MC-CNN
 FlowNet
+
+
+
+OCR：几大开源库
+2015年10月08日 17:02:41 千里河山 阅读数：8658
+﻿﻿1.概述
+1）OCRE(OCR Easy)
+http://lem.eui.upm.es/ocre.html
+2）Clara OCR
+http://directory.fsf.org/claraocr.html
+3）Ocrad(based on a feature extraction)
+http://directory.fsf.org/ocrad.html
+4）GOCR
+http://sourceforge.net/projects/jocr
+5）OCRchie: Modular Optical Character Recognition Software
+http://http.cs.berkeley.edu/~fateman/kathey/ocrchie.html
+6）tesseract-ocr
+http://code.google.com/p/tesseract-ocr/
+7）Grocr
+
+http://vision.ucsd.edu/~kai/grocr/
+
+8）http://www.ocrgrid.org/
+
+9）http://www.ocrgrid.org/ocrdev.html，OCR多个开源库链接
+
+
+
+2.1 gocr和ocrad稍作修改可在Windows下编译运行；gocr用vc6, ocrad用gcc。
+2.2 OCRE,OCRchie和clara OCR需要X window或gtk不太好编译。
+2.3 tesseract 用VC 10年前的东西,太老, 里面很多代码是STL的原型。
+
