@@ -4,7 +4,9 @@
 
 深度学习的核心教程：
 GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
+
 Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
+Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html 
 
 国际信息神经处理会议NIPS ：https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018
 
@@ -127,3 +129,5 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 
 # DF数钢筋比赛
 ![](https://github.com/Eric3911/image/blob/master/00009.jpg)
+
+https://opensource.org/licenses/MIT
