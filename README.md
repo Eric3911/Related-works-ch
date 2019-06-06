@@ -18,6 +18,7 @@ Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.ht
 
 欧洲计算机视觉会议ECCV ：https://eccv2018.org/
 
+国内经典的基础教材南瓜书：https://datawhalechina.github.io/pumpkin-book/#/
 
 
 # 维护视觉开源学习项目
