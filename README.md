@@ -3,6 +3,7 @@
 该项工作主要是提高自己研究中与工程学结合通过学术指导实验工程学上系统问题笔记，通过QAS的
 
 深度学习的核心教程：
+
 GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
 
 Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
