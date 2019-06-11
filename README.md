@@ -86,6 +86,10 @@ https://mmcheng.net/tag/salient-object-detection/
 https://github.com/chongyangtao/Awesome-Scene-Text-Recognition
 
 https://github.com/Eric3911/icpr2018_ocr_papers
+
+# 图像去水印、去噪、超分辨
+https://github.com/DmitryUlyanov/deep-image-prior
+
 # 文档及证件去除阴影项目
 ![](https://github.com/Eric3911/image/blob/master/00006.jpg)
 # 证件识别项目
