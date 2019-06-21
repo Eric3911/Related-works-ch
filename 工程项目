@@ -45,8 +45,7 @@ https://github.com/zuoqing1988/ZQCNN-MTCNN-vs-libfacedetection
 代码地址  ：github：https://github.com/xiaochus/MSCNN
 论文地址  ：Multi-scale convolutional neural network for crowd counting
 工程项目地址：https://www.jianshu.com/p/29a213f22b40
-参考工程二：MTCNN实现公交车人头检测情况
-项目地址：https://blog.csdn.net/weixin_36474809/article/details/83305490
+参考工程二：MTCNN实现公交车人头检测情况项目地址：https://blog.csdn.net/weixin_36474809/article/details/83305490
 FCHD：一种快速准确的人头检测模型
 论文地址：https://arxiv.org/abs/1809.08766v1
 代码地址：https://github.com/aditya-vora/FCHD-Fully-Convolutional-Head-Detector
@@ -61,3 +60,9 @@ Crowd-counting-scnn
 ————|蒙版弹幕（这是深度学习在娱乐方法非常有意义的应用，其余还有服装设计、音乐制作）
      ——|：https://github.com/youyuge34/Mask_Danmu
      ——|：https://www.bilibili.com/video/av25055026?from=search&seid=2709213321925987006
+
+项目五：活体检测项目：
+
+CVPR2019活体检测比赛
+第二名代码地址：https://github.com/SeuTao/CVPR19-Face-Anti-spoofing
+第三名代码地址：https://github.com/SoftwareGift/FeatheNets_Face-Anti-spoofing-Attack-Detection-Challenge-CVPR2019
