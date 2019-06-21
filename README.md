@@ -10,9 +10,7 @@ Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
 
 Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html 
 
-目标检测：
-
-http://machinethink.net/blog/object-detection/
+目标检测：http://machinethink.net/blog/object-detection/
 
 国际信息神经处理会议NIPS ：https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018
 
