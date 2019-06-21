@@ -1,3 +1,11 @@
+1、如何把卷积当作特征提取器使用；2、如何使用细粒度与注意力解决目标检测的定位不准；3、图像的稀疏特征操作 EDH、RFC；4、小目标检测的专用技术 FCHD
+5、密集目标检测的专用技术 CrowdNet  MVCNN；6、fine-turn；7、模型融合（解释器、中间件、直接编解码关联）；8、3D神经网络可视化；TensorSpace；
+9、ONNX workshop；10、模型优化框架学习；PocketFlow；NCNN；MMdnn；ONNNX
+时代意义的论文解读：
+R-CNN、RPN、fasterRCNN、yolov3、DSSD、FCN、FPN、STDN、M2Det、DCN、GNN、GCN、FPN、DCN2、Capsule
+yolo—LITE、YOLT、ASDN、SimGAN、BiGAN、VINet、Light-head-RCNN、MegDet、DetNet、DocUnet、WPOD-NET、NetVLAD、CornerNet、GhostVLAD、
+HyperNet、LayoutNet、pointnet++、DropBlock、Targeted。
+
 小目标与难分样本学习(首先区分一下题目是两个不同概念领域)
 
 [1]FPN论文：feature pyramid networks for object detection 
@@ -49,7 +57,6 @@ https://github.com/fizyr/keras-retinanet
 [15]Perceptual Generative Adversarial Networks for Small Object Detection feature pyramid networks for object detection 
 
 小目标的研究目前的模型容易漏检这个可能存在很多原因
-
 （1）backbone特征提取出现的深浅层语义信息和空间位置信息没法很好融合改进Resnet、Xception、DensNet、FPN、DetNet、PANet
 （2）iou方面unitbox、iou-net、Giou
  (3)loss方面Focal loss、交叉信息损失熵
@@ -67,10 +74,7 @@ SMN:Spatial Memory Network
 ORN:Object Relation Network
 SIN：Structure Inference Net
 
-
-
 主要采用分割、对抗、显著性、注意力、细粒度识别技术实现问题
-
 
 一、学术方向
 二、行业水平
