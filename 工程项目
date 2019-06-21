@@ -67,7 +67,7 @@ CVPR2019活体检测比赛
 第二名代码地址：https://github.com/SeuTao/CVPR19-Face-Anti-spoofing
 第三名代码地址：https://github.com/SoftwareGift/FeatheNets_Face-Anti-spoofing-Attack-Detection-Challenge-CVPR2019
 
-项目六：点云检测与分割
+项目六：点云检测与分割项目
 
 ——|视频结构化和图像结构化过程中采用基于光流为基础的分形方法在底层实现每个像素的类别含义实现全景分割。
     ——|主要用在地图构建、自动驾驶第一阶段感知、医学病灶检测、蛋白质、药物合成。
