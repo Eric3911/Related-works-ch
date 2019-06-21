@@ -29,3 +29,28 @@ https://github.com/zuoqing1988/ZQCNN-MTCNN-vs-libfacedetection
 ————|Multi-task learning
     ————|identification+verification loss 
 ————|Triplet loss
+
+项目三：车辆超载安全检测
+车辆超载项目包括：
+一、数据集收集：https://github.com/desenzhou/ShanghaiTechDataset
+  解决的工程问题
+  1、公交车人头的密集型目标检测
+  2、客运汽车超载和过道目标检测
+  3、商场娱乐场所小目标拥挤检测
+  学术问题：小目标、遮挡问题检测
+ 
+ 参考模型：MSCNN、SaCNN、CrowdNet、CCNN、The CountingCNN 、SubCNN
+
+参考工程一：Keras实现基于MSCNN的人群计数
+代码地址  ：github：https://github.com/xiaochus/MSCNN
+论文地址  ：Multi-scale convolutional neural network for crowd counting
+工程项目地址：https://www.jianshu.com/p/29a213f22b40
+参考工程二：MTCNN实现公交车人头检测情况
+项目地址：https://blog.csdn.net/weixin_36474809/article/details/83305490
+FCHD：一种快速准确的人头检测模型
+论文地址：https://arxiv.org/abs/1809.08766v1
+代码地址：https://github.com/aditya-vora/FCHD-Fully-Convolutional-Head-Detector
+CCNN
+代码地址：https://github.com/gramuah/ccnn
+Crowd-counting-scnn
+代码地址：https://github.com/val-iisc/crowd-counting-scnn
