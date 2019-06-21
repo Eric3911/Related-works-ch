@@ -11,7 +11,6 @@ DSFD人脸识别模型：
 ZQCNN实时人脸检测：
 https://github.com/zuoqing1988/ZQCNN-MTCNN-vs-libfacedetection
 
-
 项目二：密集型行人检测
 
 密集人群检测：
@@ -32,6 +31,7 @@ https://github.com/zuoqing1988/ZQCNN-MTCNN-vs-libfacedetection
 
 
 项目三：车辆超载安全检测
+
     参考模型：MSCNN、SaCNN、CrowdNet、CCNN、The CountingCNN 、SubCNN
     解决的工程问题
   1、公交车人头的密集型目标检测
