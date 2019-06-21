@@ -1,16 +1,31 @@
 项目一：人脸识别工程项目
-人脸识别主要以下方向：
-   人脸检测、人脸对齐、面部特征点分析、面部重建、面部跟踪、超分辨识别、面部合成、面部复原、偏转测量、面部检索。
 
-   最近在做一个关于驾驶员疲劳驾驶项目，要分析人脸识别做闭眼疲劳检测，首先想到的就是人脸特征点的提取，我的导师就建议我是用ASM，于是我就自学了一些它的知识，ASM是一
-种基于点分布模型（Point Distribution Model, PDM）的算法。在PDM中，外形相似的物体，例如人脸、人手、心脏、肺部等的几何形状可以通过若干关键特征点
-（landmarks）的坐标依次串联形成一个形状向量来表示。ASM跟大多数统计学习方法一样，也包括train和test（or fit）两部分，
-也就是形状建模build和形状匹配fit。
-
-DSFD人脸识别模型
+人脸识别主要以下方向：人脸检测、人脸对齐、面部特征点分析、面部重建、面部跟踪、超分辨识别、面部合成、面部复原、偏转测量、面部检索。
+最近在做一个关于驾驶员疲劳驾驶项目，要分析人脸识别做闭眼疲劳检测，首先想到的就是人脸特征点的提取，我的导师就建议我是用ASM，于是我就自学了一些它的知识，
+ASM是一种基于点分布模型（Point Distribution Model, PDM）的算法。在PDM中，外形相似的物体，例如人脸、人手、心脏、肺部等的几何形状可以通过若干关键特
+征点检测（landmarks）的坐标依次串联形成一个形状向量来表示。ASM跟大多数统计学习方法一样，也包括train和test（or fit）两部分，也就是形状建模build和形
+状匹配fit。
+DSFD人脸识别模型：
 特点：解决了多尺度、模糊图像、光照和姿态变换问题
 代码地址：https://github.com/TencentYoutuResearch/FaceDetection-DSFD
-
-实时人脸检测
+ZQCNN实时人脸检测：
 https://github.com/zuoqing1988/ZQCNN-MTCNN-vs-libfacedetection
 
+
+项目二：密集型行人检测
+
+密集人群检测：
+————|SVDNet行人重识别
+    ————|https://arxiv.org/abs/1703.05693
+    ————|https://github.com/syfafterzy/SVDNet-for-Pedestrian-Retrieval
+    ————|https://github.com/Simon4Yan/SVDNet-for-Pedestrian-Retrieval   
+————|Repulsion Loss遮挡行人检测
+    ————|https://arxiv.org/abs/1711.07752
+————|PS-GAN提高行人检测分辨率
+    ————|https://arxiv.org/abs/1804.02047
+————|TFusion无监督时空关联行人识别
+    ————|论文地址：https://arxiv.org/abs/1803.07293
+    ————|代码地址：https://github.com/ahangchen/TFusion 
+————|Multi-task learning
+    ————|identification+verification loss 
+————|Triplet loss
