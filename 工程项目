@@ -54,7 +54,7 @@ CCNN
 Crowd-counting-scnn
 代码地址：https://github.com/val-iisc/crowd-counting-scnn
 
-项目四：蒙版弹幕
+项目四：蒙版弹幕项目：
 
 语义分割目前比较主流的几个应用是U/VNet在医学的相关尝试、智慧城市自动驾驶感知阶段、视频播放中的蒙版弹幕！
 ————|蒙版弹幕（这是深度学习在娱乐方法非常有意义的应用，其余还有服装设计、音乐制作）
