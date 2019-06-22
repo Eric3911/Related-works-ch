@@ -78,3 +78,103 @@ CVPR2019活体检测比赛
 ————|DGCNN
 ————|PointCNN
   ——|特点：Fully connected layers、maxpooling、local context、Hierarchical learning
+
+项目七：
+图像去水印、去噪、超分辨
+
+https://github.com/DmitryUlyanov/deep-image-prior
+
+一、文字定位
+
+https://handong1587.github.io/deep_learning/2015/10/09/ocr.html
+
+这个工程是我最近的一个项目下实现的。
+
+数据集：ICDAR，SynthText
+
+目前国内最新的模型
+  
+  云从科技Pixel-Anchor
+  
+  南京大学和南京理工PSEnet
+  
+  旷视科技Mask Text
+  
+  商汤科技FOTS
+  
+  阿里巴巴IncepText
+  
+  其他模型：SLPR、Pixel-Link、R2CNN、TextBoxes++、EAST、WordSup、SSTD、Seglink、CTPN 、CRNN、GRU。
+  
+  
+
+
+
+二、文字识别
+
+2.1 CRNN
+2.2 attention-ocr
+2.3 FAN    FAN论文地址：https://arxiv.org/abs/1709.02054
+
+
+一、OCR文字识别
+
+https://handong1587.github.io/deep_learning/2015/10/09/ocr.html
+https://blog.csdn.net/qq_14845119/article/details/77979161
+https://blog.csdn.net/u011394059/article/details/77076190
+比较好的
+seglink
+R2CNN
+CRNN+yolo3
+  简单的数字识别应用
+  https://www.cnblogs.com/sjzh/p/6104105.html
+  
+二、python计算机视觉编程
+
+http://yongyuan.name/pcvwithpython/
+http://yongyuan.name/pcvwithpython/chapter1.html
+
+三、pytorch教程
+
+https://github.com/L1aoXingyu/code-of-learn-deep-learning-with-pytorch
+
+四、目标检测
+
+https://blog.paperspace.com/
+yolo3目标检测
+https://blog.paperspace.com/how-to-implement-a-yolo-v3-object-detector-from-scratch-in-pytorch-part-2/
+
+五、3D感知物体检测
+MC-CNN
+FlowNet
+
+
+
+OCR：几大开源库
+2015年10月08日 17:02:41 千里河山 阅读数：8658
+﻿﻿1.概述
+1）OCRE(OCR Easy)
+http://lem.eui.upm.es/ocre.html
+2）Clara OCR
+http://directory.fsf.org/claraocr.html
+3）Ocrad(based on a feature extraction)
+http://directory.fsf.org/ocrad.html
+4）GOCR
+http://sourceforge.net/projects/jocr
+5）OCRchie: Modular Optical Character Recognition Software
+http://http.cs.berkeley.edu/~fateman/kathey/ocrchie.html
+6）tesseract-ocr
+http://code.google.com/p/tesseract-ocr/
+7）Grocr
+
+http://vision.ucsd.edu/~kai/grocr/
+
+8）http://www.ocrgrid.org/
+
+9）http://www.ocrgrid.org/ocrdev.html，OCR多个开源库链接
+
+
+
+2.1 gocr和ocrad稍作修改可在Windows下编译运行；gocr用vc6, ocrad用gcc。
+2.2 OCRE,OCRchie和clara OCR需要X window或gtk不太好编译。
+2.3 tesseract 用VC 10年前的东西,太老, 里面很多代码是STL的原型。
