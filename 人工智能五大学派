@@ -1,0 +1,51 @@
+一、逻辑学派
+
+名称：符号主义（Symbolists）
+起源：逻辑学、哲学
+核心思想：认知即计算，通过对符号的演绎和逆演绎进行结果预测
+问题：知识结构
+代表算法：逆演绎算法（Inverse deduction）
+代表应用：知识图谱
+代表人物：Tom Mitchell、Steve Muggleton、Ross Quinlan
+
+二、统计学派
+
+名称：贝叶斯派（Bayesians）
+起源：统计学
+核心思想：主观概率估计，发生概率修正，最优决策
+问题：不确定性
+代表算法：概率推理（Probabilistic inference）
+代表应用：反垃圾邮件、概率预测
+代表人物：David Heckerman、Judea Pearl、Michael Jordan
+
+三、认知神经学
+
+名称：联结主义（Connectionist）
+起源：神经科学
+核心思想：对大脑进行仿真
+问题：信度分配
+代表算法：反向传播算法（Backpropagation）、深度学习（Deep learning）
+代表应用：机器视觉、语音识别
+代表人物：Yann LeCun、Geoff Hinton、Yoshua Bengio
+
+四、计算生物学派
+
+名称：进化主义（Evolutionaries）
+起源：进化生物学
+核心思想：对进化进行模拟，使用遗传算法和遗传编程
+问题：结构发现
+代表算法：基因编程（Genetic programming）
+代表应用：海星机器人
+代表人物：John Koda、John Holland、Hod Lipson
+
+五、心理学派
+
+名称：行为类比主义（Analogizer）
+起源：心理学
+核心思想：新旧知识间的相似性
+问题：相似性
+代表算法：核机器（Kernel machines）、近邻算法（Nearest Neightor）
+代表应用：Netflix推荐系统
+代表人物： Peter Hart、Vladimir Vapnik、Douglas Hofstadter
+
+华盛顿大学教授 Pedro Domingos 曾详细地对机器学习领域的五大流派进行了详细的盘点，写了34页的PPT，各个流派的核心思想和演化过程进行了详细的介绍
