@@ -1,0 +1,23 @@
+
+1、算法安全
+
+2、计算机视觉算法像素攻击安全
+
+3、语音识别音色算法安全
+
+4、自然语言词分析
+
+
+CVPR2019 | 人脸防伪检测挑战赛
+
+ChaLearn Face Anti-spoofing Attack Detection Challenge @CVPR2019，是CVPR2019的workshop，此次比赛项目是人脸防伪检测
+活体检测、亚像素分析
+
+【论文】Recognizing Multi-modal Face Spoofing with Face Recognition Networks
+【代码】AlexanderParkin/ChaLearn_liveness_challenge
+
+【论文】FaceBagNet: Bag-of-local-features Model for Multi-modal Face Anti-spoofing
+【代码】SeuTao/CVPR19-Face-Anti-spoofing
+
+【论文】FeatherNets: Convolutional Neural Networks as Ligh as Feather for Face Anti-spoofing
+【代码】github.com/SoftwareGift
