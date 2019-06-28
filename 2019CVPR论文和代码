@@ -1,0 +1,103 @@
+1.《Shapes and Context: In-the-wild Image Synthesis & Manipulation》(CVPR 2019) 
+GitHub地址：https://github.com/aayushbansal/OpenShapes
+
+2.《Robust Point Cloud Based Reconstruction of Large-Scale Outdoor Scenes》(CVPR 2019) 
+GitHub地址：https://github.com/ziquan111/RobustPCLReconstruction
+
+3.《DAVANet: Stereo Deblurring with View Aggregation》(CVPR 2019 Oral) 
+GitHub地址：https://github.com/sczhou/DAVANet
+
+4.《Taking A Closer Look at Domain Shift: Category-level Adversaries for Semantics Consistent Domain Adaptation》(CVPR 2019 Oral) 
+GitHub地址：https://github.com/RoyalVane/CLAN
+
+5.《PPGNet: Learning Point-Pair Graph for Line Segment Detection》(CVPR 2019)
+GitHub地址：https://github.com/svip-lab/PPGNet
+
+6.《Distilling Object Detectors with Fine-grained Feature Imitation》(CVPR 2019) 
+
+GitHub地址：https://github.com/twangnh/Distilling-Object-Detectors
+
+7.《3D Hand Shape and Pose Estimation from a Single RGB Image》(CVPR 2019) 
+GitHub地址：https://github.com/3d-hand-shape/hand-graph-cnn
+
+8.《Wide-Context Semantic Image Extrapolation》(CVPR 2019)
+GitHub地址：https://github.com/shepnerd/outpainting_srn
+
+9.《Image-to-Image Translation via Group-wise Deep Whitening-and-Coloring Transformation》(CVPR 2019 Oral) 
+GitHub地址：https://github.com/taki0112/GDWCT-Tensorflow
+
+10.《Learning Non-volumetric Depth Fusion using Successive Reprojections》(CVPR 2019) 
+
+GitHub地址：https://github.com/simon-donne/defusr
+
+11.《Disentangled Representation Learning for 3D Face Shape》(CVPR 2019) 
+GitHub地址：https://github.com/zihangJiang/DR-Learning-for-3D-Face
+
+12.《Pixel-Adaptive Convolutional Neural Networks》(CVPR 2019)
+GitHub地址：https://github.com/NVlabs/pacnet
+
+13.《Modulating Image Restoration with Continual Levels via Adaptive Feature Modification Layers(AdaFM)》(CVPR 2019 oral) 
+GitHub地址：https://github.com/hejingwenhejingwen/AdaFM
+
+14.《Taking a Deeper Look at the Inverse Compositional Algorithm》 (CVPR 2019 Oral) 
+GitHub地址：https://github.com/lvzhaoyang/DeeperInverseCompositionalAlgorithm
+
+15.《Looking for the Devil in the Details: Learning Trilinear Attention Sampling Network for Fine-grained Image Recognition》(CVPR 2019) 
+GitHub地址：https://github.com/Heliang-Zheng/TASN
+
+16.《Multi-Target Embodied Question Answering》(CVPR 2019)
+GitHub地址：https://github.com/lichengunc/mteqa
+
+17.《Learning Context Graph for Person Search》(CVPR 2019 Oral) 
+GitHub地址：https://github.com/sjtuzq/person_search_gcn
+
+18.《Generating Classification Weights with GNN Denoising Autoencoders for Few-Shot Learning》(CVPR 2019) 
+GitHub地址：https://github.com/gidariss/wDAE_GNN_FewShot
+
+19.《Learning Parallax Attention for Stereo Image Super-Resolution》(CVPR 2019) 
+GitHub地址：https://github.com/LongguangWang/PASSRnet
+
+20.《Meta-SR: A Magnification-Arbitrary Network for Super-Resolution》(CVPR2019) 
+GitHub地址：https://github.com/XuecaiHu/Meta-SR-Pytorch
+
+21.《Learning Actor Relation Graphs for Group Activity Recognition》(CVPR 2019) 
+GitHub地址:https://github.com/wjchaoGit/Group-Activity-Recognition
+
+22.《HorizonNet: Learning Room Layout with 1D Representation and Pano Stretch Data Augmentation》(CVPR 2019) 
+GitHub地址：https://github.com/sunset1995/HorizonNet
+
+23.《3D-SIS: 3D Semantic Instance Segmentation of RGB-D Scans》(CVPR 2019 Oral)
+GitHub地址：https://github.com/Sekunde/3D-SIS
+
+24.《Exploiting temporal context for 3D human pose estimation in the wild》(CVPR 2019)
+GitHub地址：https://github.com/deepmind/Temporal-3D-Pose-Kinetics
+
+25.《Zoom To Learn, Learn To Zoom》(CVPR 2019)
+GitHub地址：https://github.com/ceciliavision/zoom-learn-zoom
+
+26.《Generalized Intersection over Union》(CVPR 2019)
+GitHub地址：https://github.com/generalized-iou/Detectron.pytorch
+
+27.《Reliable and Efficient Image Cropping: A Grid Anchor based Approach》(CVPR 2019)
+GitHub地址：https://github.com/HuiZeng/Grid-Anchor-based-Image-Cropping
+
+28.《Semantic Image Synthesis with Spatially-Adaptive Normalization Taesung》(CVPR 2019)
+GitHub地址：https://github.com/divyanshj16/SPADE
+
+29.《4D Spatio-Temporal ConvNets: Minkowski Convolutional Neural Networks》(CVPR 2019)
+GitHub地址：https://github.com/StanfordVL/MinkowskiEngine
+
+30.《Knowledge-Embedded Routing Network for Scene Graph Generation》(CVPR 2019)
+GitHub地址：https://github.com/yuweihao/KERN
+
+31.《Deep Flow-Guided Video Inpainting》(CVPR 2019)
+GitHub地址：https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting
+
+32.《onvolutional Mesh Regression for Single-Image Human Shape Reconstruction》(CVPR2019)
+GitHub地址：https://github.com/nkolot/GraphCMR
+
+33.《Capture, Learning, and Synthesis of 3D Speaking Styles》(CVPR 2019)
+GitHub地址：https://github.com/TimoBolkart/voca
+
+34.《Meta-Transfer Learning for Few-Shot Learning》 (CVPR 2019)
+GitHub地址：https://github.com/y2l/meta-transfer-learning-tensorflow
