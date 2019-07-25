@@ -1,8 +1,8 @@
 # Stage：主要从事低质量多尺度图像量化卷积和MIPS架构芯片算法设计：
+# Stage: Mainly engaged in low-quality multi-scale image quantization convolution and MIPS architecture chip algorithm design:
 
-该项工作主要是提高自己研究中与工程学结合通过学术指导实验工程学上系统问题笔记，通过QAS的
-
-深度学习的核心教程：
+该项工作主要是提高自己研究中与工程学结合通过学术指导实验工程学上系统问题笔记，通过QAS的深度学习的核心教程：
+The main task of this project is to improve the combination of research and engineering through academic guidance on the notes of systematic problems in experimental engineering, and through the core course of QAS in-depth learning:
 
 GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
 
@@ -10,11 +10,11 @@ Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
 
 Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html 
 
-目标检测：http://machinethink.net/blog/object-detection/
+目标检测（object detection）：http://machinethink.net/blog/object-detection/
 
-国际信息神经处理会议NIPS ：https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018
+国际信息神经处理会议（Conference and Workshop on Neural Information Processing Systems）NIPS ：https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018
 
-深度学习方向性会议ICLR ：https://openreview.net/group?id=ICLR.cc/2019/Conference
+深度学习研究方向性会议ICLR ：https://openreview.net/group?id=ICLR.cc/2019/Conference
 
 国际计算机视觉模式识别CVPR ：http://cvpr2019.thecvf.com/
 
