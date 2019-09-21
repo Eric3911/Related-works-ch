@@ -135,6 +135,8 @@ https://github.com/DmitryUlyanov/deep-image-prior
 ![](https://github.com/Eric3911/image/blob/master/01.png)
 
 # 舞姿同步项目
+![](https://github.com/Eric3911/image/blob/master/00016.jpg)
+![](https://github.com/Eric3911/image/blob/master/00017.jpg)
 ![](https://github.com/Eric3911/image/blob/master/0418.jpg)
 
 # DF数钢筋比赛
