@@ -143,5 +143,5 @@ https://github.com/DmitryUlyanov/deep-image-prior
 ![](https://github.com/Eric3911/image/blob/master/00009.jpg)
 
 # 宫颈癌与红细胞检测项目
-![](https://github.com/Eric3911/image/blob/master/00018.jpg)
+![](https://github.com/Eric3911/image/blob/master/00019.jpg)
 https://opensource.org/licenses/MIT
