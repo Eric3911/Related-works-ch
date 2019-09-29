@@ -142,4 +142,6 @@ https://github.com/DmitryUlyanov/deep-image-prior
 # DF数钢筋比赛
 ![](https://github.com/Eric3911/image/blob/master/00009.jpg)
 
+# 宫颈癌与红细胞检测项目
+![https://github.com/Eric3911/image/blob/master/00018.jpg]
 https://opensource.org/licenses/MIT
