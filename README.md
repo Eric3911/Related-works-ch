@@ -24,24 +24,24 @@ Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.ht
 
 
 # 维护视觉开源学习项目
-https://github.com/Dikea/ML-Weekly-Learning/tree/master/CV
+ https://github.com/Dikea/ML-Weekly-Learning/tree/master/CV
 
 # 图像算法个人开源代码库
-https://github.com/Eric3911/Code-with-Life
+ https://github.com/Eric3911/Code-with-Life
 
-https://github.com/Eric3911/Coding-learning
+ https://github.com/Eric3911/Coding-learning
 
 # 边缘分割
-https://github.com/MarkMoHR/Awesome-Edge-Detection-Papers
+ https://github.com/MarkMoHR/Awesome-Edge-Detection-Papers
 
 # 经典论文阅读库
-https://arxiv.org/list/cs.AI/recent
+ https://arxiv.org/list/cs.AI/recent
 
-https://github.com/Eric3911/Paper-Sharing
+ https://github.com/Eric3911/Paper-Sharing
 
-https://github.com/Eric3911/Super-Paper
+ https://github.com/Eric3911/Super-Paper
 
-https://github.com/Eric3911/Engineering-papers
+ https://github.com/Eric3911/Engineering-papers
 
 ![](https://github.com/Eric3911/image/blob/master/model_list.png)
 ![](https://github.com/Eric3911/image/blob/master/00015.jpg)
@@ -49,13 +49,13 @@ https://github.com/Eric3911/Engineering-papers
  深度学习未来方向之一： 基于非线性动力学结合分数阶非线性方程在群论中模态融合表示，继强化学习之后一种元学习方法及模型安全联邦学习、数据安全区块链。
 
 # 大数据比赛学习
-https://github.com/Eric3911/CDCS
+ https://github.com/Eric3911/CDCS
 
 # 计算机视觉科学竞赛
-https://github.com/Eric3911/Visual-Science-Competition
+ https://github.com/Eric3911/Visual-Science-Competition
 
 # 显著性目标检测
-      https://mmcheng.net/tag/salient-object-detection/
+  https://mmcheng.net/tag/salient-object-detection/
 # 计算机图形学
           Jim Blinn's Corner: Dirty Pixels
           Jim Blinn's Corner: A Trip Down The Graphics Pipeline
