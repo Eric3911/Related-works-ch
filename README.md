@@ -1,7 +1,6 @@
- Stage：主要从事低质量多尺度图像量化卷积和MIPS架构芯片算法设计：Stage: Mainly engaged in low-quality multi-scale image quantization convolution and MIPS architecture chip algorithm design， based on RSIC-V architecture:
+Stage: Mainly engaged in low-quality multi-scale image quantization convolution and MIPS architecture chip algorithm design， based on RSIC-V architecture（主要从事低质量多尺度图像量化卷积和MIPS架构芯片算法设计：）:
 
-该项工作主要是提高自己研究中与工程学结合通过学术指导实验工程学上系统问题笔记，通过QAS的深度学习的核心教程：
-The main task of this project is to improve the combination of research and engineering through academic guidance on the notes of systematic problems in experimental engineering, and through the core course of QAS in-depth learning:
+The main task of this project is to improve the combination of research and engineering through academic guidance on the notes of systematic problems in experimental engineering, and through the core course of QAS in-depth learning（该项工作主要是提高自己研究中与工程学结合通过学术指导实验工程学上系统问题笔记，通过QAS的深度学习的核心教程）:
 
 GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
 
@@ -47,7 +46,7 @@ https://github.com/Eric3911/Engineering-papers
 ![](https://github.com/Eric3911/image/blob/master/model_list.png)
 ![](https://github.com/Eric3911/image/blob/master/00015.jpg)
 # 对偶学习：一种全新的深度学习范式
- 深度学习走向何方？ 非线性动力学与分数阶非线性方程在群论中的模态融合知识表示体系，目前元学习继强化学习之后一种学习型学习方法和解决模型安全问题的联邦学习
+ 深度学习未来方向之一： 基于非线性动力学结合分数阶非线性方程在群论中模态融合表示，继强化学习之后一种元学习方法及模型安全联邦学习、数据安全区块链。
 
 # 大数据比赛学习
 https://github.com/Eric3911/CDCS
@@ -56,9 +55,8 @@ https://github.com/Eric3911/CDCS
 https://github.com/Eric3911/Visual-Science-Competition
 
 # 显著性目标检测
-https://mmcheng.net/tag/salient-object-detection/
+      https://mmcheng.net/tag/salient-object-detection/
 # 计算机图形学
-
           Jim Blinn's Corner: Dirty Pixels
           Jim Blinn's Corner: A Trip Down The Graphics Pipeline
           Jim Blinn's Corner: Notation, Notation, Notation
@@ -104,6 +102,7 @@ https://github.com/DmitryUlyanov/deep-image-prior
 ![](https://github.com/Eric3911/image/blob/master/Text_20181101153336.png)
 
  # 交通ADAS项目
+ 
  ![](https://github.com/Eric3911/image/blob/master/00011.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00012.jpg)
 
@@ -112,7 +111,6 @@ https://github.com/DmitryUlyanov/deep-image-prior
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
 
 # 麻省理工寒假科研交流项目
-（那些年里眷恋的您——MIT）
 
 ![](https://github.com/Eric3911/image/blob/master/MIT.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/1.jpg)
@@ -128,7 +126,7 @@ https://github.com/DmitryUlyanov/deep-image-prior
 
 # 密集人群检测项目
 
-![](https://github.com/Eric3911/image/blob/master/WX20190420-092259.png)
+![](https://github.com/Eric3911/image/blob/master/00020.jpg)
 
 # 蒙版弹幕项目
 
@@ -144,4 +142,5 @@ https://github.com/DmitryUlyanov/deep-image-prior
 
 # 宫颈癌与红细胞检测项目
 ![](https://github.com/Eric3911/image/blob/master/00019.jpg)
+
 https://opensource.org/licenses/MIT
