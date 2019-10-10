@@ -1,4 +1,5 @@
 论文 - 开源代码 - 软著 - 专利 - 论著
+
 Stage: Mainly engaged in low-quality multi-scale image quantization convolution and MIPS architecture chip algorithm design， based on RSIC-V architecture（主要从事低质量多尺度图像量化卷积和MIPS架构芯片算法设计：）:
 
 The main task of this project is to improve the combination of research and engineering through academic guidance on the notes of systematic problems in experimental engineering, and through the core course of QAS in-depth learning（该项工作主要是提高自己研究中与工程学结合通过学术指导实验工程学上系统问题笔记，通过QAS的深度学习的核心教程）:
