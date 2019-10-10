@@ -50,6 +50,7 @@ Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.ht
 
 # 大数据比赛学习
  https://github.com/Eric3911/CDCS
+ ![](https://github.com/Eric3911/image/blob/master/00021.jpg)
 
 # 计算机视觉科学竞赛
  https://github.com/Eric3911/Visual-Science-Competition
