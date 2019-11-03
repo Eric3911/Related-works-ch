@@ -151,4 +151,5 @@ https://github.com/DmitryUlyanov/deep-image-prior
 
 ![](https://github.com/Eric3911/image/blob/master/00019.jpg)
 
+Note：近期不知道什么原因目前github实验结果图没法显示，我正在查找原因解决。
 https://opensource.org/licenses/MIT
