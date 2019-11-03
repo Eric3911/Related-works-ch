@@ -47,11 +47,13 @@ Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.ht
 
 ![](https://github.com/Eric3911/image/blob/master/model_list.png)
 ![](https://github.com/Eric3911/image/blob/master/00015.jpg)
+
 # 对偶学习：一种全新的深度学习范式
  深度学习未来方向之一： 基于非线性动力学结合分数阶非线性方程在群论中模态融合表示，继强化学习之后一种元学习方法及模型安全联邦学习、数据安全区块链。
 
 # 大数据比赛学习
  https://github.com/Eric3911/CDCS
+ 
  ![](https://github.com/Eric3911/image/blob/master/00021.jpg)
 
 # 计算机视觉科学竞赛
@@ -136,14 +138,17 @@ https://github.com/DmitryUlyanov/deep-image-prior
 ![](https://github.com/Eric3911/image/blob/master/01.png)
 
 # 舞姿同步项目
+
 ![](https://github.com/Eric3911/image/blob/master/00016.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00017.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00018.jpg)
 
 # DF数钢筋比赛
+
 ![](https://github.com/Eric3911/image/blob/master/00009.jpg)
 
 # 宫颈癌与红细胞检测项目
+
 ![](https://github.com/Eric3911/image/blob/master/00019.jpg)
 
 https://opensource.org/licenses/MIT
