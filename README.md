@@ -1,6 +1,6 @@
 论文 - 开源代码 - 软著 - 专利 - 论著
 
-Stage: Mainly engaged in low-quality multi-scale image quantization convolution and MIPS architecture chip algorithm design， based on RSIC-V architecture（主要从事低质量多分辨图像量化卷积和MIPS架构芯片算法设计：）:
+Stage: Mainly engaged in low-quality multi-scale image quantization convolution and MIPS architecture chip algorithm design， based on RSIC-V architecture（主要从事低质量多分辨图像量化卷积和MIPS、RSIC-V架构芯片算法设计：）:
 
 The main task of this project is to improve the combination of research and engineering through academic guidance on the notes of systematic problems in experimental engineering, and through the core course of QAS in-depth learning（该项工作主要是提高自己研究中与工程学结合通过学术指导实验工程学上系统问题笔记，通过QAS的深度学习的核心教程）:
 
@@ -57,6 +57,8 @@ Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.ht
 
 # 大数据比赛学习
  https://github.com/Eric3911/CDCS
+ 
+ https://github.com/Eric3911/Computer_vision_Object
  
  ![](https://github.com/Eric3911/image/blob/master/00021.jpg)
 
