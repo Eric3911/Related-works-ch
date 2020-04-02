@@ -9,37 +9,37 @@ Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
 
 Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html 
 
-目标检测（object detection）：http://machinethink.net/blog/object-detection/
+（object detection）：http://machinethink.net/blog/object-detection/
 
-国际信息神经处理会议（Conference and Workshop on Neural Information Processing Systems）NIPS ：https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018
+（Conference and Workshop on Neural Information Processing Systems）NIPS ：https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018
 
-深度学习研究方向性会议ICLR ：https://openreview.net/group?id=ICLR.cc/2019/Conference
+ICLR ：https://openreview.net/group?id=ICLR.cc/2019/Conference
 
-国际计算机视觉模式识别CVPR ：http://cvpr2019.thecvf.com/
+CVPR ：http://cvpr2019.thecvf.com/
 
-国际计算机视觉会议ICCV ：http://iccv2019.thecvf.com/
+ICCV ：http://iccv2019.thecvf.com/
 
-欧洲计算机视觉会议ECCV ：https://eccv2018.org/
+ECCV ：https://eccv2018.org/
 
-国内经典的基础教材南瓜书：https://datawhalechina.github.io/pumpkin-book/#/
+machinelearningbook：https://datawhalechina.github.io/pumpkin-book/#/
 
-# 认知计算与多模态空间能量学习（神经动力学计算）
+# Cognitive computation and multimodal spatial energy learning based on neurodynamics
 
  https://github.com/naturomics/CapsNet-Tensorflow
  https://github.com/bojone/Capsule
 
-# 维护视觉开源学习项目
+# Visual open source learning project
  https://github.com/Dikea/ML-Weekly-Learning/tree/master/CV
 
-# 图像算法个人开源代码库
+# Image algorithm personal open source code base
  https://github.com/Eric3911/Code-with-Life
 
  https://github.com/Eric3911/Coding-learning
 
-# 边缘分割
+# Edge segmentation
  https://github.com/MarkMoHR/Awesome-Edge-Detection-Papers
 
-# 经典论文阅读库
+# Reading Library of classic papers
  https://arxiv.org/list/cs.AI/recent
 
  https://github.com/Eric3911/Paper-Sharing
@@ -51,41 +51,40 @@ Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.ht
 ![](https://github.com/Eric3911/image/blob/master/model_list.png)
 ![](https://github.com/Eric3911/image/blob/master/00015.jpg)
 
-# 对偶学习：一种全新的深度学习范式
+# A new deep learning paradigm: dual learning
  深度学习未来方向之一： 基于非线性动力学结合分数阶非线性方程在群论中模态融合表示，继强化学习之后一种元学习方法及模型安全联邦学习、数据安全区块链。
 
-# 大数据比赛学习
+# Big data game learning
  https://github.com/Eric3911/CDCS
  
  https://github.com/Eric3911/Computer_vision_Object
  
  ![](https://github.com/Eric3911/image/blob/master/00021.jpg)
 
-# 计算机视觉科学竞赛
+# Computer vision science competition
  https://github.com/Eric3911/Visual-Science-Competition
 
-# 显著性目标检测
+# Significance target detection
   https://mmcheng.net/tag/salient-object-detection/
-# 计算机图形学
+# computer graphics
           Jim Blinn's Corner: Dirty Pixels
           Jim Blinn's Corner: A Trip Down The Graphics Pipeline
           Jim Blinn's Corner: Notation, Notation, Notation
 
-# 计算机摄影学
+# Computer photography    
+    Millimeter wave radar fusion of optical flow field and ray tracing in 77GHz phase control matrix
           
-          光流场和光线追踪在相控矩阵77GHZ的毫米波雷达融合
-          
-# 视网膜去雨雾项目
+# Project of removing rain and fog from retina
 ![](https://github.com/Eric3911/image/blob/master/%E8%A7%86%E7%BD%91%E8%86%9C%E5%8E%BB%E9%9B%BE%E7%BB%93%E6%9E%9C.png)
 
-# 成像质量分析项目
+# Imaging quality analysis project
 ![](https://github.com/Eric3911/image/blob/master/00007.jpg)
 ![](https://github.com/Eric3911/image/blob/master/123456.png)
 ![](https://github.com/Eric3911/Stage/blob/master/%E5%9F%BA%E4%BA%8ESCB%E7%AE%97%E6%B3%95%E7%9A%84%E5%A2%9E%E5%BC%BA.png)
 ![](https://github.com/Eric3911/image/blob/master/%E5%9F%BA%E4%BA%8ESCB%E7%AE%97%E6%B3%95%E7%9A%84%E5%A2%9E%E5%BC%BA.png)
 ![](https://github.com/Eric3911/image/blob/master/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BB%B7%E5%8F%82%E8%80%83Evaluation.png)
 
-# STR自然场景文本识别项目
+# STR natural scene text recognition project
   文字识别使用超分辨和对抗生成宋体后使用FAN/Attention识别最具有工程意义和学术价值,其中金老师做的基于强化学习的模型FOTS模型也是一个很好方向。
   
 https://github.com/chongyangtao/Awesome-Scene-Text-Recognition
