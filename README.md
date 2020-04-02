@@ -122,6 +122,7 @@ https://github.com/DmitryUlyanov/deep-image-prior
 ![](https://github.com/Eric3911/image/blob/master/000013.png)
 
 # Intensive population testing project
+![](https://github.com/Eric3911/Stage/blob/master/000_List_of_best_papers/survey_forcrowd_counting.jpg）
 ![](https://github.com/Eric3911/image/blob/master/00020.jpg)
 
 # Matte bullet screen project
