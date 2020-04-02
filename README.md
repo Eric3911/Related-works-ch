@@ -9,16 +9,13 @@ Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
 
 Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html 
 
-（object detection）：http://machinethink.net/blog/object-detection/
+object detection：http://machinethink.net/blog/object-detection/
 
 （Conference and Workshop on Neural Information Processing Systems）NIPS ：https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018
 
 ICLR ：https://openreview.net/group?id=ICLR.cc/2019/Conference
-
 CVPR ：http://cvpr2019.thecvf.com/
-
 ICCV ：http://iccv2019.thecvf.com/
-
 ECCV ：https://eccv2018.org/
 
 machinelearningbook：https://datawhalechina.github.io/pumpkin-book/#/
@@ -41,18 +38,15 @@ machinelearningbook：https://datawhalechina.github.io/pumpkin-book/#/
 
 # Reading Library of classic papers
  https://arxiv.org/list/cs.AI/recent
-
  https://github.com/Eric3911/Paper-Sharing
-
  https://github.com/Eric3911/Super-Paper
-
  https://github.com/Eric3911/Engineering-papers
 
 ![](https://github.com/Eric3911/image/blob/master/model_list.png)
 ![](https://github.com/Eric3911/image/blob/master/00015.jpg)
 
 # A new deep learning paradigm: dual learning
- 深度学习未来方向之一： 基于非线性动力学结合分数阶非线性方程在群论中模态融合表示，继强化学习之后一种元学习方法及模型安全联邦学习、数据安全区块链。
+ One of the future directions of deep learning: Based on the combination of nonlinear dynamics and fractional nonlinear equations in group theory, a meta learning method, model safe federated learning and data safe blockchain are proposed after reinforcement learning.
 
 # Big data game learning
  https://github.com/Eric3911/CDCS
@@ -85,42 +79,37 @@ machinelearningbook：https://datawhalechina.github.io/pumpkin-book/#/
 ![](https://github.com/Eric3911/image/blob/master/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BB%B7%E5%8F%82%E8%80%83Evaluation.png)
 
 # STR natural scene text recognition project
-  文字识别使用超分辨和对抗生成宋体后使用FAN/Attention识别最具有工程意义和学术价值,其中金老师做的基于强化学习的模型FOTS模型也是一个很好方向。
+  It has the most engineering significance and academic value to use fan / attention recognition after using super-resolution and antagonism to generate Song typeface for character recognition, and the FOTS model based on reinforcement learning made by Mr. Jin is also a good direction.
   
 https://github.com/chongyangtao/Awesome-Scene-Text-Recognition
-
 https://github.com/Eric3911/icpr2018_ocr_papers
 
-# 图像去水印、去噪、超分辨
+# Image watermarking, denoising, super-resolution
 https://github.com/DmitryUlyanov/deep-image-prior
 
-# 文档及证件去除阴影项目
+# Remove shadow items from documents and certificates
 ![](https://github.com/Eric3911/image/blob/master/00006.jpg)
-# 证件识别项目
 
+# Certificate identification items
 ![](https://github.com/Eric3911/image/blob/master/00008.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00002.png)
 ![](https://github.com/Eric3911/image/blob/master/QQ%E6%88%AA%E5%9B%BE20190425135959.jpg)
 ![](https://github.com/Eric3911/image/blob/master/0002.png)
 ![](https://github.com/Eric3911/image/blob/master/00005.jpg)
 
-# 版面分析
-
+# Layout analysis project
 ![](https://github.com/Eric3911/image/blob/master/00003.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00014.jpg)
 ![](https://github.com/Eric3911/image/blob/master/Text_20181101153336.png)
 
- # 交通ADAS项目
- 
+ # Transportation ADAS project
  ![](https://github.com/Eric3911/image/blob/master/00011.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00012.jpg)
 
-# 遥感小目标检测项目
-
+# Remote sensing small target detection project
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
 
-# 麻省理工寒假科研交流项目
-
+# MIT winter vacation scientific research exchange project
 ![](https://github.com/Eric3911/image/blob/master/MIT.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/1.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/2.jpg)
@@ -129,30 +118,24 @@ https://github.com/DmitryUlyanov/deep-image-prior
 ![](https://github.com/Eric3911/Stage/blob/master/5.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00001.jpg)
 
-# 车辆超载项目
-
+# Vehicle overload project
 ![](https://github.com/Eric3911/image/blob/master/000013.png)
 
-# 密集人群检测项目
-
+# Intensive population testing project
 ![](https://github.com/Eric3911/image/blob/master/00020.jpg)
 
-# 蒙版弹幕项目
-
+# Matte bullet screen project
 ![](https://github.com/Eric3911/image/blob/master/01.png)
 
-# 舞姿同步项目
-
+# Dance synchronization project
 ![](https://github.com/Eric3911/image/blob/master/00016.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00017.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00018.jpg)
 
-# DF数钢筋比赛
-
+# Several steel bar competitions
 ![](https://github.com/Eric3911/image/blob/master/00009.jpg)
 
-# 宫颈癌与红细胞检测项目
-
+# Cervical cancer and red blood cell detection project
 ![](https://github.com/Eric3911/image/blob/master/00019.jpg)
 
 https://opensource.org/licenses/MIT
