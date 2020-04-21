@@ -110,6 +110,7 @@ https://github.com/DmitryUlyanov/deep-image-prior
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
 
 # MIT winter vacation scientific research exchange project
+Open coursera: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
 ![](https://github.com/Eric3911/image/blob/master/MIT.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/1.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/2.jpg)
@@ -122,6 +123,7 @@ https://github.com/DmitryUlyanov/deep-image-prior
 ![](https://github.com/Eric3911/image/blob/master/000013.png)
 
 # Intensive population testing project
+![](https://github.com/Eric3911/Stage/blob/master/000_List_of_best_papers/survey_forcrowd_counting.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00020.jpg)
 
 # Matte bullet screen project
