@@ -9,14 +9,20 @@ Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.ht
 
 object detection：http://machinethink.net/blog/object-detection/
 
-（Conference and Workshop on Neural Information Processing Systems）NIPS ：https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018
+（Conference and Workshop on Neural Information Processing Systems）
+NIPS ：https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018
 
 ICLR ：https://openreview.net/group?id=ICLR.cc/2019/Conference
+
 CVPR ：http://cvpr2019.thecvf.com/
+
 ICCV ：http://iccv2019.thecvf.com/
+
 ECCV ：https://eccv2018.org/
 
 machinelearningbook：https://datawhalechina.github.io/pumpkin-book/#/
+
+Algorithms：https://github.com/TheAlgorithms/Python
 
 # Cognitive computation and multimodal spatial energy learning based on neurodynamics
 
