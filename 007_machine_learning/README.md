@@ -1,7 +1,7 @@
 # data_mining/数据挖掘
 data_analysis
 
-	一、十六种回归算法
+	一、二十种回归算法
 	01)LineaRegrssion
 	02)KNeighuborsRegresspr
 	03)SVR
@@ -19,6 +19,9 @@ data_analysis
 	15）LightGBM
 	16）Catboost
 	17）Ngboost
+        18)lightGCN
+	19)DeepGBM
+	20)DeepAR
 	
 	二、
 	Gaussian Naive Bayes (GNB)
