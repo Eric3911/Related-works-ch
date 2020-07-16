@@ -86,8 +86,9 @@ https://github.com/DmitryUlyanov/deep-image-prior
 # Remote sensing small target detection project
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
 
-# MIT winter vacation scientific research exchange project
+# MIT vacation scientific research exchange project
 Open coursera: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
+
 ![](https://github.com/Eric3911/image/blob/master/MIT.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/1.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/2.jpg)
