@@ -115,7 +115,7 @@ Open coursera: https://ocw.mit.edu/courses/electrical-engineering-and-computer-s
 ![](https://github.com/Eric3911/image/blob/master/00001.jpg)
 
 # Vehicle overload project
-![](https://github.com/Eric3911/image/blob/master/000013.png)
+![](https://github.com/Eric3911/image/blob/master/bilatera.jpg)
 
 # Intensive population testing project
 ![](https://github.com/Eric3911/Stage/blob/master/000_List_of_best_papers/survey_forcrowd_counting.jpg)
