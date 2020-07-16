@@ -1,6 +1,8 @@
 
 # 该方向主要机器学习和数据挖掘方向
 
+machinelearningbook：https://datawhalechina.github.io/pumpkin-book/#/
+
 ** data_mining/data_analysis/数据挖掘
 
 	一、二十种回归算法
