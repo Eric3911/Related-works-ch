@@ -24,15 +24,6 @@ Algorithms：https://github.com/TheAlgorithms/Python
 # Edge segmentation
  https://github.com/MarkMoHR/Awesome-Edge-Detection-Papers
 
-# Reading Library of classic papers
- https://arxiv.org/list/cs.AI/recent
- https://github.com/Eric3911/Paper-Sharing
- https://github.com/Eric3911/Super-Paper
- https://github.com/Eric3911/Engineering-papers
-
-![](https://github.com/Eric3911/image/blob/master/model_list.png)
-![](https://github.com/Eric3911/image/blob/master/00015.jpg)
-
 # A new deep learning paradigm: dual learning
  One of the future directions of deep learning: Based on the combination of nonlinear dynamics and fractional nonlinear equations in group theory, a meta learning method, model safe federated learning and data safe blockchain are proposed after reinforcement learning.
 
