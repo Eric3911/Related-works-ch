@@ -1,5 +1,8 @@
-* 传统方法图像质量评估
-* 深度学习图像质量评估
+
+# 图像质量评估方向
+
+** 传统方法图像质量评估
+** 深度学习图像质量评估
 
 
 The ‘good-ness’ of any algorithm is gauged by measuring the correlation of algorithmic scores with subjective (differential) 

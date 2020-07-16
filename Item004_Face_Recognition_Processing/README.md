@@ -1,5 +1,19 @@
 
-## 人脸识别项目工程学习流程
+# 该项目主要研究《人脸识别处理》项目和工程
+
+01——人脸特征提取
+|
+02——人脸检测
+|
+03——人脸对齐
+|
+04——活体检测
+|
+05——人脸比对
+
+
+
+** 人脸识别项目工程学习流程
 
 **一、DAN：人脸关键点检测
 	ASM(Active Shape Model) 、CPR(Cascaded Pose Regression）、MTCNN 、Deep Alignment Network、landmark

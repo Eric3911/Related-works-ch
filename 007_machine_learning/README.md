@@ -1,5 +1,7 @@
-# data_mining/数据挖掘
-data_analysis
+
+# 该方向主要机器学习和数据挖掘方向
+
+** data_mining/data_analysis/数据挖掘
 
 	一、二十种回归算法
 	01)LineaRegrssion
