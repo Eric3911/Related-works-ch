@@ -7,10 +7,6 @@ Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
 
 Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html 
 
-object detection：http://machinethink.net/blog/object-detection/
-
-NIPS 、ICLR 、CVPR 、ICCV 、ECCV 
-
 machinelearningbook：https://datawhalechina.github.io/pumpkin-book/#/
 
 Algorithms：https://github.com/TheAlgorithms/Python
