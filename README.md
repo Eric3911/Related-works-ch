@@ -7,8 +7,6 @@ Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
 
 Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html 
 
-machinelearningbook：https://datawhalechina.github.io/pumpkin-book/#/
-
 Algorithms：https://github.com/TheAlgorithms/Python
 
 # Cognitive computation and multimodal spatial energy learning based on neurodynamics
