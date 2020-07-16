@@ -20,9 +20,6 @@ Algorithms：https://github.com/TheAlgorithms/Python
  https://github.com/naturomics/CapsNet-Tensorflow
  https://github.com/bojone/Capsule
 
-# Visual open source learning project
- https://github.com/Dikea/ML-Weekly-Learning/tree/master/CV
-
 # Image algorithm personal open source code base
  https://github.com/Eric3911/Code-with-Life
 
