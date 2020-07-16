@@ -9,17 +9,7 @@ Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.ht
 
 object detection：http://machinethink.net/blog/object-detection/
 
-（Conference and Workshop on Neural Information Processing Systems）
-
-NIPS ：https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018
-
-ICLR ：https://openreview.net/group?id=ICLR.cc/2019/Conference
-
-CVPR ：http://cvpr2019.thecvf.com/
-
-ICCV ：http://iccv2019.thecvf.com/
-
-ECCV ：https://eccv2018.org/
+NIPS 、ICLR 、CVPR 、ICCV 、ECCV 
 
 machinelearningbook：https://datawhalechina.github.io/pumpkin-book/#/
 
@@ -125,7 +115,7 @@ Open coursera: https://ocw.mit.edu/courses/electrical-engineering-and-computer-s
 ![](https://github.com/Eric3911/image/blob/master/00001.jpg)
 
 # Vehicle overload project
-![](https://github.com/Eric3911/image/blob/master/000013.png)
+![](https://github.com/Eric3911/image/blob/master/bilatera.jpg)
 
 # Intensive population testing project
 ![](https://github.com/Eric3911/Stage/blob/master/000_List_of_best_papers/survey_forcrowd_counting.jpg)
