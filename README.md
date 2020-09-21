@@ -1,17 +1,11 @@
 
-Stage: Mainly engaged in low-quality multi-scale image quantization convolution and MIPS architecture chip algorithm design， based on RSIC-V architecture.The main task of this project is to improve the combination of research and engineering through academic guidance on the notes of systematic problems in experimental engineering, and through the core course of QAS in-depth learning.
+# Stage: Mainly engaged in low-quality multi-scale image quantization convolution and MIPS architecture chip algorithm design.The main task of this project is to improve the combination of research and engineering through academic guidance on the notes of systematic problems in experimental engineering, and through the core course of QAS deep learning.
 
 GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
 
 Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
 
 Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html 
-
-object detection：http://machinethink.net/blog/object-detection/
-
-NIPS 、ICLR 、CVPR 、ICCV 、ECCV 
-
-machinelearningbook：https://datawhalechina.github.io/pumpkin-book/#/
 
 Algorithms：https://github.com/TheAlgorithms/Python
 
@@ -20,9 +14,6 @@ Algorithms：https://github.com/TheAlgorithms/Python
  https://github.com/naturomics/CapsNet-Tensorflow
  https://github.com/bojone/Capsule
 
-# Visual open source learning project
- https://github.com/Dikea/ML-Weekly-Learning/tree/master/CV
-
 # Image algorithm personal open source code base
  https://github.com/Eric3911/Code-with-Life
 
@@ -30,15 +21,6 @@ Algorithms：https://github.com/TheAlgorithms/Python
 
 # Edge segmentation
  https://github.com/MarkMoHR/Awesome-Edge-Detection-Papers
-
-# Reading Library of classic papers
- https://arxiv.org/list/cs.AI/recent
- https://github.com/Eric3911/Paper-Sharing
- https://github.com/Eric3911/Super-Paper
- https://github.com/Eric3911/Engineering-papers
-
-![](https://github.com/Eric3911/image/blob/master/model_list.png)
-![](https://github.com/Eric3911/image/blob/master/00015.jpg)
 
 # A new deep learning paradigm: dual learning
  One of the future directions of deep learning: Based on the combination of nonlinear dynamics and fractional nonlinear equations in group theory, a meta learning method, model safe federated learning and data safe blockchain are proposed after reinforcement learning.
@@ -104,8 +86,9 @@ https://github.com/DmitryUlyanov/deep-image-prior
 # Remote sensing small target detection project
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
 
-# MIT winter vacation scientific research exchange project
+# MIT vacation scientific research exchange project
 Open coursera: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
+
 ![](https://github.com/Eric3911/image/blob/master/MIT.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/1.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/2.jpg)
