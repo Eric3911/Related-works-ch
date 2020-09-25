@@ -16,6 +16,10 @@ Algorithms：https://github.com/TheAlgorithms/Python
 
 # Image algorithm personal open source code base
  https://github.com/Eric3911/Code-with-Life
+* 清华大学计算机相关开源学习课程
+https://rekcarc-tsc-uht.readthedocs.io/en/latest/
+* 浙江大学计算机相关开源学习课程
+https://qsctech.github.io/zju-icicles/
 
  https://github.com/Eric3911/Coding-learning
 
