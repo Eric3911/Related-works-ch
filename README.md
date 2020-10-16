@@ -1,6 +1,3 @@
-
-# Stage: Mainly engaged in low-quality multi-scale image quantization convolution and MIPS architecture chip algorithm design.The main task of this project is to improve the combination of research and engineering through academic guidance on the notes of systematic problems in experimental engineering, and through the core course of QAS deep learning.
-
 GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
 
 Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
