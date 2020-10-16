@@ -3,6 +3,7 @@
 目前我个人主要从事低质量多分辨图像处理量化卷积、MIPS、RSIC架构芯片算法设计
 
 该项工作主要是提高自己研究中与工程学结合通过学术指导实验工程学上系统问题笔记，通过QAS的深度学习的核心教程）:
+Stage: Mainly engaged in low-quality multi-scale image quantization convolution and MIPS architecture chip algorithm design.The main task of this project is to improve the combination of research and engineering through academic guidance on the notes of systematic problems in experimental engineering, and through the core course of QAS deep learning.
 
 GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
 
