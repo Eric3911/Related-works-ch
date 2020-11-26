@@ -83,6 +83,7 @@ https://github.com/DmitryUlyanov/deep-image-prior
  # Transportation ADAS project
  ![](https://github.com/Eric3911/image/blob/master/00011.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00012.jpg)
+![](https://github.com/Eric3911/Stage/blob/master/005%20_AIOT_ASIC_RSIC_and_MIPS/Dingtalk_20201126172730.jpg)
 
 # Remote sensing small target detection project
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
