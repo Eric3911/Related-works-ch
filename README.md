@@ -33,7 +33,7 @@ https://qsctech.github.io/zju-icicles/
  https://github.com/Eric3911/Computer_vision_Object
  
  ![](https://github.com/Eric3911/image/blob/master/00021.jpg)
-
+ ![](https://github.com/Eric3911/image/blob/master/%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84.jpg)
 # Computer vision science competition
  https://github.com/Eric3911/Visual-Science-Competition
 
