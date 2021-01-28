@@ -1,0 +1,9 @@
+LeNet
+AlexNet
+VGGNet
+ResNet
+
+MobileNet
+shuffleNet
+
+

@@ -1,0 +1,10 @@
+FasterRCNN
+casacdeRCNN
+
+YOLOx
+
+SSD
+
+CernerNet
+CenterNet
+

@@ -1,0 +1,17 @@
+
+
+图片/视频流中的人脸、人体、车辆、车牌以及一般目标的检测
+多目标跟踪（MOT） & 单目标跟踪（SOT）
+行人/车辆重识别（ReID）以及Metric Learning
+多视几何
+小样本学习
+特征变换、压缩、聚类
+模型量化、压缩、蒸馏技术
+OCR、Activity、HOI、Crowd Counting、GAN
+
+
+要求：
+1） 熟悉当前比较知名的检测模型，包括FCOS、ATSS、PAA等检测模型
+2)   熟悉当前知名的MoT框架，包括DeepSort系列等
+3） 有CVPR、ECCV,  ICCV等论文者优先。
+4)   有足够的自我Motivation者优先。

@@ -1,0 +1,15 @@
+
+算法学派
+网络设计
+	Import
+	datasets（train、test）
+	model = tf.keras.models.Sequential
+	model = model.compile
+	model = model.fit
+	model = model.summary
+
+	感受野
+	特征器
+	激活函数
+	损失函数
+	优化函数
