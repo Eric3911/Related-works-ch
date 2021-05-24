@@ -75,22 +75,22 @@ https://github.com/DmitryUlyanov/deep-image-prior
 ![](https://github.com/Eric3911/image/blob/master/0002.png)
 ![](https://github.com/Eric3911/image/blob/master/00005.jpg)
 
-# Layout analysis project
+【16】Layout analysis project
 ![](https://github.com/Eric3911/image/blob/master/00003.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00014.jpg)
 ![](https://github.com/Eric3911/image/blob/master/Text_20181101153336.png)
 
- # Transportation ADAS project
+【17】Transportation ADAS project
  ![](https://github.com/Eric3911/image/blob/master/00011.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00012.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/005%20_AIOT_ASIC_RSIC_and_MIPS/Dingtalk_20201126172730.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/005%20_AIOT_ASIC_RSIC_and_MIPS/Dingtalk_20201126172749.jpg)
-# Remote sensing small target detection project
+【18】Remote sensing small target detection project
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
 ![](https://github.com/Eric3911/yolov3-keras-master/blob/master/beihang_airplane_PR.png)
 ![](https://github.com/Eric3911/image/blob/master/QQ%E6%88%AA%E5%9B%BE20190425164616.jpg)
 
-# MIT vacation scientific research exchange project
+【19】MIT vacation scientific research exchange project
 Open coursera: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
 
 ![](https://github.com/Eric3911/image/blob/master/MIT.jpg)
@@ -101,25 +101,25 @@ Open coursera: https://ocw.mit.edu/courses/electrical-engineering-and-computer-s
 ![](https://github.com/Eric3911/Stage/blob/master/5.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00001.jpg)
 
-# Vehicle overload project
+【20】Vehicle overload project
 ![](https://github.com/Eric3911/image/blob/master/bilatera.jpg)
 
-# Intensive population testing project
+【21】Intensive population testing project
 ![](https://github.com/Eric3911/Stage/blob/master/000_List_of_best_papers/survey_forcrowd_counting.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00020.jpg)
 
-# Matte bullet screen project
+【22】Matte bullet screen project
 ![](https://github.com/Eric3911/image/blob/master/01.png)
 
-# Dance synchronization project
+【23】Dance synchronization project
 ![](https://github.com/Eric3911/image/blob/master/00016.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00017.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00018.jpg)
 
-# Several steel bar competitions
+【24】Several steel bar competitions
 ![](https://github.com/Eric3911/image/blob/master/00009.jpg)
 
-# Cervical cancer and red blood cell detection project
+Cervical cancer and red blood cell detection project
 ![](https://github.com/Eric3911/image/blob/master/00019.jpg)
 
 https://opensource.org/licenses/MIT
