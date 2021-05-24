@@ -7,22 +7,21 @@ Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.ht
 
 Algorithms：https://github.com/TheAlgorithms/Python
 
-**Cognitive computation and multimodal spatial energy learning based on neurodynamics
-
+# related works
+[1] Cognitive computation and multimodal spatial energy learning based on neurodynamics
  https://github.com/naturomics/CapsNet-Tensorflow
  https://github.com/bojone/Capsule
 
-# Image algorithm personal open source code base
+[2] Image algorithm personal open source code base
  https://github.com/Eric3911/Code-with-Life
  https://github.com/Eric3911/Engineering-papers
 * 清华大学计算机相关开源学习课程
 https://rekcarc-tsc-uht.readthedocs.io/en/latest/
 * 浙江大学计算机相关开源学习课程
 https://qsctech.github.io/zju-icicles/
+https://github.com/Eric3911/Coding-learning
 
- https://github.com/Eric3911/Coding-learning
-
-# Edge segmentation
+[3] Edge segmentation
  https://github.com/MarkMoHR/Awesome-Edge-Detection-Papers
 
 # A new deep learning paradigm: dual learning
