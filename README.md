@@ -1,3 +1,4 @@
+# Introduction
 GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
 
 Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html
@@ -6,7 +7,7 @@ Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.ht
 
 Algorithms：https://github.com/TheAlgorithms/Python
 
-# Cognitive computation and multimodal spatial energy learning based on neurodynamics
+**Cognitive computation and multimodal spatial energy learning based on neurodynamics
 
  https://github.com/naturomics/CapsNet-Tensorflow
  https://github.com/bojone/Capsule
