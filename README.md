@@ -24,52 +24,51 @@ https://github.com/Eric3911/Coding-learning
 [3] Edge segmentation
  https://github.com/MarkMoHR/Awesome-Edge-Detection-Papers
 
-# A new deep learning paradigm: dual learning
+[4] new deep learning paradigm: dual learning
  One of the future directions of deep learning: Based on the combination of nonlinear dynamics and fractional nonlinear equations in group theory, a meta learning method, model safe federated learning and data safe blockchain are proposed after reinforcement learning.
 
-# Big data game learning
+[5] Big data game learning
  https://github.com/Eric3911/CDCS
  
  https://github.com/Eric3911/Computer_vision_Object
- 
  ![](https://github.com/Eric3911/image/blob/master/00021.jpg)
  ![](https://github.com/Eric3911/image/blob/master/%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84.jpg)
-# Computer vision science competition
- https://github.com/Eric3911/Visual-Science-Competition
+[6] Computer vision science competition
+https://github.com/Eric3911/Visual-Science-Competition
 
-# Significance target detection
-  https://mmcheng.net/tag/salient-object-detection/
-# computer graphics
+[7] Significance target detection
+https://mmcheng.net/tag/salient-object-detection/
+[8] computer graphics
           Jim Blinn's Corner: Dirty Pixels
           Jim Blinn's Corner: A Trip Down The Graphics Pipeline
           Jim Blinn's Corner: Notation, Notation, Notation
 
-# Computer photography    
-    Millimeter wave radar fusion of optical flow field and ray tracing in 77GHz phase control matrix
+[9] Computer photography    
+   Millimeter wave radar fusion of optical flow field and ray tracing in 77GHz phase control matrix
           
-# Project of removing rain and fog from retina
+[10] Project of removing rain and fog from retina
 ![](https://github.com/Eric3911/image/blob/master/%E8%A7%86%E7%BD%91%E8%86%9C%E5%8E%BB%E9%9B%BE%E7%BB%93%E6%9E%9C.png)
 
-# Imaging quality analysis project
+[11] Imaging quality analysis project
 ![](https://github.com/Eric3911/image/blob/master/00007.jpg)
 ![](https://github.com/Eric3911/image/blob/master/123456.png)
 ![](https://github.com/Eric3911/Stage/blob/master/%E5%9F%BA%E4%BA%8ESCB%E7%AE%97%E6%B3%95%E7%9A%84%E5%A2%9E%E5%BC%BA.png)
 ![](https://github.com/Eric3911/image/blob/master/%E5%9F%BA%E4%BA%8ESCB%E7%AE%97%E6%B3%95%E7%9A%84%E5%A2%9E%E5%BC%BA.png)
 ![](https://github.com/Eric3911/image/blob/master/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BB%B7%E5%8F%82%E8%80%83Evaluation.png)
 
-# STR natural scene text recognition project
+[12] STR natural scene text recognition project
   It has the most engineering significance and academic value to use fan / attention recognition after using super-resolution and antagonism to generate Song typeface for character recognition, and the FOTS model based on reinforcement learning made by Mr. Jin is also a good direction.
   
 https://github.com/chongyangtao/Awesome-Scene-Text-Recognition
 https://github.com/Eric3911/icpr2018_ocr_papers
 
-# Image watermarking, denoising, super-resolution
+[13] watermarking, denoising, super-resolution
 https://github.com/DmitryUlyanov/deep-image-prior
 
-# Remove shadow items from documents and certificates
+[14] Remove shadow items from documents and certificates
 ![](https://github.com/Eric3911/image/blob/master/00006.jpg)
 
-# Certificate identification items
+[15] Certificate identification items
 ![](https://github.com/Eric3911/image/blob/master/00008.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00002.png)
 ![](https://github.com/Eric3911/image/blob/master/QQ%E6%88%AA%E5%9B%BE20190425135959.jpg)
