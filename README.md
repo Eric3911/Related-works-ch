@@ -6,23 +6,19 @@
 
 General Matrix Multiplication-GMM={https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/}
 
-Open Source Computer Vision Library-Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html, Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html 
-
+Open Source Computer Vision Library-Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html, Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html ,
 Algorithms：https://github.com/TheAlgorithms/Python
 
 # related works
 [1] Cognitive computation and multimodal spatial energy learning based on neurodynamics
- https://github.com/naturomics/CapsNet-Tensorflow
- https://github.com/bojone/Capsule
+ https://github.com/naturomics/CapsNet-Tensorflow, https://github.com/bojone/Capsule
 
 [2] Image algorithm personal open source code base
- https://github.com/Eric3911/Code-with-Life
- https://github.com/Eric3911/Engineering-papers
+ https://github.com/Eric3911/Code-with-Life, https://github.com/Eric3911/Engineering-papers
 * 清华大学计算机相关开源学习课程
 https://rekcarc-tsc-uht.readthedocs.io/en/latest/
 * 浙江大学计算机相关开源学习课程
-https://qsctech.github.io/zju-icicles/
-https://github.com/Eric3911/Coding-learning
+https://qsctech.github.io/zju-icicles/, https://github.com/Eric3911/Coding-learning
 
 [3] Edge segmentation
  https://github.com/MarkMoHR/Awesome-Edge-Detection-Papers
@@ -103,6 +99,7 @@ Open coursera: https://ocw.mit.edu/courses/electrical-engineering-and-computer-s
 ![](https://github.com/Eric3911/Stage/blob/master/4.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/5.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00001.jpg)
+![](https://github.com/Eric3911/Experiment/blob/main/00001.jpg)
 
 【20】Vehicle overload project
 ![](https://github.com/Eric3911/image/blob/master/bilatera.jpg)
