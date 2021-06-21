@@ -4,7 +4,7 @@
 ##### 主要工程：PDF文档文字识别，低分辨率遥感图像处理，医学图像处理，视频图像跟踪或超分处理，微服务算法服务。
 ##### 联系方式：yunxinan@outlook.com
 
-General Matrix Multiplication-GMM  https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/
+General Matrix Multiplication-GMM  {https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/}
 
 Open Source Computer Vision Library-Opencv  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html, Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html 
 
