@@ -5,8 +5,7 @@
 #### 联系方式：yunxinan@outlook.com
 
 [广义矩阵乘法](https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/)
-
-  https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html, Opencv  http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html ,
+[OpenCV](https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html,http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html ) http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html ,
 Algorithms：https://github.com/TheAlgorithms/Python
 
 # related works
