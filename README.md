@@ -5,19 +5,15 @@
 #### 联系方式：yunxinan@outlook.com
 
 [广义矩阵乘法](https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/)
-[OpenCV](https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html,http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html ) http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html ,
-Algorithms：https://github.com/TheAlgorithms/Python
+[OpenCV01](https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html),[OPenCV02](http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html ) 
+[Python传统算法]：https://github.com/TheAlgorithms/Python
 
 # related works
-[1] Cognitive computation and multimodal spatial energy learning based on neurodynamics
- https://github.com/naturomics/CapsNet-Tensorflow, https://github.com/bojone/Capsule
+[神经计算与胶囊网络](https://github.com/naturomics/CapsNet-Tensorflow)(https://github.com/bojone/Capsule)
 
-[2] Image algorithm personal open source code base
- https://github.com/Eric3911/Code-with-Life, https://github.com/Eric3911/Engineering-papers
-* 清华大学计算机相关开源学习课程
-https://rekcarc-tsc-uht.readthedocs.io/en/latest/
-* 浙江大学计算机相关开源学习课程
-https://qsctech.github.io/zju-icicles/, https://github.com/Eric3911/Coding-learning
+[图像算法开源代码](https://github.com/Eric3911/Code-with-Life)( https://github.com/Eric3911/Engineering-papers)( https://github.com/Eric3911/Coding-learning)
+[清华大学计算机相关开源学习课程](https://rekcarc-tsc-uht.readthedocs.io/en/latest/)
+[浙江大学计算机相关开源学习课程](https://qsctech.github.io/zju-icicles/)
 
 [3] Edge segmentation
  https://github.com/MarkMoHR/Awesome-Edge-Detection-Papers
