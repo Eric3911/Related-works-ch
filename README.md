@@ -3,7 +3,7 @@
 
 ### 研究方向：神经计算算法与系统，视觉深度学习，大数据分析与机器学习系统，认知计算系统,并行异构与优化传输。
 ### 主要工程：PDF文档文字识别，低分辨率遥感图像处理，医学图像处理，视频图像跟踪或超分处理，微服务算法服务。
-### 兴趣方向：[RSIC-V芯片工程](https://codechina.csdn.net/OpenXiangShan/XiangShan); 蛋白质组学；材料合成；高频交易；能源开发。
+### 兴趣方向：[RSIC-V芯片工程](https://codechina.csdn.net/OpenXiangShan/XiangShan); 蛋白质组学；材料合成；高频交易；能源等工业边缘计算架构设计。
 
 [广义矩阵乘法](https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/)
 [Opencv01](https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html),[OPencv02](http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html ) 
