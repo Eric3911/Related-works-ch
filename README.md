@@ -14,14 +14,16 @@
 [图像算法开源代码](https://github.com/Eric3911/Code-with-Life)
 [图像算法开源代码]( https://github.com/Eric3911/Engineering-papers)
 [图像算法开源代码]( https://github.com/Eric3911/Coding-learning)
+
 [清华大学计算机相关开源学习课程](https://rekcarc-tsc-uht.readthedocs.io/en/latest/)
+
 [浙江大学计算机相关开源学习课程](https://qsctech.github.io/zju-icicles/)
 
 
-[4] new deep learning paradigm: dual learning
+[全新学习方向](元学习与认知计算)
  One of the future directions of deep learning: Based on the combination of nonlinear dynamics and fractional nonlinear equations in group theory, a meta learning method, model safe federated learning and data safe blockchain are proposed after reinforcement learning.
 
-[5] Big data game learning
+[5] 大数据项目学习
  https://github.com/Eric3911/CDCS
  
  https://github.com/Eric3911/Computer_vision_Object
@@ -32,34 +34,34 @@ https://github.com/Eric3911/Visual-Science-Competition
 
 [7] Significance target detection
 https://mmcheng.net/tag/salient-object-detection/
-[8] computer graphics
+[8] 计算图形学
           Jim Blinn's Corner: Dirty Pixels
           Jim Blinn's Corner: A Trip Down The Graphics Pipeline
           Jim Blinn's Corner: Notation, Notation, Notation
 
-[9] Computer photography    
+[9] 计算摄影学   
    Millimeter wave radar fusion of optical flow field and ray tracing in 77GHz phase control matrix
           
-[10] Project of removing rain and fog from retina
+[10] 图像去噪（去雨雾和暗通道滤波）
 ![](https://github.com/Eric3911/image/blob/master/%E8%A7%86%E7%BD%91%E8%86%9C%E5%8E%BB%E9%9B%BE%E7%BB%93%E6%9E%9C.png)
 
-[11] Imaging quality analysis project
+[11] 图像质量分析
 ![](https://github.com/Eric3911/image/blob/master/00007.jpg)
 ![](https://github.com/Eric3911/image/blob/master/123456.png)
 ![](https://github.com/Eric3911/Stage/blob/master/%E5%9F%BA%E4%BA%8ESCB%E7%AE%97%E6%B3%95%E7%9A%84%E5%A2%9E%E5%BC%BA.png)
 ![](https://github.com/Eric3911/image/blob/master/%E5%9F%BA%E4%BA%8ESCB%E7%AE%97%E6%B3%95%E7%9A%84%E5%A2%9E%E5%BC%BA.png)
 ![](https://github.com/Eric3911/image/blob/master/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BB%B7%E5%8F%82%E8%80%83Evaluation.png)
 
-[12] STR natural scene text recognition project
+[12] 自然场景文本检测
   It has the most engineering significance and academic value to use fan / attention recognition after using super-resolution and antagonism to generate Song typeface for character recognition, and the FOTS model based on reinforcement learning made by Mr. Jin is also a good direction.
   
 https://github.com/chongyangtao/Awesome-Scene-Text-Recognition
 https://github.com/Eric3911/icpr2018_ocr_papers
 
-[13] watermarking, denoising, super-resolution
+[13] 水下目标检测
 https://github.com/DmitryUlyanov/deep-image-prior
 
-[14] Remove shadow items from documents and certificates
+[14]文档阴影去除
 ![](https://github.com/Eric3911/image/blob/master/00006.jpg)
 
 [15] Certificate identification items
@@ -74,18 +76,19 @@ https://github.com/DmitryUlyanov/deep-image-prior
 ![](https://github.com/Eric3911/image/blob/master/00014.jpg)
 ![](https://github.com/Eric3911/image/blob/master/Text_20181101153336.png)
 
-【17】Transportation ADAS project
+【17】自动驾驶基础项目
  ![](https://github.com/Eric3911/image/blob/master/00011.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00012.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/005%20_AIOT_ASIC_RSIC_and_MIPS/Dingtalk_20201126172730.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/005%20_AIOT_ASIC_RSIC_and_MIPS/Dingtalk_20201126172749.jpg)
-【18】Remote sensing small target detection project
+
+【18】遥感小目标检测
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
 ![](https://github.com/Eric3911/yolov3-keras-master/blob/master/beihang_airplane_PR.png)
 ![](https://github.com/Eric3911/image/blob/master/QQ%E6%88%AA%E5%9B%BE20190425164616.jpg)
 
-【19】MIT vacation scientific research exchange project
-Open coursera: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
+【19】麻省理工学院交流生项目
+[麻省理工开放课程](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/)
 
 ![](https://github.com/Eric3911/image/blob/master/MIT.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/1.jpg)
