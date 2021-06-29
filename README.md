@@ -12,8 +12,8 @@
 [神经计算与胶囊网络](https://github.com/bojone/Capsule)
 
 [图像算法开源代码](https://github.com/Eric3911/Code-with-Life)
-[图像算法开源代码]( https://github.com/Eric3911/Engineering-papers)
-[图像算法开源代码]( https://github.com/Eric3911/Coding-learning)
+ |[图像算法开源代码]( https://github.com/Eric3911/Engineering-papers)
+ |[图像算法开源代码]( https://github.com/Eric3911/Coding-learning)
 
 [清华大学计算机相关开源学习课程](https://rekcarc-tsc-uht.readthedocs.io/en/latest/)
 
