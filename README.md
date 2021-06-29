@@ -119,4 +119,4 @@ https://github.com/DmitryUlyanov/deep-image-prior
 Cervical cancer and red blood cell detection project
 ![](https://github.com/Eric3911/image/blob/master/00019.jpg)
 
-https://opensource.org/licenses/MIT
+[MIT-licenses](https://opensource.org/licenses/MIT)
