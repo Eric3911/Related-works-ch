@@ -83,7 +83,6 @@ https://github.com/DmitryUlyanov/deep-image-prior
 
 【18】遥感小目标检测
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
-![](https://github.com/Eric3911/yolov3-keras-master/blob/master/beihang_airplane_PR.png)
 ![](https://github.com/Eric3911/image/blob/master/QQ%E6%88%AA%E5%9B%BE20190425164616.jpg)
 
 【19】麻省理工学院交流生项目
