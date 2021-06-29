@@ -23,8 +23,7 @@
 [全新学习方向](元学习与认知计算)
  One of the future directions of deep learning: Based on the combination of nonlinear dynamics and fractional nonlinear equations in group theory, a meta learning method, model safe federated learning and data safe blockchain are proposed after reinforcement learning.
 
-[5] 大数据项目学习
- https://github.com/Eric3911/CDCS
+[大数据项目学习](https://github.com/Eric3911/CDCS)
  
  https://github.com/Eric3911/Computer_vision_Object
  ![](https://github.com/Eric3911/Experiment/blob/main/00021.jpg)
@@ -74,7 +73,7 @@ https://github.com/DmitryUlyanov/deep-image-prior
 【16】Layout analysis project
 ![](https://github.com/Eric3911/image/blob/master/00003.jpg)
 ![](https://github.com/Eric3911/image/blob/master/00014.jpg)
-![](https://github.com/Eric3911/image/blob/master/Text_20181101153336.png)
+![](https://github.com/Eric3911/image/blob/master/001det.jpg)
 
 【17】自动驾驶基础项目
  ![](https://github.com/Eric3911/image/blob/master/00011.jpg)
