@@ -9,7 +9,7 @@
 [Python传统算法](https://github.com/TheAlgorithms/Python)
 
 # related works
-[神经计算与胶囊网络](https://github.com/naturomics/CapsNet-Tensorflow)(https://github.com/bojone/Capsule)
+[神经计算与胶囊网络](https://github.com/bojone/Capsule)
 
 [图像算法开源代码](https://github.com/Eric3911/Code-with-Life)
 [图像算法开源代码]( https://github.com/Eric3911/Engineering-papers)
