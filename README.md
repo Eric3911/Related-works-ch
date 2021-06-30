@@ -1,9 +1,9 @@
 # Introduction
-                                                              质疑权威是独立思考的开端。
+                                                              质疑权威是独立思考的开端
 
 ### 研究方向：神经计算算法与系统，视觉深度学习，大数据分析与机器学习系统，认知计算系统,并行异构与优化传输。
 ### 主要工程：PDF文档文字识别，低分辨率遥感图像处理，医学图像处理，视频图像跟踪或超分处理，微服务算法服务。
-### 兴趣方向：[RSIC-V芯片工程](https://codechina.csdn.net/OpenXiangShan/XiangShan); 蛋白质组学；材料合成；高频交易；能源等工业边缘计算架构设计。
+### 兴趣方向：[RSIC-V芯片工程](https://codechina.csdn.net/OpenXiangShan/XiangShan); 蛋白质组学；材料合成；高频交易；能源、工业制造边缘计算架构设计。
 
 [广义矩阵乘法](https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/)
 [Opencv01](https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html),[OPencv02](http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html ) 
@@ -32,7 +32,7 @@
 [6] Computer vision science competition
 https://github.com/Eric3911/Visual-Science-Competition
 
-[7] Significance target detection
+[ Significance target detection](https://mmcheng.net/tag/salient-object-detection/)
 https://mmcheng.net/tag/salient-object-detection/
 [8] 计算图形学
           Jim Blinn's Corner: Dirty Pixels
@@ -52,14 +52,11 @@ https://mmcheng.net/tag/salient-object-detection/
 ![](https://github.com/Eric3911/image/blob/master/%E5%9F%BA%E4%BA%8ESCB%E7%AE%97%E6%B3%95%E7%9A%84%E5%A2%9E%E5%BC%BA.png)
 ![](https://github.com/Eric3911/image/blob/master/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BB%B7%E5%8F%82%E8%80%83Evaluation.png)
 
-[12] 自然场景文本检测
-  It has the most engineering significance and academic value to use fan / attention recognition after using super-resolution and antagonism to generate Song typeface for character recognition, and the FOTS model based on reinforcement learning made by Mr. Jin is also a good direction.
-  
+[ 自然场景文本检测](https://github.com/jiangxiluning/FOTS.PyTorch)
 https://github.com/chongyangtao/Awesome-Scene-Text-Recognition
 https://github.com/Eric3911/icpr2018_ocr_papers
 
-[13] 水下目标检测
-https://github.com/DmitryUlyanov/deep-image-prior
+[ 水下目标检测](https://github.com/DmitryUlyanov/deep-image-prior)
 
 [14]文档阴影去除
 ![](https://github.com/Eric3911/image/blob/master/00006.jpg)
@@ -119,4 +116,5 @@ https://github.com/DmitryUlyanov/deep-image-prior
 Cervical cancer and red blood cell detection project
 ![](https://github.com/Eric3911/image/blob/master/00019.jpg)
 
-[MIT-licenses](https://opensource.org/licenses/MIT)
+LICENSE
+[MIT](https://opensource.org/licenses/MIT)
