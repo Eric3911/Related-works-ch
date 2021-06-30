@@ -16,8 +16,8 @@
  |[图像算法开源代码]( https://github.com/Eric3911/Engineering-papers)
  |[图像算法开源代码]( https://github.com/Eric3911/Coding-learning)
 
-[清华大学计算机相关开源学习课程](https://rekcarc-tsc-uht.readthedocs.io/en/latest/)
- |[浙江大学计算机相关开源学习课程](https://qsctech.github.io/zju-icicles/)
+[清华大学计算机开源学习课程](https://rekcarc-tsc-uht.readthedocs.io/en/latest/)
+ |[浙江大学计算机开源学习课程](https://qsctech.github.io/zju-icicles/)
 
 
 [全新学习方向](元学习与认知计算)
