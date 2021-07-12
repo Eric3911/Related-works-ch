@@ -21,6 +21,8 @@
 nasnet、senet、sknet、panet、cspnet
 
  densenet121、densenet161、densenet201； squeezenet、mobilenet、mobilenetv2、mobilenetv3；shufflenetv1、shufflenetv2；
+ 
+ !()[https://github.com/Eric3911/related-works-ch/blob/master/02_%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%A0%94%E7%A9%B6%E5%8F%8A%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8/01_%20%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB%E8%AF%86%E5%88%AB/A000001.jpg]
 
 
 
