@@ -5,6 +5,8 @@
 #### 主要工程：PDF文档文字识别，低分辨率遥感图像处理，医学图像处理，视频图像跟踪或超分处理，微服务算法服务。
 #### 兴趣方向：[RSIC-V芯片工程](https://codechina.csdn.net/OpenXiangShan/XiangShan); 蛋白质组学；材料合成；高频交易；能源、工业制造边缘计算架构设计。
 
+![](https://github.com/Eric3911/related-works-ch/blob/master/04_%E8%A7%86%E8%A7%89%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B/%E8%A7%86%E8%A7%89%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%EF%BC%88%E5%85%A8%E4%B9%A6%E6%A1%86%E6%9E%B6%EF%BC%89.jpg)
+
 [广义矩阵乘法](https://petewarden.com/2015/04/20/why-gemm-is-at-the-heart-of-deep-learning/)
 [Opencv01](https://docs.opencv.org/3.4.5/d9/df8/tutorial_root.html),[OPencv02](http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html ) 
 [Python传统算法](https://github.com/TheAlgorithms/Python)
