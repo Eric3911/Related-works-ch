@@ -79,6 +79,7 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 ![](https://github.com/Eric3911/image/blob/master/00012.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/005%20_AIOT_ASIC_RSIC_and_MIPS/Dingtalk_20201126172730.jpg)
 ![](https://github.com/Eric3911/Stage/blob/master/005%20_AIOT_ASIC_RSIC_and_MIPS/Dingtalk_20201126172749.jpg)
+![](https://github.com/Eric3911/related-works-ch/blob/master/04_%E8%A7%86%E8%A7%89%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B/RSIC-V%E5%8E%9F%E7%94%9F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.jpg)
 
 【09】遥感小目标检测
 ![](https://github.com/Eric3911/RFBNet_master/blob/master/000044test.jpg)
