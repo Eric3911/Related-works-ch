@@ -5,7 +5,7 @@
                                             
 #### 研究方向：神经计算算法与系统，认知计算系统,视觉深度学习，大数据分析与机器学习系统，并行异构与优化传输。
 #### 主要工程：PDF文档文字识别，低分辨率遥感图像处理，医学图像处理，视频图像跟踪或超分处理，微服务算法服务。
-#### 兴趣方向：[RSIC-V芯片工程](https://codechina.csdn.net/OpenXiangShan/XiangShan); 蛋白质组学；材料合成；高频交易；能源、工业制造边缘计算架构设计。
+#### 兴趣方向：[RSIC-V芯片工程](https://codechina.csdn.net/OpenXiangShan/XiangShan); 蛋白质组学；材料合成；高频交易；能源开发、工业制造边缘计算架构设计。
 
 ![](https://github.com/Eric3911/related-works-ch/blob/master/04_%E8%A7%86%E8%A7%89%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B/%E8%A7%86%E8%A7%89%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%EF%BC%88%E5%85%A8%E4%B9%A6%E6%A1%86%E6%9E%B6%EF%BC%89.jpg)
 
