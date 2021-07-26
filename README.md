@@ -17,7 +17,7 @@
 # related works
 [神经计算与胶囊网络](https://github.com/bojone/Capsule)
 | [视觉算法应用](https://szeliski.org/Book/)
-[图像算法开源代码](https://github.com/Eric3911/Code-with-Life)
+ |[图像算法开源代码](https://github.com/Eric3911/Code-with-Life)
  |[图像算法开源代码]( https://github.com/Eric3911/Engineering-papers)
  |[图像算法开源代码]( https://github.com/Eric3911/Coding-learning)
 
