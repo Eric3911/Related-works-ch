@@ -26,6 +26,8 @@ machinelearningbook：https://datawhalechina.github.io/pumpkin-book/#/
         18)lightGCN
 	19)DeepGBM
 	20)DeepAR
+	21）MALib
+	22)GBDT
 	
 	二、
 	Gaussian Naive Bayes (GNB)
