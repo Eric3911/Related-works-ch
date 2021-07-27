@@ -28,6 +28,8 @@ machinelearningbook：https://datawhalechina.github.io/pumpkin-book/#/
 	20)DeepAR
 	21）MALib
 	22)GBDT
+        23）https://github.com/MAIF/shapash
+	24）pycharet
 	
 	二、
 	Gaussian Naive Bayes (GNB)
