@@ -26,9 +26,13 @@
  |[图像算法开源代码]( https://github.com/Eric3911/Coding-learning)
 
 [清华大学计算机开源学习课程](https://rekcarc-tsc-uht.readthedocs.io/en/latest/)
- |[浙江大学计算机开源学习课程](https://qsctech.github.io/zju-icicles/， https://github.com/QSCTech/zju-icicles)
-
-
+|[清华大学计算机开源学习课程](https://github.com/PKUanonym/REKCARC-TSC-UHT)
+|[北京大小计算机开源学习课程](https://github.com/lib-pku/libpku)
+|[北京大小计算机开源学习课程]( https://lib-pku.github.io/)
+|[上海交大计算机开源学习课程](https://github.com/CoolPhilChen/SJTU-Courses/)
+|[浙江大学计算机开源学习课程](https://qsctech.github.io/zju-icicles/) 
+|[浙江大学计算机开源学习课程](https://github.com/QSCTech/zju-icicles)
+ 
 [全新学习方向](元学习与认知计算)
  One of the future directions of deep learning: Based on the combination of nonlinear dynamics and fractional nonlinear equations in group theory, a meta learning method, model safe federated learning and data safe blockchain are proposed after reinforcement learning.
 
