@@ -6,7 +6,7 @@
                                             
 #### 研究方向：神经计算算法系统，认知计算算法系统；视觉深度学习算法系统，大数据分析与机器学习系统，并行异构与服务优化传输系统，云端认知系统；奇异矩阵分解，分形优化，差分方程。
 #### 主要工程：PDF文档文字识别，低分辨率低质量遥感图像处理，医学图像处理，视频图像跟踪或超分处理，微服务算法服务。
-#### 兴趣方向：[RSIC-V芯片工程](https://codechina.csdn.net/OpenXiangShan/XiangShan); 蛋白质组学；材料合成；高频交易；能源开发、工业制造边缘计算架构设计。
+#### 兴趣方向：[RSIC-V芯片工程](https://codechina.csdn.net/OpenXiangShan/XiangShan); 、工业制造自动化设计；异构边缘计算架构，村算一体硬件，认知多端系统；蛋白质组学计算；材料合成算法；高频交易算法；能源开发工艺设计。
 #### 论文列表：
             [01](https://ieeexplore.ieee.org/abstract/document/9006506)
             [02](https://ieeexplore.ieee.org/abstract/document/8763909)
