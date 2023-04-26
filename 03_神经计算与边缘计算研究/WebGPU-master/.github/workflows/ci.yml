@@ -1,0 +1,378 @@
+name: CI
+
+on:
+  push:
+    branches: ["*"]
+    tags: [v0.*]
+  pull_request:
+  merge_group:
+
+env:
+  CARGO_INCREMENTAL: false
+  CARGO_TERM_COLOR: always
+  RUST_BACKTRACE: full
+  MSRV: 1.64
+  PKG_CONFIG_ALLOW_CROSS: 1 # allow android to work
+  RUSTFLAGS: --cfg=web_sys_unstable_apis -D warnings
+  RUSTDOCFLAGS: -Dwarnings
+  CACHE_SUFFIX: c # cache busting
+
+# We distinguish the following kinds of builds:
+# - native: build for the same target as we compile on
+# - web: build for the Web
+# - em: build for the Emscripten
+
+# For build time and size optimization we disable debug
+# entirely on clippy jobs and reduce it to line-numbers
+# only for ones where we run tests.
+#
+# Additionally, we disable incremental builds entirely
+# as our caching system doesn't actually cache our crates.
+# It adds overhead to the build and another point of failure.
+
+jobs:
+  check-msrv:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Windows
+          - name: Windows x86_64
+            os: windows-2022
+            target: x86_64-pc-windows-msvc
+            kind: native
+
+          # MacOS
+          - name: MacOS x86_64
+            os: macos-12
+            target: x86_64-apple-darwin
+            kind: native
+
+          - name: MacOS aarch64
+            os: macos-12
+            target: aarch64-apple-darwin
+            kind: native
+
+          # IOS
+          - name: IOS aarch64
+            os: macos-12
+            target: aarch64-apple-ios
+            kind: native
+
+          # Linux
+          - name: Linux x86_64
+            os: ubuntu-22.04
+            target: x86_64-unknown-linux-gnu
+            kind: native
+
+          - name: Linux aarch64
+            os: ubuntu-22.04
+            target: aarch64-unknown-linux-gnu
+            kind: native
+
+          # Android
+          - name: Android aarch64
+            os: ubuntu-22.04
+            target: aarch64-linux-android
+            kind: native
+
+          # WebGPU/WebGL
+          - name: WebAssembly
+            os: ubuntu-22.04
+            target: wasm32-unknown-unknown
+            kind: web
+
+          - name: Emscripten
+            os: ubuntu-22.04
+            target: wasm32-unknown-emscripten
+            kind: em
+
+    name: Clippy ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install MSRV toolchain
+        run: |
+          rustup toolchain install ${{ env.MSRV }} --no-self-update --profile=minimal --component clippy --target ${{ matrix.target }}
+          rustup default ${{ env.MSRV }}
+
+      - name: disable debug
+        shell: bash
+        run: |
+          mkdir -p .cargo
+          echo """
+          [profile.dev]
+          debug = false" >> .cargo/config.toml
+
+      - name: caching
+        uses: Swatinem/rust-cache@v2
+        with:
+          key: clippy-${{ matrix.target }}-${{ matrix.kind }}-${{ env.CACHE_SUFFIX }}
+
+      - name: add android apk to path
+        if: matrix.target == 'aarch64-linux-android'
+        run: |
+          echo "$ANDROID_HOME/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin" >> $GITHUB_PATH
+
+      - name: check web
+        if: matrix.kind == 'web'
+        shell: bash
+        run: |
+          set -e
+
+          # build for WebGPU
+          cargo clippy --target ${{ matrix.target }} -p wgpu --tests --features glsl,spirv
+          cargo doc --target ${{ matrix.target }} -p wgpu --no-deps --features glsl,spirv
+
+          # all features
+          cargo clippy --target ${{ matrix.target }} -p wgpu -p wgpu-hal --tests --all-features
+          cargo doc --target ${{ matrix.target }} -p wgpu --no-deps --all-features
+
+      - name: check em
+        if: matrix.kind == 'em'
+        shell: bash
+        run: |
+          set -e
+
+          # build for Emscripten
+          cargo clippy --target ${{ matrix.target }} -p wgpu -p wgpu-hal --no-default-features
+
+          # build cube example
+          cargo clippy --target ${{ matrix.target }} --example cube
+
+          # build raw-gles example
+          cargo clippy --target ${{ matrix.target }} --example raw-gles
+
+          # all features
+          cargo clippy --target ${{ matrix.target }} -p wgpu-hal --all-features
+          cargo clippy --target ${{ matrix.target }} -p wgpu --all-features
+
+      - name: check native
+        if: matrix.kind == 'native'
+        shell: bash
+        run: |
+          set -e
+
+          # check with no features
+          cargo clippy --target ${{ matrix.target }} -p wgpu -p wgpu-core -p wgpu-info -p player --no-default-features
+
+          # Check with all features.
+          cargo clippy --target ${{ matrix.target }} -p wgpu -p wgpu-info -p player -p wgpu-core -p wgpu-hal --tests --all-features
+
+          # build docs
+          cargo doc --target ${{ matrix.target }} -p wgpu -p wgpu-info -p player -p wgpu-core -p wgpu-hal --all-features --no-deps
+
+  wasm-test:
+    name: Test WebAssembly
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+
+      # TODO: replace with this once there is a release containing this PR:
+      # https://github.com/rustwasm/wasm-pack/pull/1185
+      # - name: Install wasm-pack
+      #   uses: taiki-e/install-action@v2
+      #   with:
+      #     tool: wasm-pack
+      - name: install wasm-pack
+        run: cargo install --git https://github.com/rustwasm/wasm-pack --rev e1010233b0ce304f42cda59962254bf30ae97c3e wasm-pack
+
+      - name: execute tests
+        run: |
+          cd wgpu
+          wasm-pack test --headless --chrome --features webgl
+
+  gpu-test:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Windows
+          - name: Windows x86_64
+            os: windows-2022
+            backends: dx12
+
+          # Linux
+          - name: Linux x86_64
+            os: ubuntu-22.04
+            backends: vulkan gl
+
+    name: Test ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install cargo-nextest and cargo-llvm-cov
+        uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-nextest,cargo-llvm-cov
+
+      - name: install swiftshader
+        if: matrix.os == 'ubuntu-22.04'
+        shell: bash
+        run: |
+          set -e
+
+          mkdir -p swiftshader
+          curl -LsSf https://github.com/gfx-rs/ci-build/releases/latest/download/swiftshader-linux-x86_64.tar.xz | tar -xf - -C swiftshader
+
+          echo "LD_LIBRARY_PATH=$PWD/swiftshader" >> $GITHUB_ENV
+
+      - name: install llvmpipe, vulkan sdk
+        if: matrix.os == 'ubuntu-22.04'
+        shell: bash
+        run: |
+          set -e
+
+          sudo apt-get update -y -qq
+
+          # vulkan sdk
+          wget -qO - https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
+          sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-jammy.list https://packages.lunarg.com/vulkan/lunarg-vulkan-jammy.list
+
+          sudo apt-get update
+          sudo apt install -y libegl1-mesa libgl1-mesa-dri libxcb-xfixes0-dev vulkan-sdk
+
+      - name: disable debug
+        shell: bash
+        run: |
+          mkdir -p .cargo
+          echo """
+          [profile.dev]
+          debug = 1" >> .cargo/config.toml
+
+      - name: caching
+        uses: Swatinem/rust-cache@v2
+        with:
+          key: test-${{ matrix.os }}-${{ env.CACHE_SUFFIX }}
+
+      - name: run wgpu-info
+        shell: bash
+        run: |
+          set -e
+
+          cargo llvm-cov --no-cfg-coverage run --bin wgpu-info --no-report
+
+      - name: run tests
+        shell: bash
+        run: |
+          set -e
+
+          for backend in ${{ matrix.backends }}; do
+            echo "======= NATIVE TESTS $backend ======";
+            WGPU_BACKEND=$backend cargo llvm-cov --no-cfg-coverage nextest -p wgpu -p wgpu-types -p wgpu-hal -p wgpu-core -p player --no-fail-fast --no-report
+          done
+
+      - name: generate coverage report
+        shell: bash
+        run: |
+          set -e
+
+          cargo llvm-cov report --lcov --output-path lcov.info
+
+      - name: upload coverage report to codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: lcov.info
+
+  doctest:
+    name: Doctest
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+
+      - name: disable debug
+        shell: bash
+        run: |
+          mkdir -p .cargo
+          echo """
+          [profile.dev]
+          debug = 1" >> .cargo/config.toml
+
+      - name: caching
+        uses: Swatinem/rust-cache@v2
+        with:
+          key: clippy-${{ matrix.target }}-${{ matrix.kind }}-${{ env.CACHE_SUFFIX }}
+
+      - name: run doctests
+        shell: bash
+        run: |
+          set -e
+
+          cargo test --doc -p wgpu -p wgpu-core -p wgpu-hal -p wgpu-types
+
+  fmt:
+    name: Format
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+
+      - name: run rustfmt
+        run: |
+          cargo fmt -- --check
+
+  check-msrv-cts_runner:
+    name: Clippy cts_runner
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install MSRV toolchain
+        run: |
+          rustup toolchain install ${{ env.MSRV }} --no-self-update --profile=minimal --component clippy
+          rustup default ${{ env.MSRV }}
+
+      - name: disable debug
+        shell: bash
+        run: |
+          mkdir -p .cargo
+          echo """
+          [profile.dev]
+          debug = 1" >> .cargo/config.toml
+
+      - name: caching
+        uses: Swatinem/rust-cache@v2
+        with:
+          key: cts_runner-${{ env.CACHE_SUFFIX }}
+
+      - name: build Deno
+        run: |
+          cargo clippy --manifest-path cts_runner/Cargo.toml
+
+  cargo-deny-check-advisories:
+    name: "Run `cargo deny check advisories`"
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+
+      - name: Run `cargo deny check`
+        uses: EmbarkStudios/cargo-deny-action@v1
+        with:
+          command: check advisories
+          arguments: --all-features --workspace
+          rust-version: ${{ env.MSRV }}
+
+  cargo-deny-check-rest:
+    name: "Run `cargo deny check`"
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+
+      - name: Run `cargo deny check`
+        uses: EmbarkStudios/cargo-deny-action@v1
+        with:
+          command: check bans licenses sources
+          arguments: --all-features --workspace
+          rust-version: ${{ env.MSRV }}

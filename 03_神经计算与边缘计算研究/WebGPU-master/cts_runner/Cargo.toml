@@ -1,0 +1,20 @@
+[package]
+name = "cts_runner"
+version = "0.1.0"
+authors = [
+	"Luca Casonato <hello@lcas.dev>"
+]
+edition.workspace = true
+description = "CTS runner for wgpu"
+license.workspace = true
+publish = false
+
+[dependencies]
+deno_console.workspace = true
+deno_core.workspace = true
+deno_url.workspace = true
+deno_web.workspace = true
+deno_webidl.workspace = true
+deno_webgpu.workspace = true
+tokio = { workspace = true, features = ["full"] }
+termcolor.workspace = true

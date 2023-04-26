@@ -1,0 +1,345 @@
+[package]
+name = "wgpu"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+description = "Rusty WebGPU API wrapper"
+homepage.workspace = true
+repository.workspace = true
+keywords.workspace = true
+license.workspace = true
+exclude = [
+    "etc/**/*",
+    "examples/**/*.png",  # Image comparison test
+    "examples/**/*.dds",  # Compressed textures
+    "examples/**/*.ktx2", # Compressed textures
+    "examples/**/*.mtl",  # Material files
+    "examples/**/*.obj",  # Model files
+    "tests/**/*",
+    "Cargo.lock",
+    "target/**/*"
+]
+autotests = false
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+targets = [
+    "x86_64-unknown-linux-gnu",
+    "x86_64-apple-darwin",
+    "x86_64-pc-windows-msvc",
+    "wasm32-unknown-unknown",
+]
+
+[lib]
+
+[[test]]
+name = "wgpu-tests"
+path = "tests/root.rs"
+
+[[example]]
+name = "boids"
+test = true
+
+[[example]]
+name = "bunnymark"
+test = true
+
+[[example]]
+name = "conservative-raster"
+test = true
+
+[[example]]
+name = "cube"
+test = true
+
+[[example]]
+name = "hello-compute"
+test = true
+
+[[example]]
+name = "mipmap"
+test = true
+
+[[example]]
+name = "msaa-line"
+test = true
+
+[[example]]
+name = "shadow"
+test = true
+
+[[example]]
+name = "skybox"
+test = true
+
+[[example]]
+name = "texture-arrays"
+test = true
+
+[[example]]
+name = "water"
+test = true
+
+[[example]]
+name = "stencil-triangles"
+test = true
+
+[features]
+default = ["wgsl"]
+# Apply run-time checks, even in release builds. These are in addition
+# to the validation carried out at public APIs in all builds.
+strict_asserts = ["wgc?/strict_asserts", "wgt/strict_asserts"]
+spirv = ["naga/spv-in"]
+glsl = ["naga/glsl-in"]
+wgsl = ["wgc?/wgsl"]
+trace = ["serde", "wgc/trace"]
+replay = ["serde", "wgc/replay"]
+angle = ["wgc/angle"]
+webgl = ["hal", "wgc"]
+vulkan-portability = ["wgc/vulkan"]
+expose-ids = []
+
+# wgpu-core is always available as an optional dependency, "wgc".
+# Whenever wgpu-core is selected, we want the GLES backend and raw
+# window handle support.
+[dependencies.wgc]
+optional = true
+workspace = true
+features = ["raw-window-handle", "gles"]
+
+# wgpu-core is required whenever not targeting web APIs directly.
+# Whenever wgpu-core is selected, we want the GLES backend and raw
+# window handle support.
+[target.'cfg(any(not(target_arch = "wasm32"), target_os = "emscripten"))'.dependencies.wgc]
+workspace = true
+features = ["raw-window-handle", "gles"]
+
+# We want the wgpu-core Metal backend on macOS and iOS.
+# (We should consider also enabling "vulkan" for Vulkan Portability.)
+[target.'cfg(any(target_os = "macos", target_os = "ios"))'.dependencies.wgc]
+workspace = true
+features = ["metal"]
+
+# We want the wgpu-core Direct3D backends on Windows.
+[target.'cfg(windows)'.dependencies.wgc]
+workspace = true
+features = ["dx11", "dx12"]
+
+# We want the wgpu-core Vulkan backend on Unix (but not Emscripten) and Windows.
+[target.'cfg(any(windows, all(unix, not(target_os = "emscripten"), not(target_os = "ios"), not(target_os = "macos"))))'.dependencies.wgc]
+workspace = true
+features = ["vulkan"]
+
+[dependencies.wgt]
+workspace = true
+
+# We need wgpu-hal unless we're targeting the web APIs.
+[target.'cfg(any(not(target_arch = "wasm32"), target_os = "emscripten"))'.dependencies]
+hal = { workspace = true }
+
+[target.'cfg(all(not(target_arch = "wasm32"), unix, not(target_os = "ios"), not(target_os = "macos")))'.dependencies]
+hal = { workspace = true, features = ["renderdoc"] }
+
+[target.'cfg(windows)'.dependencies]
+hal = { workspace = true, features = ["dxc_shader_compiler", "renderdoc", "windows_rs"] }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies.hal]
+workspace = true
+optional = true
+
+[dependencies]
+arrayvec.workspace = true
+log.workspace = true
+parking_lot.workspace = true
+profiling.workspace = true
+raw-window-handle.workspace = true
+serde = { workspace = true, features = ["derive"], optional = true }
+smallvec.workspace = true
+static_assertions.workspace = true
+cfg-if.workspace = true
+
+[dev-dependencies]
+bitflags.workspace = true
+bytemuck = { workspace = true, features = ["derive"] }
+glam.workspace = true
+ddsfile.workspace = true
+futures-intrusive.workspace = true
+env_logger.workspace = true
+image.workspace = true
+log.workspace = true
+noise = { workspace = true }
+obj.workspace = true
+pollster.workspace = true
+png.workspace = true
+nanorand = { workspace = true, features = ["wyrand"] }
+wasm-bindgen-test.workspace = true
+winit.workspace = true # for "halmark" example
+
+[target.'cfg(not(target_arch = "wasm32"))'.dev-dependencies]
+async-executor.workspace = true
+
+[dependencies.naga]
+workspace = true
+features = ["clone"]
+optional = true
+
+# used to test all the example shaders
+[dev-dependencies.naga]
+workspace = true
+features = ["wgsl-in"]
+
+[target.'cfg(target_arch = "wasm32")'.dependencies.naga]
+workspace = true
+features = ["wgsl-out"]
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+web-sys = { workspace = true, features = [
+    "Document",
+    "Navigator",
+    "Node",
+    "NodeList",
+    "Gpu",
+    "GpuAdapter",
+    "GpuAddressMode",
+    "GpuAutoLayoutMode",
+    "GpuBindGroup",
+    "GpuBindGroupDescriptor",
+    "GpuBindGroupEntry",
+    "GpuBindGroupLayout",
+    "GpuBindGroupLayoutDescriptor",
+    "GpuBindGroupLayoutEntry",
+    "GpuBlendComponent",
+    "GpuBlendFactor",
+    "GpuBlendOperation",
+    "GpuBlendState",
+    "GpuBuffer",
+    "GpuBufferBinding",
+    "GpuBufferBindingLayout",
+    "GpuBufferBindingType",
+    "GpuBufferDescriptor",
+    "GpuCanvasAlphaMode",
+    "GpuCanvasContext",
+    "GpuCanvasConfiguration",
+    "GpuColorDict",
+    "GpuColorTargetState",
+    "GpuCommandBuffer",
+    "GpuCommandBufferDescriptor",
+    "GpuCommandEncoder",
+    "GpuCommandEncoderDescriptor",
+    "GpuCompareFunction",
+    "GpuCompilationInfo",
+    "GpuCompilationMessage",
+    "GpuCompilationMessageType",
+    "GpuComputePassDescriptor",
+    "GpuComputePassEncoder",
+    "GpuComputePipeline",
+    "GpuComputePipelineDescriptor",
+    "GpuCullMode",
+    "GpuDepthStencilState",
+    "GpuDevice",
+    "GpuDeviceDescriptor",
+    "GpuDeviceLostInfo",
+    "GpuDeviceLostReason",
+    "GpuError",
+    "GpuErrorFilter",
+    # "GpuExtent2dDict", Not yet implemented in web_sys
+    "GpuExtent3dDict",
+    "GpuFeatureName",
+    "GpuFilterMode",
+    "GpuFragmentState",
+    "GpuFrontFace",
+    "GpuImageCopyBuffer",
+    "GpuImageCopyExternalImage",
+    "GpuImageCopyTexture",
+    "GpuImageCopyTextureTagged",
+    "GpuImageDataLayout",
+    "GpuIndexFormat",
+    "GpuLoadOp",
+    "gpu_map_mode",
+    "GpuMipmapFilterMode",
+    "GpuMultisampleState",
+    "GpuObjectDescriptorBase",
+    "GpuOrigin2dDict",
+    "GpuOrigin3dDict",
+    "GpuOutOfMemoryError",
+    "GpuPipelineDescriptorBase",
+    "GpuPipelineLayout",
+    "GpuPipelineLayoutDescriptor",
+    "GpuPowerPreference",
+    "GpuPrimitiveState",
+    "GpuPrimitiveTopology",
+    "GpuProgrammableStage",
+    "GpuQuerySet",
+    "GpuQuerySetDescriptor",
+    "GpuQueryType",
+    "GpuQueue",
+    "GpuRenderBundle",
+    "GpuRenderBundleDescriptor",
+    "GpuRenderBundleEncoder",
+    "GpuRenderBundleEncoderDescriptor",
+    "GpuRenderPassColorAttachment",
+    "GpuRenderPassDepthStencilAttachment",
+    "GpuRenderPassDescriptor",
+    "GpuRenderPassEncoder",
+    "GpuRenderPipeline",
+    "GpuRenderPipelineDescriptor",
+    "GpuRequestAdapterOptions",
+    "GpuSampler",
+    "GpuSamplerBindingLayout",
+    "GpuSamplerBindingType",
+    "GpuSamplerDescriptor",
+    "GpuShaderModule",
+    "GpuShaderModuleDescriptor",
+    "GpuStencilFaceState",
+    "GpuStencilOperation",
+    "GpuStorageTextureAccess",
+    "GpuStorageTextureBindingLayout",
+    "GpuStoreOp",
+    "GpuSupportedFeatures",
+    "GpuSupportedLimits",
+    "GpuTexture",
+    "GpuTextureAspect",
+    "GpuTextureBindingLayout",
+    "GpuTextureDescriptor",
+    "GpuTextureDimension",
+    "GpuTextureFormat",
+    "GpuTextureSampleType",
+    "GpuTextureView",
+    "GpuTextureViewDescriptor",
+    "GpuTextureViewDimension",
+    "GpuUncapturedErrorEvent",
+    "GpuUncapturedErrorEventInit",
+    "GpuValidationError",
+    "GpuVertexAttribute",
+    "GpuVertexBufferLayout",
+    "GpuVertexFormat",
+    "GpuVertexState",
+    "GpuVertexStepMode",
+    "HtmlCanvasElement",
+    "OffscreenCanvas",
+    "ImageBitmap",
+    "ImageBitmapRenderingContext",
+    "Window",
+    "WorkerGlobalScope",
+    "WorkerNavigator"
+] }
+wasm-bindgen.workspace = true
+js-sys.workspace = true
+wasm-bindgen-futures.workspace = true
+parking_lot.workspace = true
+
+[target.'cfg(target_arch = "wasm32")'.dev-dependencies]
+console_error_panic_hook.workspace = true
+console_log.workspace = true
+# We need these features in the framework examples and tests
+web-sys = { workspace = true, features = [
+    "Location",
+    "Blob",
+    "RequestInit",
+    "RequestMode",
+    "Request",
+    "Response",
+    "WebGl2RenderingContext",
+    "CanvasRenderingContext2d"
+] }

@@ -1,0 +1,68 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - gecko
+
+env:
+  CARGO_INCREMENTAL: false
+  CARGO_TERM_COLOR: always
+  RUST_BACKTRACE: full
+  RUSTFLAGS: --cfg=web_sys_unstable_apis
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Install Rust WASM target
+        run: rustup target add wasm32-unknown-unknown
+
+      - name: Install wasm-bindgen-cli
+        run: cargo install wasm-bindgen-cli --version=0.2.83
+
+      - name: Build WebGPU examples
+        run: cargo build --package wgpu --release --target wasm32-unknown-unknown --examples
+
+      - name: Generate JS bindings for WebGPU examples
+        run: |
+          for i in target/wasm32-unknown-unknown/release/examples/*.wasm;
+          do
+            wasm-bindgen --no-typescript --out-dir target/generated-gpu --web "$i";
+          done
+
+      - name: Deploy WebGPU examples
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          token: ${{ secrets.WEB_DEPLOY }}
+          folder: target/generated-gpu
+          repository-name: gfx-rs/wgpu-rs.github.io
+          branch: master
+          target-folder: examples-gpu/wasm
+
+      - name: Clean the build
+        run: cargo clean
+
+      - name: Build WebGL examples
+        run: cargo build --release --target wasm32-unknown-unknown --examples --features webgl
+
+      - name: Generate JS bindings for WebGL examples
+        run: |
+          for i in target/wasm32-unknown-unknown/release/examples/*.wasm;
+          do
+            wasm-bindgen --no-typescript --out-dir target/generated-gl --web "$i";
+          done
+
+      - name: Deploy WebGL examples
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          token: ${{ secrets.WEB_DEPLOY }}
+          folder: target/generated-gl
+          repository-name: gfx-rs/wgpu-rs.github.io
+          branch: master
+          target-folder: examples-gl/wasm
