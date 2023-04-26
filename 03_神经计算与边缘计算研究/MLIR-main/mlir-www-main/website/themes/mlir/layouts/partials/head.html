@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+{{- if eq .Title "" }}
+<title>{{ .Site.Title }}</title>
+{{- else }}
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+{{- end }}
+{{- if ne .Description "" }}
+<meta name="description" content="{{ .Description }}">
+{{- else if isset .Site.Params "description" }}
+<meta name="description" content="{{ .Site.Params.description }}">
+{{- end }}
+{{ hugo.Generator }}
+<link href="{{ .Site.BaseURL }}index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="stylesheet" href="{{"css/theme.css" | absURL}}">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+{{ partial "meta/chroma.html" . -}}
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="{{"js/bundle.js" | absURL}}"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    }
+  });
+</script>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
+<link rel="manifest" href="/site.webmanifest?v=1">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#3775e0">
+<link rel="shortcut icon" href="/favicon.ico?v=1">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+{{- partial "meta/google-analytics-async.html" . -}}
+{{- partial "meta/tag-manager.html" . -}}
+{{- partial "meta/google-site-verification.html" . -}}
+{{- partial "custom-css.html" . -}}

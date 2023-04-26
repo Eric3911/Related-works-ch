@@ -1,0 +1,20 @@
+{{- define "main" -}}
+<h1>{{ .Title }}</h1>
+{{- .Content -}}
+
+{{- if .Pages -}}
+<h2>{{ .Title }} Docs</h2>
+<ul>
+{{- range .Pages -}}
+{{- if .Title -}}
+<li>
+  <a href="{{.Permalink}}">{{.Title}}</a>
+</li>
+{{- end -}}
+{{- end -}}
+</ul>
+{{- end -}}
+
+{{- partial "edit-meta.html" . -}}
+{{- partial "pagination.html" . -}}
+{{- end -}}
