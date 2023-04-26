@@ -1,0 +1,18 @@
+[submodule "rocket-chip"]
+	path = rocket-chip
+	url = https://github.com/OpenXiangShan/rocket-chip.git
+[submodule "difftest"]
+	path = difftest
+	url = https://github.com/OpenXiangShan/difftest.git
+[submodule "ready-to-run"]
+	path = ready-to-run
+	url = https://github.com/OpenXiangShan/ready-to-run
+[submodule "huancun"]
+	path = huancun
+	url = https://github.com/OpenXiangshan/huancun.git
+[submodule "fudian"]
+	path = fudian
+	url = https://github.com/OpenXiangShan/fudian.git
+[submodule "utility"]
+	path = utility
+	url = https://github.com/OpenXiangShan/utility
