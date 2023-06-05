@@ -126,10 +126,13 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 【15】Several steel bar competitions
 ![](https://github.com/Eric3911/image/blob/master/00009.jpg)
 
-Cervical cancer and red blood cell detection project
+【16】Cervical cancer and red blood cell detection project
 ![](https://github.com/Eric3911/image/blob/master/00019.jpg)
 ![](https://github.com/Eric3911/related-works-ch/blob/master/02_%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%A0%94%E7%A9%B6%E5%8F%8A%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8/Item002_%E5%8C%BB%E5%AD%A6%E5%9B%BE%E5%83%8F/009.jpg)
 ![](https://github.com/Eric3911/related-works-ch/blob/master/02_%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%A0%94%E7%A9%B6%E5%8F%8A%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8/Item002_%E5%8C%BB%E5%AD%A6%E5%9B%BE%E5%83%8F/001.jpg)
 
+【17】Large model service application
+![](https://github.com/Eric3911/Related-works-ch/blob/master/07_Experiment-master/llms001.png)
+![](https://github.com/Eric3911/Related-works-ch/blob/master/07_Experiment-master/llms002.png)
 LICENSE
 [MIT](https://opensource.org/licenses/MIT)
