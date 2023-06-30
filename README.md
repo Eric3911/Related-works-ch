@@ -1,10 +1,8 @@
 ### Introduction
 
-                                                   质疑权威是独立思考的开端，question everything，to be or not to be！
-                                                   
-                                      一个伟大的技术人员从艺术家的思考工程方式和超现实主义思想对待自己的工作和热爱的事业
-                                                   
-                                                   论文整理——思维框架整理——相关开源项目整理
+质疑权威是独立思考的开端，question everything，to be or not to be！
+一个伟大的技术人员从艺术家的思考工程方式和超现实主义思想对待自己的工作和热爱的事业
+论文整理——思维框架整理——相关开源项目整理
                                             
 #### 研究方向：神经计算算法系统，认知智能体系架构系统；认知计算算法系统；视觉深度学习算法系统，并行大数据分析机器学习系统，异构计算服务优化传输系统，云端融合认知系统；奇异矩阵分解，分形优化，差分方程，海涅-加瓦罗定量研究。
 
@@ -109,7 +107,7 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 
 【11】Vehicle overload project
 ![](https://github.com/Eric3911/image/blob/master/bilatera.jpg)
-！[](https://github.com/Eric3911/Related-works-ch/blob/master/07_Experiment-master/00014.png)
+![](https://github.com/Eric3911/Related-works-ch/blob/master/07_Experiment-master/00014.png)
 
 【12】Intensive population testing project
 ![](https://github.com/Eric3911/Stage/blob/master/000_List_of_best_papers/survey_forcrowd_counting.jpg)
