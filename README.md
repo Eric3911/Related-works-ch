@@ -132,6 +132,7 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 【17】Large model service application
 ![](https://github.com/Eric3911/Related-works-ch/blob/master/07_Experiment-master/llms001.png)
 ![](https://github.com/Eric3911/Related-works-ch/blob/master/07_Experiment-master/llms002.png)
+![](https://github.com/Eric3911/Related-works-ch/blob/master/07_Experiment-master/00015.png)
 
 17年参加全球大数据峰会GBDC北京会； 18年参加人工智能国际前沿技术论坛； 19年参加CCF郑州BDCI获得三等奖； 22年参加BDTC中国大数据技术大会； 23年参加全球人工智能技术大会； 23年参加北京智源大会； 23年带领团队企业获得AI应用典型案例奖
 
