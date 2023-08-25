@@ -140,7 +140,8 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 ####  22年参加BDTC中国大数据技术大会； 
 ####  23年参加全球人工智能技术大会； 
 ####  23年参加北京智源大会，CCF图神经网络会议； 
-####  23年带领团队获得中关村AI应用典型案例奖。
+####  23年带领团队获得中关村AI应用典型案例奖；
+####  23年参加人工智能芯片北京RSIC-V中国峰会；
 
 LICENSE
 [MIT](https://opensource.org/licenses/MIT)
