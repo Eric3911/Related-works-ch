@@ -135,7 +135,7 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 ![](https://github.com/Eric3911/Related-works-ch/blob/master/07_Experiment-master/00015.png)
 
 ####  17年参加全球大数据峰会GBDC北京会； 
-####  18年参加人工智能国际前沿技术论坛； 
+####  18年参加人工智能国际前沿技术论坛； ONNX workshop for ONNX community members and partners
 ####  19年参加CCF郑州BDCI获得三等奖； 
 ####  22年参加BDTC中国大数据技术大会； 
 ####  23年参加全球人工智能技术大会； 
