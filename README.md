@@ -10,11 +10,12 @@
 #### 主要工程：PDF文档文字识别，低分辨率低质量遥感图像处理，医学图像处理，视频图像跟踪或超分处理，图像语音文本生成，情报态势感知知识系统；摘要生成，实体识别，微服务算法服务。
 #### 兴趣方向：[RSIC-V芯片工程](https://codechina.csdn.net/OpenXiangShan/XiangShan); 、工业制造自动化设计；异构边缘计算架构，村算一体硬件，认知多端系统；蛋白质组学计算；材料合成算法；高频交易算法；能源开发工艺系统设计。
 #### 论文列表：
-            [01](https://ieeexplore.ieee.org/abstract/document/9006506)
-            [02](https://ieeexplore.ieee.org/abstract/document/8763909)
-            [03](https://www.mdpi.com/2072-4292/12/4/729)
-            [04]
-            [05]
+            [01](https://ieeexplore.ieee.org/abstract/document/9006506)遥感图像
+            [02](https://ieeexplore.ieee.org/abstract/document/8763909)遥感图像
+            [03](https://www.mdpi.com/2072-4292/12/4/729)航空图像
+            [04]文字识别
+            [05]威胁情报
+            [06]图神经网络
             
 ![](https://github.com/Eric3911/related-works-ch/blob/master/04_%E8%A7%86%E8%A7%89%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B/%E8%A7%86%E8%A7%89%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%EF%BC%88%E5%85%A8%E4%B9%A6%E6%A1%86%E6%9E%B6%EF%BC%89.jpg)
 
@@ -144,8 +145,8 @@ xxxx
 ####  18年参加人工智能国际前沿技术论坛； ONNX workshop for ONNX community members and partners
 ####  19年参加CCF郑州BDCI获得三等奖； 
 ####  22年参加BDTC中国大数据技术大会； 
-####  23年参加全球人工智能技术大会； 23年参加北京智源大会，CCF图神经网络会议； 
-####  23年带领团队获得中关村AI应用典型案例奖；23年完成国家653工程基础研究应用小明；
+####  23年参加全球人工智能技术大会； 23年参加北京智源大会，23年CCF图神经网络会议； 
+####  23年带领团队获得中关村AI应用典型案例奖；23年完成国家653工程基础研究应用项目工作；
 ####  23年参加人工智能芯片北京RSIC-V中国峰会；23年参加龙芯生态技术大会内生安全组分会；
 
 LICENSE
