@@ -1,17 +1,21 @@
 ### Introduction
 
-质疑权威是独立思考的开端，question everything，to be or not to be！
-一个伟大的技术人员从艺术家的思考工程方式和超现实主义思想对待自己的工作和热爱的事业
-论文整理——思维框架整理——相关开源项目整理
+独立思考的开端是批判性思维，question everything，to be or not to be！
+一个伟大的技术研究人员是用艺术思考工程方式与超现实主义思想对待自己工作热爱的事业，究天人之际，通古今之变，成一家之言！
+模型思维----论文整理----思维框架整理----相关开源项目整理----发明专利工程转化应用
                                             
-#### 研究方向：神经计算算法系统，认知智能体系架构系统；认知计算算法系统；视觉深度学习算法系统，并行大数据分析机器学习系统，异构计算服务优化传输系统，云端融合认知系统；奇异矩阵分解，分形优化，差分方程，海涅-加瓦罗定量研究。
+#### 研究方向：认知智能（认知计算）算法系统；神经计算加速器设计
+神经计算算法系统，认知智能体系架构系统；认知计算算法系统；视觉深度学习算法系统；文本语音视频多模态处理系统，并行大数据分析机器学习系统，异构计算服务优化传输系统，云端融合认知系统；态势感知系统；奇异矩阵分解，分形优化，差分方程，海涅-加瓦罗定量研究，看图说话应用，实时计算系统，短指令微内核应用。
 
-#### 主要工程：PDF文档文字识别，低分辨率低质量遥感图像处理，医学图像处理，视频图像跟踪或超分处理，微服务算法服务。
-#### 兴趣方向：[RSIC-V芯片工程](https://codechina.csdn.net/OpenXiangShan/XiangShan); 、工业制造自动化设计；异构边缘计算架构，村算一体硬件，认知多端系统；蛋白质组学计算；材料合成算法；高频交易算法；能源开发工艺设计。
+#### 主要工程：PDF文档文字识别，低分辨率低质量遥感图像处理，医学图像处理，视频图像跟踪或超分处理，图像语音文本生成，情报态势感知知识系统；摘要生成，实体识别，微服务算法服务。
+#### 兴趣方向：[RSIC-V芯片工程](https://codechina.csdn.net/OpenXiangShan/XiangShan); 、工业制造自动化设计；异构边缘计算架构，村算一体硬件，认知多端系统；蛋白质组学计算；材料合成算法；高频交易算法；能源开发工艺系统设计。
 #### 论文列表：
-            [01](https://ieeexplore.ieee.org/abstract/document/9006506)
-            [02](https://ieeexplore.ieee.org/abstract/document/8763909)
-            [03](https://www.mdpi.com/2072-4292/12/4/729)
+            [01](https://ieeexplore.ieee.org/abstract/document/9006506)遥感图像
+            [02](https://ieeexplore.ieee.org/abstract/document/8763909)遥感图像
+            [03](https://www.mdpi.com/2072-4292/12/4/729)航空图像
+            [04]文字识别
+            [05]威胁情报
+            [06]图神经网络
             
 ![](https://github.com/Eric3911/related-works-ch/blob/master/04_%E8%A7%86%E8%A7%89%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B/%E8%A7%86%E8%A7%89%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%EF%BC%88%E5%85%A8%E4%B9%A6%E6%A1%86%E6%9E%B6%EF%BC%89.jpg)
 
@@ -134,13 +138,16 @@ https://github.com/Eric3911/icpr2018_ocr_papers
 ![](https://github.com/Eric3911/Related-works-ch/blob/master/07_Experiment-master/llms002.png)
 ![](https://github.com/Eric3911/Related-works-ch/blob/master/07_Experiment-master/00015.png)
 
-17年参加全球大数据峰会GBDC北京会； 
-18年参加人工智能国际前沿技术论坛； 
-19年参加CCF郑州BDCI获得三等奖； 
-22年参加BDTC中国大数据技术大会； 
-23年参加全球人工智能技术大会； 
-23年参加北京智源大会，CCF图神经网络会议； 
-23年带领团队获得中关村AI应用典型案例奖。
+【18】Large language model application
+xxxx  
+
+####  17年参加全球大数据峰会GBDC北京会； 
+####  18年参加人工智能国际前沿技术论坛； ONNX workshop for ONNX community members and partners
+####  19年参加CCF郑州BDCI获得三等奖； 
+####  22年参加BDTC中国大数据技术大会； 
+####  23年参加全球人工智能技术大会； 23年参加北京智源大会，23年CCF图神经网络会议； 
+####  23年带领团队获得中关村AI应用典型案例奖；23年完成国家653工程基础研究应用项目工作；
+####  23年参加人工智能芯片北京RSIC-V中国峰会；23年参加龙芯生态技术大会内生安全组分会；
 
 LICENSE
 [MIT](https://opensource.org/licenses/MIT)
